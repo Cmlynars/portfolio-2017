@@ -67,7 +67,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 9, ../sass/screen.scss */
-#place-holder-logo {
-  color: #4F5E66;
+/* line 10, ../sass/screen.scss */
+* {
+  border: 1px solid red !important;
+  box-sizing: border-box;
+}
+
+/* line 22, ../sass/screen.scss */
+#project-content {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+#project-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 25, ../sass/screen.scss */
+#project-content #project-header {
+  width: 100%;
+  float: left;
+}
+/* line 28, ../sass/screen.scss */
+#project-content #project-header h1,
+#project-content #project-header h2 {
+  width: 63.23529%;
+  float: left;
+  margin-left: 1.71569%;
+  margin-right: 1.71569%;
+}
+/* line 35, ../sass/screen.scss */
+#project-content #project-grid > div {
+  width: 96.56863%;
+  float: left;
+  margin-left: 1.71569%;
+  margin-right: 1.71569%;
+  min-height: 350px;
+  margin-bottom: 1.71569%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 35, ../sass/screen.scss */
+  #project-content #project-grid > div {
+    width: 46.56863%;
+    float: left;
+    margin-left: 1.71569%;
+    margin-right: 1.71569%;
+    /*margin-bottom: gutter();*/
+  }
+  /* line 43, ../sass/screen.scss */
+  #project-content #project-grid > div:nth-child(10n+1) {
+    width: 96.56863%;
+    float: left;
+    margin-left: 1.71569%;
+    margin-right: 1.71569%;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 35, ../sass/screen.scss */
+  #project-content #project-grid > div {
+    width: 29.90196%;
+    float: left;
+    margin-left: 1.71569%;
+    margin-right: 1.71569%;
+    /*margin-bottom: gutter();*/
+  }
+  /* line 52, ../sass/screen.scss */
+  #project-content #project-grid > div:nth-child(10n+1), #project-content #project-grid > div:nth-child(10n+4), #project-content #project-grid > div:nth-child(10n+5) {
+    width: 63.23529%;
+    float: left;
+    margin-left: 1.71569%;
+    margin-right: 1.71569%;
+  }
 }
