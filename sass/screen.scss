@@ -12,7 +12,7 @@
  	box-sizing: border-box;
  }
 
-/*Susy config*/
+ /*Susy config*/
  $susy: (
  	columns: 12,
  	gutters: .70,
@@ -20,23 +20,37 @@
  	/*debug: (image: show)*/
  	);
 
-/*Header Navigation*/
+ /*Header Navigation*/
  nav {
-	@include container (1140px);
+ 	@include container (1140px);
 
-	#nav-items {
-		@include span(12);
-		display: flex;
-		justify-content: space-between;
+ 	#nav-items {
+ 		@include span(12);
+ 		display: flex;
+ 		justify-content: space-between;
 
-		ul {
-		display: flex;
-		}
-	}
-}
+ 		ul {
+ 			display: flex;
+ 		}
+ 	}
+ }
 
+ /*Footer Navigation*/
+ #footer-content {
+ 	@include container(1140px);
 
-/*Hompage Project Grid*/
+ 	#footer-items {
+ 		@include span(12);
+ 		display: flex;
+ 		justify-content: space-between;
+
+ 		div {
+ 			display: flex;	
+ 		}
+ 	}
+ }
+
+ /*Hompage Project Grid*/
  #project-content {
  	@include container(1140px);
 
@@ -75,5 +89,22 @@
  			}
  		}	
  	}
+ }
+
+ /*Project Page*/ 
+ #project-content-container {
+	@include container(1140px);
+
+	#breadcrumb-container {
+		@include span(12);
+	}
+
+	#image-container {
+		@include span(8);
+	}
+
+	#description-container {
+		@include span(4 last); 
+	} 	
  }
 
