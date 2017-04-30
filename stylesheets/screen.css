@@ -73,7 +73,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
-/* line 22, ../sass/screen.scss */
+/*Susy config*/
+/*Header Navigation*/
+/* line 24, ../sass/screen.scss */
+nav {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+nav:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 27, ../sass/screen.scss */
+nav #nav-items {
+  width: 96.56863%;
+  float: left;
+  margin-left: 1.71569%;
+  margin-right: 1.71569%;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 32, ../sass/screen.scss */
+nav #nav-items ul {
+  display: flex;
+}
+
+/*Hompage Project Grid*/
+/* line 40, ../sass/screen.scss */
 #project-content {
   max-width: 1140px;
   margin-left: auto;
@@ -85,12 +114,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   clear: both;
 }
-/* line 25, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 #project-content #project-header {
   width: 100%;
   float: left;
 }
-/* line 28, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 #project-content #project-header h1,
 #project-content #project-header h2 {
   width: 63.23529%;
@@ -98,7 +127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 1.71569%;
   margin-right: 1.71569%;
 }
-/* line 35, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 #project-content #project-grid > div {
   width: 96.56863%;
   float: left;
@@ -108,7 +137,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 1.71569%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 35, ../sass/screen.scss */
+  /* line 53, ../sass/screen.scss */
   #project-content #project-grid > div {
     width: 46.56863%;
     float: left;
@@ -116,7 +145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 1.71569%;
     /*margin-bottom: gutter();*/
   }
-  /* line 43, ../sass/screen.scss */
+  /* line 61, ../sass/screen.scss */
   #project-content #project-grid > div:nth-child(10n+1) {
     width: 96.56863%;
     float: left;
@@ -125,7 +154,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media (min-width: 1025px) {
-  /* line 35, ../sass/screen.scss */
+  /* line 53, ../sass/screen.scss */
   #project-content #project-grid > div {
     width: 29.90196%;
     float: left;
@@ -133,7 +162,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right: 1.71569%;
     /*margin-bottom: gutter();*/
   }
-  /* line 52, ../sass/screen.scss */
+  /* line 70, ../sass/screen.scss */
   #project-content #project-grid > div:nth-child(10n+1), #project-content #project-grid > div:nth-child(10n+4), #project-content #project-grid > div:nth-child(10n+5) {
     width: 63.23529%;
     float: left;

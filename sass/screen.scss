@@ -12,6 +12,7 @@
  	box-sizing: border-box;
  }
 
+/*Susy config*/
  $susy: (
  	columns: 12,
  	gutters: .70,
@@ -19,6 +20,23 @@
  	/*debug: (image: show)*/
  	);
 
+/*Header Navigation*/
+ nav {
+	@include container (1140px);
+
+	#nav-items {
+		@include span(12);
+		display: flex;
+		justify-content: space-between;
+
+		ul {
+		display: flex;
+		}
+	}
+}
+
+
+/*Hompage Project Grid*/
  #project-content {
  	@include container(1140px);
 
@@ -27,7 +45,7 @@
 
  		h1,
  		h2, {
- 			@include span(8)
+ 			@include span(8);
  		}
  	}
 
