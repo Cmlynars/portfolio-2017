@@ -1,0 +1,29 @@
+/*Header Navigation*/
+ nav {
+ 	@include container (1140px);
+
+ 	#nav-items {
+ 		@include span(12);
+ 		display: flex;
+ 		justify-content: space-between;
+
+ 		ul {
+ 			display: flex;
+ 		}
+ 	}
+ }
+
+ /*Footer Navigation*/
+ #footer-content {
+ 	@include container(1140px);
+
+ 	#footer-items {
+ 		@include span(12);
+ 		display: flex;
+ 		justify-content: space-between;
+
+ 		div {
+ 			display: flex;	
+ 		}
+ 	}
+ }

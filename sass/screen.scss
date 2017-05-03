@@ -3,108 +3,11 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
- @import "compass/reset";
- @import "susy";
- @import "partials/colors";
+@import "compass/reset";
+@import "susy";
+@import "variables";
+@import "base";
+@import "layouts";
+@import "modules";
 
- * {
- 	border: 1px solid red !important;
- 	box-sizing: border-box;
- }
-
- /*Susy config*/
- $susy: (
- 	columns: 12,
- 	gutters: .70,
- 	gutter-position: split,
- 	/*debug: (image: show)*/
- 	);
-
- /*Header Navigation*/
- nav {
- 	@include container (1140px);
-
- 	#nav-items {
- 		@include span(12);
- 		display: flex;
- 		justify-content: space-between;
-
- 		ul {
- 			display: flex;
- 		}
- 	}
- }
-
- /*Footer Navigation*/
- #footer-content {
- 	@include container(1140px);
-
- 	#footer-items {
- 		@include span(12);
- 		display: flex;
- 		justify-content: space-between;
-
- 		div {
- 			display: flex;	
- 		}
- 	}
- }
-
- /*Hompage Project Grid*/
- #project-content {
- 	@include container(1140px);
-
- 	#project-header {
- 		@include span(12 nest);
-
- 		h1,
- 		h2, {
- 			@include span(8);
- 		}
- 	}
-
- 	#project-grid {
- 		> div {
- 			@include span(12);
- 			min-height: 350px;
- 			margin-bottom: gutter();
-
- 			@media (min-width: 768px) and (max-width: 1024px){
- 				@include span(6);
- 				/*margin-bottom: gutter();*/
- 				&:nth-child(10n+1) {
- 					@include span(12);
- 				}
- 			}
-
- 			@media (min-width: 1025px) {
- 				@include span(4);
- 				/*margin-bottom: gutter();*/
-
- 				&:nth-child(10n+1),
- 				&:nth-child(10n+4),
- 				&:nth-child(10n+5), {
- 					@include span(8);
- 				}
- 			}
- 		}	
- 	}
- }
-
- /*Project Page*/ 
- #project-content-container {
-	@include container(1140px);
-
-	#breadcrumb-container {
-		@include span(12);
-	}
-
-	#image-container {
-		@include span(8);
-	}
-
-	#description-container {
-		@include span(4 last); 
-	} 	
- }
 
