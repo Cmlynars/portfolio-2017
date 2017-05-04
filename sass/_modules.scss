@@ -1,6 +1,6 @@
-/*Header Navigation*/
+/*Header*/
  nav {
- 	@include container (1140px);
+ 	@include container ($max-width);
 
  	#nav-items {
  		@include span(12);
@@ -13,9 +13,9 @@
  	}
  }
 
- /*Footer Navigation*/
+ /*Footer*/
  #footer-content {
- 	@include container(1140px);
+ 	@include container($max-width);
 
  	#footer-items {
  		@include span(12);
