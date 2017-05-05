@@ -1,29 +1,68 @@
 /*Header*/
- nav {
- 	@include container ($max-width);
+nav {
+	@include container ($max-width);
 
- 	#nav-items {
- 		@include span(12);
- 		display: flex;
- 		justify-content: space-between;
+	.nav-items {
+		@include span(12);
+		display: flex;
+		justify-content: space-between;
 
- 		ul {
- 			display: flex;
- 		}
- 	}
- }
+		ul {
+			display: flex;
+		}
+	}
+}
 
- /*Footer*/
- #footer-content {
- 	@include container($max-width);
+.nav-items {
+	padding: 3.25rem 0;
+}
 
- 	#footer-items {
- 		@include span(12);
- 		display: flex;
- 		justify-content: space-between;
+/*Footer*/
+#footer-content {
+	@include container($max-width);
 
- 		div {
- 			display: flex;	
- 		}
- 	}
- }
+	#footer-items {
+		@include span(12);
+		display: flex;
+		justify-content: space-between;
+
+		div {
+			display: flex;	
+		}
+	}
+}
+
+/*Site Header*/
+.project-header {
+	margin: 8.571rem 0;
+}
+
+.site-title {
+	margin-bottom: 3.25rem;
+}
+
+/*Project Cards*/
+.project-card {
+	height: $card-height;
+}
+
+.card-image {
+	background-image: url("../img/placeholder.jpg");
+	height: $card-image-height;
+	background-repeat: no-repeat;
+}
+
+.card-content {
+	padding: 1rem 1.5rem 0 1.5rem;
+	height: $card-height - $card-image-height;
+
+	h4 {
+		margin-bottom: .25rem;
+	}
+
+	h3 {
+		margin-bottom: .5rem;
+	}
+}
+
+

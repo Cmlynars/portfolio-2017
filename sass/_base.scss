@@ -5,9 +5,11 @@
 
 html {
 	font-size: 16px;
+	font-family: $open-sans;
 }
 
 h1 {
+	font-family: $montserrat;
 	color: $primary;
 	font-size: 2.625rem;
 }
@@ -25,6 +27,7 @@ h3 {
 h4 {
 	color: $tertiary;
 	font-size: 0.875rem;
+	text-transform: uppercase;
 }
 
 p {

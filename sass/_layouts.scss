@@ -9,11 +9,11 @@ $susy: (
 #project-content {
 	@include container($max-width);
 
-	#project-header {
+	.project-header {
 		@include span(12 nest);
 
-		h1,
-		h2, {
+		.site-title,
+		.site-byline, {
 			@include span(8);
 		}
 	}
@@ -21,7 +21,7 @@ $susy: (
 	#project-grid {
 		> div {
 			@include span(12);
-			min-height: 350px;
+			/*height: 350px;*/
 			margin-bottom: gutter();
 
 			@media (min-width: 768px) and (max-width: 1024px){
