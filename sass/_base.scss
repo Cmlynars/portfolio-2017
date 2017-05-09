@@ -5,32 +5,44 @@
 
 html {
 	font-size: 16px;
-	font-family: $open-sans;
+	font-family: $body-font;
 }
 
 h1 {
-	font-family: $montserrat;
+	font-family: $headline-font;
 	color: $primary;
 	font-size: 2.625rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 h2 {
 	color: $secondary;
 	font-size: 1.5rem;
+	line-height: 2.375rem;
+	letter-spacing: .75px;
+	font-weight: 300;
 }
 
 h3 {
 	color: $primary;
 	font-size: 1.625rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: .25px;
 }
 
 h4 {
 	color: $tertiary;
 	font-size: 0.875rem;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 p {
 	color: $secondary;
 	font-size: 1rem;
+	line-height: 1.375rem;
+	font-weight: 400;
+	letter-spacing: .25px;
 }

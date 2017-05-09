@@ -2,7 +2,7 @@
 nav {
 	@include container ($max-width);
 
-	.nav-items {
+	.nav-container {
 		@include span(12);
 		display: flex;
 		justify-content: space-between;
@@ -13,23 +13,15 @@ nav {
 	}
 }
 
-.nav-items {
+.nav-container {
 	padding: 3.25rem 0;
 }
 
-/*Footer*/
-#footer-content {
-	@include container($max-width);
-
-	#footer-items {
-		@include span(12);
-		display: flex;
-		justify-content: space-between;
-
-		div {
-			display: flex;	
-		}
-	}
+.nav-item {
+	margin-right: 3rem;
+	&:last-child {
+		margin-right: 0;
+	}	
 }
 
 /*Site Header*/
@@ -43,7 +35,9 @@ nav {
 
 /*Project Cards*/
 .project-card {
+	@media (min-width: 1024px) {
 	height: $card-height;
+	}
 }
 
 .card-image {
@@ -53,8 +47,11 @@ nav {
 }
 
 .card-content {
-	padding: 1rem 1.5rem 0 1.5rem;
+	padding: 1rem 1.5rem 1rem 1.5rem;
+
+	@media (min-width: 1024px) {
 	height: $card-height - $card-image-height;
+	}
 
 	h4 {
 		margin-bottom: .25rem;
@@ -65,4 +62,24 @@ nav {
 	}
 }
 
+/*Footer*/
+.footer-content {
+	@include container($max-width);
+	margin: 2rem auto 8rem auto;
+
+	.footer-items {
+		@include span(12);
+
+		display: flex;
+		justify-content: space-between;
+
+		div {
+			display: flex;	
+		}
+	}
+}
+
+.email {
+	margin-right: 3rem;
+} 
 

@@ -1,32 +1,36 @@
 /*Hompage Project Grid*/
 $susy: (
 	columns: 12,
-	gutters: .70,
+	gutters: .30,
 	gutter-position: split,
 	/*debug: (image: show)*/
 	);
 
-#project-content {
+.project-content {
 	@include container($max-width);
+	margin-bottom: 6rem;
 
 	.project-header {
 		@include span(12 nest);
+		
 
 		.site-title,
 		.site-byline, {
-			@include span(8);
+			@include span(12);
+
+			@media (min-width: 768px) {
+				@include span(8);
+			}
 		}
 	}
 
-	#project-grid {
-		> div {
+	.project-card {
 			@include span(12);
-			/*height: 350px;*/
 			margin-bottom: gutter();
 
 			@media (min-width: 768px) and (max-width: 1024px){
 				@include span(6);
-				margin-bottom: gutter();
+				margin-bottom: gutter() * 2;
 				&:nth-child(10n+1) {
 					@include span(12);
 				}
@@ -34,7 +38,7 @@ $susy: (
 
 			@media (min-width: 1025px) {
 				@include span(4);
-				/*margin-bottom: gutter();*/
+				margin-bottom: gutter() * 3;
 
 				&:nth-child(10n+1),
 				&:nth-child(10n+4),
@@ -43,7 +47,7 @@ $susy: (
 				}
 			}
 		}	
-	}
+	
 }
 
 /*Project Page*/ 
