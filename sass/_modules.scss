@@ -33,23 +33,45 @@ nav {
 	margin-bottom: 3.25rem;
 }
 
+/*Background*/
+/*.project-content {
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: $background-color;
+	}
+}*/
+
 /*Project Cards*/
 .project-card {
-	@media (min-width: 1024px) {
+	cursor: pointer;
+	@include box-shadow($card-shadow);
+	@include transition-property(box-shadow);
+	@include transition-duration(.2s);
+	@include transition-timing-function(ease-in);
+	&:hover {
+		@include box-shadow($hover-shadow);
+	}
+	@media (min-width: $large-break) {
 	height: $card-height;
 	}
 }
 
 .card-image {
-	background-image: url("../img/placeholder.jpg");
 	height: $card-image-height;
-	background-repeat: no-repeat;
+	@include background-image(url("../img/placeholder.jpg"));
+	background-repeat: no-repeat;	
 }
 
 .card-content {
 	padding: 1rem 1.5rem 1rem 1.5rem;
 
-	@media (min-width: 1024px) {
+	@media (min-width: $large-break) {
 	height: $card-height - $card-image-height;
 	}
 
@@ -69,7 +91,6 @@ nav {
 
 	.footer-items {
 		@include span(12);
-
 		display: flex;
 		justify-content: space-between;
 

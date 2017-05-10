@@ -12,13 +12,12 @@ $susy: (
 
 	.project-header {
 		@include span(12 nest);
-		
 
 		.site-title,
 		.site-byline, {
 			@include span(12);
 
-			@media (min-width: 768px) {
+			@media (min-width: $medium-break) {
 				@include span(8);
 			}
 		}
@@ -26,17 +25,16 @@ $susy: (
 
 	.project-card {
 			@include span(12);
-			margin-bottom: gutter();
+			margin-bottom: gutter() * 5;
 
-			@media (min-width: 768px) and (max-width: 1024px){
+			@media (min-width: $medium-break) {
 				@include span(6);
-				margin-bottom: gutter() * 2;
 				&:nth-child(10n+1) {
 					@include span(12);
 				}
 			}
 
-			@media (min-width: 1025px) {
+			@media (min-width: $large-break) {
 				@include span(4);
 				margin-bottom: gutter() * 3;
 
@@ -47,32 +45,37 @@ $susy: (
 				}
 			}
 		}	
-	
 }
 
 /*Project Page*/ 
 $project: (
 	columns: 12,
 	gutters: .70,
-	gutter-position: after,
+	gutter-position: split,
 	/*debug: (image: show)*/
 	);
 
 @include with-layout($project) {
-	#project-content-container {
+	.project-content-container {
 
 		@include container($max-width);
 
-		#breadcrumb-container {
+		.breadcrumb-container {
 			@include span(12);
 		}
 
-		#image-container {
+		.image-container {
 			@include span(8);
+			@media (max-width: $medium-break) {
+				@include span(12);
+			}
 		}
 
-		#description-container {
-			@include span(4 last); 
+		.description-container {
+			@include span(4 last);
+			@media (max-width: $medium-break) {
+				@include span(12);
+			} 
 		} 	
 	}
 }
