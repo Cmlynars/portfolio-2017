@@ -1,25 +1,25 @@
-/*Colors*/
+/* === COLORS === */
 $primary: #4F5E66;
 $secondary: #7893A1;
 $tertiary: #9DA9B0;
 $accent: #4BC180;
 $background-color: #EDF1F5;
 
-/*Sizing*/
+/* === SIZING === */
 $max-width: 1140px;
 $card-height: 400px;
 $card-image-height: 265px;
 
-/*Media Queries*/
+/* === MEDIA QUERIES === */
 $medium-break: 768px; 
 $large-break: 1024px;
 
-/*Fonts*/
+/* === FONTS === */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Source+Sans+Pro:300,400,600,700');
 $headline-font: 'Montserrat', sans-serif;
 $body-font: 'Source Sans Pro', sans-serif;
 $base-font-size: 16px;
 
-/*Shadows*/
+/* === SHADOWS === */
 $card-shadow: 0 30px 28px rgba(79, 94, 102, .2);
 $hover-shadow: 0 40px 40px rgba(79, 94, 102, .15)

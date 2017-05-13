@@ -1,4 +1,4 @@
-/*Hompage Project Grid*/
+/* === HOMEPAGE === */
 $susy: (
 	columns: 12,
 	gutters: .30,
@@ -8,7 +8,7 @@ $susy: (
 
 .project-content {
 	@include container($max-width);
-	margin-bottom: 6rem;
+	margin-bottom: 96px;
 
 	.project-header {
 		@include span(12 nest);
@@ -47,7 +47,7 @@ $susy: (
 		}	
 }
 
-/*Project Page*/ 
+/* === ARTICLE PAGE === */ 
 $project: (
 	columns: 12,
 	gutters: .70,
