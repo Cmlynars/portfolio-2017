@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* === SHADOWS === */
 /* line 1, ../sass/_base.scss */
 * {
-  border: 1px solid red !important;
+  /*border: 1px solid red !important;*/
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -335,30 +335,80 @@ nav .nav-container ul .nav-item:last-child {
     justify-content: space-between;
   }
   /* line 44, ../sass/_modules.scss */
+  .footer-content .footer-wrapper .footer-item {
+    margin-bottom: 0;
+  }
+  /* line 48, ../sass/_modules.scss */
   .footer-content .footer-wrapper .contact-container {
     display: flex;
   }
-  /* line 47, ../sass/_modules.scss */
+  /* line 51, ../sass/_modules.scss */
   .footer-content .footer-wrapper .contact-container .email {
     margin-right: 48px;
   }
 }
 
 /* === BACKGROUND === */
+/* line 60, ../sass/_modules.scss */
+.background {
+  background: -webkit-linear-gradient(-75deg, white 0%, white 30%, #edf1f5 30%, #edf1f5 100%);
+}
+
+/*.background {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}*/
+/*.background:before {
+		content: "";
+		background-color: $background-color;
+		height: 400px;
+		transform: skewY(-30deg);
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		top: 200px;
+	}*/
+/*.background:after {
+		content: "";
+		background-color: $background-color;
+		height:1500px;
+		transform-origin: top right;
+		transform: skew(0deg, -30deg);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}*/
+/*	.background:after {
+		content: "";
+		background: red;
+		height: 40px;
+		transform: skewY(1deg);
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		top: -30px;
+	} 
+*/
 /* === SITE HEADER === */
-/* line 58, ../sass/_modules.scss */
+/* line 109, ../sass/_modules.scss */
 .project-header {
   margin: 135px 0;
 }
-/* line 61, ../sass/_modules.scss */
+/* line 112, ../sass/_modules.scss */
 .project-header .site-title {
   margin-bottom: 52px;
 }
 
 /* === PROJECT CARDS === */
-/* line 67, ../sass/_modules.scss */
+/* line 118, ../sass/_modules.scss */
 .project-card {
   cursor: pointer;
+  background-color: #fff;
   -moz-box-shadow: 0 30px 28px rgba(79, 94, 102, 0.2);
   -webkit-box-shadow: 0 30px 28px rgba(79, 94, 102, 0.2);
   box-shadow: 0 30px 28px rgba(79, 94, 102, 0.2);
@@ -375,38 +425,38 @@ nav .nav-container ul .nav-item:last-child {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 73, ../sass/_modules.scss */
+/* line 125, ../sass/_modules.scss */
 .project-card:hover {
   -moz-box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
   -webkit-box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
   box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
 }
 @media (min-width: 1024px) {
-  /* line 67, ../sass/_modules.scss */
+  /* line 118, ../sass/_modules.scss */
   .project-card {
     height: 400px;
   }
 }
-/* line 80, ../sass/_modules.scss */
+/* line 132, ../sass/_modules.scss */
 .project-card .card-image {
   height: 265px;
   background-image: url("../img/placeholder.jpg");
   background-repeat: no-repeat;
 }
-/* line 86, ../sass/_modules.scss */
+/* line 138, ../sass/_modules.scss */
 .project-card .card-content {
   padding: 16px 24px 16px 24px;
 }
-/* line 89, ../sass/_modules.scss */
+/* line 141, ../sass/_modules.scss */
 .project-card .card-content h4 {
   margin-bottom: 4px;
 }
-/* line 93, ../sass/_modules.scss */
+/* line 145, ../sass/_modules.scss */
 .project-card .card-content h3 {
   margin-bottom: 8px;
 }
 @media (min-width: 1024px) {
-  /* line 86, ../sass/_modules.scss */
+  /* line 138, ../sass/_modules.scss */
   .project-card .card-content {
     height: 135px;
   }
