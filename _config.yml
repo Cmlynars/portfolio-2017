@@ -1,0 +1,15 @@
+# Site Settings
+ title: Chris Mlynarski's Portfolio Site
+description: A site that displays Chris Mlynarski's work 
+baseurl: "/portfolio"
+defaults:
+  -
+ scope:
+  path: ""
+ values:
+  layout: "default"
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
