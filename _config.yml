@@ -2,6 +2,7 @@
  title: Chris Mlynarski's Portfolio Site
 description: A site that displays Chris Mlynarski's work 
 baseurl: "/portfolio"
+url: ""
 defaults:
   -
  scope:
