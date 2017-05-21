@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* === SHADOWS === */
 /* line 1, ../sass/_base.scss */
 * {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -136,7 +136,7 @@ p {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 96px;
+  padding-bottom: 60px;
 }
 /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .project-content:after {
@@ -312,7 +312,7 @@ nav .nav-container ul .nav-item:last-child {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  margin: 32px auto 128px auto;
+  margin: 64px auto 128px auto;
 }
 /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .footer-content:after {
@@ -432,4 +432,11 @@ nav .nav-container ul .nav-item:last-child {
   .project-card .card-content {
     height: 135px;
   }
+}
+
+/* === BREADCRUMB === */
+/* line 112, ../sass/_modules.scss */
+.breadcrumb-container {
+  display: flex;
+  margin-bottom: 24px;
 }

@@ -24,7 +24,7 @@ nav {
 /* === FOOTER === */
 .footer-content {
 	@include container($max-width);
-	margin: 32px auto 128px auto;
+	margin: 64px auto 128px auto;
 	
 	.footer-wrapper {
 		display: block;
@@ -107,6 +107,13 @@ nav {
 		}
 	}
 }
+
+/* === BREADCRUMB === */
+.breadcrumb-container {
+	display: flex;
+	margin-bottom: 24px;
+}
+
 
 
 

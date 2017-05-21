@@ -1,0 +1,34 @@
+---
+title: Project
+layout: default
+---
+
+<div class="background">
+
+<section class="project-content-container">
+	
+	<div class="breadcrumb-container">
+	<a href="{{ site.baseurl }}/">Projects</a><div class="current-project">{{ page.title }}</div>
+	</div>
+
+	<div class="description-container">
+	<h4 class="project-description">{{ page.role }}</h4>
+	<h3 class="project-title">
+	{{ page.title }}
+	</h3>
+	<p>
+	{{ content }}
+	</p>
+	</div>
+
+	<div class="image-container">
+		
+		{% for image in page.images %}
+		<img src="{{ site.baseurl }}/img/{{ image }}" alt="">
+		{% endfor %}
+
+	</div>
+
+</section>
+
+</div>
