@@ -112,6 +112,10 @@ nav {
 .breadcrumb-container {
 	display: flex;
 	margin-bottom: 24px;
+
+	.current-project {
+		margin-left: 4px;
+	}
 }
 
 

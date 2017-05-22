@@ -1,7 +1,7 @@
 /* === HOMEPAGE === */
 $susy: (
 	columns: 12,
-	gutters: .30,
+	gutters: $gutter-width,
 	gutter-position: split,
 	/*debug: (image: show)*/
 	);
@@ -50,7 +50,7 @@ $susy: (
 /* === PROJECT PAGE === */ 
 $project: (
 	columns: 12,
-	gutters: .70,
+	gutters: $gutter-width,
 	gutter-position: split,
 	/*debug: (image: show)*/
 	);
@@ -59,6 +59,7 @@ $project: (
 	.project-content-container {
 
 		@include container($max-width);
+		padding: 64px 0 150px 0;
 
 		h4 {
 			margin-bottom: 4px;
@@ -73,9 +74,17 @@ $project: (
 		}
 
 		.image-container {
-			@include span(8);
+			@include span(7.25);
+
 			@media (max-width: $medium-break) {
 				@include span(12);
+			}
+
+			img {
+				margin-bottom: 40px;
+				&:last-child {
+				margin-bottom: 0;
+				}
 			}
 		}
 

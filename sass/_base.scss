@@ -1,5 +1,5 @@
 * {
- 	border: 1px solid red;
+ 	/*border: 1px solid red !important;*/
  	@include box-sizing(border-box);
 }
 
@@ -44,4 +44,9 @@ p {
 	line-height: 21px;
 	font-weight: 400;
 	letter-spacing: .25px;
+}
+
+a {
+	text-decoration: none;
+	color: $accent;
 }
