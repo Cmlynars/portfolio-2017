@@ -11,15 +11,30 @@ nav {
 		ul {
 			display: flex;
 
-			.nav-item {
+			li {
 				margin-right: 48px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+
+				a {
+
+				color: $secondary;
+
+				&:hover {
+					color: $accent;
+				}
+
+				}
+
 				&:last-child {
 					margin-right: 0;
-				}	
+				}
+			}
+					
 			}
 		}
 	}
-}
+
 
 /* === FOOTER === */
 .footer-content {
@@ -87,7 +102,13 @@ nav {
 
 	.card-image {
 		height: $card-image-height;
-		@include background-image(url("../img/placeholder.jpg"));
+
+		/*{% for projects in site.pages %}
+        {% if projects.layout == 'project' %}
+        @include background-image(url("{{ project.image }}"));
+        {% endif %}
+        {% endfor %}*/
+		/*@include background-image(url("../img/placeholder.jpg"));*/
 		background-repeat: no-repeat;	
 	}
 
@@ -112,6 +133,18 @@ nav {
 .breadcrumb-container {
 	display: flex;
 	margin-bottom: 24px;
+
+	a {
+		color: $accent;
+
+		&:hover {
+			color: darken( $accent, 10% );
+		}
+
+		&:visted {
+					color: inherit;
+				}
+	}
 
 	.current-project {
 		margin-left: 4px;

@@ -17,59 +17,22 @@ layout: default
 
         <div class="project-grid">
 
+            {% for projects in site.pages %}
+            {% if projects.layout == 'project' %}
+            
             <div class="project-card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h4>Title and Timeframe</h4>
-                    <h3>Project Title</h3>
-                    <p>I did some pretty amazing things on this project and you should definitely check it out. I did some pretty amazing things on this project and you should definitely check it out.</p>
-                </div>
+                <a href="{{ site.baseurl }}{{ projects.url }}">
+                    <div class="card-image" style="background-image: url({{ site.baseurl}}/img/{{ projects.images[0] }});"></div>
+                    <div class="card-content">
+                        <h4>{{ projects.title }}</h4>
+                        <h3>{{ projects.title }}</h3>
+                        <p>{{ projects.description }}</p>
+                    </div>
+                </a>
             </div>
 
-            <div class="project-card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h4>Title and Timeframe</h4>
-                    <h3>Project Title</h3>
-                    <p>I did some pretty amazing things on this project.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h4>Title and Timeframe</h4>
-                    <h3>Project Title</h3>
-                    <p>I did some pretty amazing things on this project.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h4>Title and Timeframe</h4>
-                    <h3>Project Title</h3>
-                    <p>I did some pretty amazing things on this project and you should definitely check it out. I did some pretty amazing things on this project and you should definitely check it out.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h4>Title and Timeframe</h4>
-                    <h3>Project Title</h3>
-                    <p>I did some pretty amazing things on this project and you should definitely check it out. I did some pretty amazing things on this project and you should definitely check it out.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-image"></div>  
-                <div class="card-content">
-                    <h4>Title and Timeframe</h4>
-                    <h3>Project Title</h3>
-                    <p>I did some pretty amazing things on this project.</p>
-                </div>
-            </div>
+            {% endif %}
+            {% endfor %}
 
         </div>
     </div>

@@ -24,27 +24,27 @@ $susy: (
 	}
 
 	.project-card {
-			@include span(12);
-			margin-bottom: gutter() * 5;
+		@include span(12);
+		margin-bottom: gutter() * 5;
 
-			@media (min-width: $medium-break) {
-				@include span(6);
-				&:nth-child(10n+1) {
-					@include span(12);
-				}
+		@media (min-width: $medium-break) {
+			@include span(6);
+			&:nth-child(10n+1) {
+				@include span(12);
 			}
+		}
 
-			@media (min-width: $large-break) {
-				@include span(4);
-				margin-bottom: gutter() * 3;
+		@media (min-width: $large-break) {
+			@include span(4);
+			margin-bottom: gutter() * 3;
 
-				&:nth-child(10n+1),
-				&:nth-child(10n+4),
-				&:nth-child(10n+5), {
-					@include span(8);
-				}
+			&:nth-child(10n+1),
+			&:nth-child(10n+4),
+			&:nth-child(10n+5), {
+				@include span(8);
 			}
-		}	
+		}
+	}	
 }
 
 /* === PROJECT PAGE === */ 
@@ -83,7 +83,7 @@ $project: (
 			img {
 				margin-bottom: 40px;
 				&:last-child {
-				margin-bottom: 0;
+					margin-bottom: 0;
 				}
 			}
 		}
