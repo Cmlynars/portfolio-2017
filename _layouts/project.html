@@ -3,13 +3,11 @@ title: Project
 layout: default
 ---
 
-<div class="background">
-
 	<section class="project-content-container">
-		
+
 		<div class="breadcrumb-container">
 			<p><a href="{{ site.baseurl }}/">All Projects</a></p>
-			<p class="current-project">// {{ page.title }}</p>
+			<p class="current-project">• {{ page.title }}</p>
 		</div>
 
 		<div class="description-container">
@@ -23,7 +21,7 @@ layout: default
 		</div>
 
 		<div class="image-container">
-			
+
 			{% for image in page.images %}
 			<img src="{{ site.baseurl }}/img/{{ image }}" alt="">
 			{% endfor %}
@@ -31,5 +29,3 @@ layout: default
 		</div>
 
 	</section>
-
-</div>

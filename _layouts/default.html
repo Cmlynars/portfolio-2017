@@ -22,13 +22,15 @@
             <![endif]-->
             
             <!-- Begin Top Nav -->
+            <div {% if page.layout == 'default' %}class="background index-background"{% else %}class="background project-background"{% endif %}></div>
+
             {% include nav.html %}
 
             {{ content }}
             
             {% include footer.html %}
 
-            
+
             <!-- Begin Javascript -->
             <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

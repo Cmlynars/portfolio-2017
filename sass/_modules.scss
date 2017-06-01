@@ -18,11 +18,11 @@ nav {
 
 				a {
 
-				color: $secondary;
+					color: $secondary;
 
-				&:hover {
-					color: $accent;
-				}
+					&:hover {
+						color: $accent;
+					}
 
 				}
 
@@ -30,51 +30,77 @@ nav {
 					margin-right: 0;
 				}
 			}
-					
-			}
+
 		}
 	}
+}
 
 
 /* === FOOTER === */
-.footer-content {
-	@include container($max-width);
-	margin: 64px auto 128px auto;
-	
-	.footer-wrapper {
-		display: block;
+footer {
+	background-color: #fff;
 
-		.footer-item {
-			margin-bottom: 16px;
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
+	.footer-content {
+		@include container($max-width);
+		padding: 64px 0 128px 0;
+		margin: 0 auto;
 
-		@media (min-width: $medium-break) {
-			@include span(12);
-			display: flex;
-			justify-content: space-between;
+		.footer-wrapper {
+			display: block;
 
 			.footer-item {
-				margin-bottom: 0;
+				margin-bottom: 16px;
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 
-			.contact-container {
+			@media (min-width: $medium-break) {
+				@include span(12);
 				display: flex;
+				justify-content: space-between;
 
-				.email {
-					margin-right: 48px;
-				} 	
+				.footer-item {
+					margin-bottom: 0;
+				}
+
+				.contact-container {
+					display: flex;
+
+					.email {
+						margin-right: 48px;
+					} 	
+				}
 			}
 		}
 	}
 }
 
-/* === BACKGROUND === */
-.background {
-	@include background-image(linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, $background-color 30%, $background-color 100%));
+/* === BACKGROUNDs === */
+body {
+	position: relative;
 }
+
+.background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.index-background {
+	@include background-image(linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, $background-color 30%, $background-color 100%));	
+}
+
+.project-background {
+	@include background-image(linear-gradient(265deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, $background-color 30%, $background-color 100%));	
+}
+	/*{% if page.layout == 'default' %}*/
+	/*{% else %}*/
+	/*.background {
+	@include background-image(linear-gradient(265deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, $background-color 30%, $background-color 100%));	
+	}*/
+	/*{% endif %}*/
 
 /* === SITE HEADER === */
 .project-header {
@@ -108,25 +134,25 @@ nav {
         @include background-image(url("{{ project.image }}"));
         {% endif %}
         {% endfor %}*/
-		/*@include background-image(url("../img/placeholder.jpg"));*/
-		background-repeat: no-repeat;	
-	}
+        /*@include background-image(url("../img/placeholder.jpg"));*/
+        background-repeat: no-repeat;	
+    }
 
-	.card-content {
-		padding: 16px 24px 16px 24px;
+    .card-content {
+    	padding: 16px 24px 16px 24px;
 
-		h4 {
-			margin-bottom: 4px;
-		}
+    	h4 {
+    		margin-bottom: 4px;
+    	}
 
-		h3 {
-			margin-bottom: 8px;
-		}
+    	h3 {
+    		margin-bottom: 8px;
+    	}
 
-		@media (min-width: $large-break) {
-			height: $card-height - $card-image-height;
-		}
-	}
+    	@media (min-width: $large-break) {
+    		height: $card-height - $card-image-height;
+    	}
+    }
 }
 
 /* === BREADCRUMB === */
@@ -142,8 +168,8 @@ nav {
 		}
 
 		&:visted {
-					color: inherit;
-				}
+			color: inherit;
+		}
 	}
 
 	.current-project {
