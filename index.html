@@ -18,17 +18,15 @@ layout: default
             {% for projects in site.pages %}
             {% if projects.layout == 'project' %}
             
-            <div class="project-card">
-                <a href="{{ site.baseurl }}{{ projects.url }}">
+            <a class="project-card" href="{{ site.baseurl }}{{ projects.url }}">
                     <div class="card-image" style="background-image: url({{ site.baseurl}}/img/{{ projects.images[0] }});"></div>
                     <div class="card-content">
                         <h4>{{ projects.title }}</h4>
                         <h3>{{ projects.title }}</h3>
                         <p>{{ projects.description }}</p>
-                    </div>
-                </a>
-            </div>
-
+                    </div> 
+            </a>
+            
             {% endif %}
             {% endfor %}
 

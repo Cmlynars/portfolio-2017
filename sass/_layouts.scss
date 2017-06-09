@@ -6,9 +6,17 @@ $susy: (
 	/*debug: (image: show)*/
 	);
 
+.project-header {
+	margin: 8.4375rem 0;
+	
+	.site-title {
+		margin-bottom: 3.25rem;
+	}
+}
+
 .project-content {
 	@include container($max-width);
-	padding-bottom: 60px;
+	padding-bottom: 3.75rem;
 
 	.project-header {
 		@include span(12 nest);
@@ -59,7 +67,7 @@ $project: (
 	.project-content-container {
 
 		@include container($max-width);
-		padding: 64px 0 150px 0;
+		padding: 4rem 0 9.375rem 0;
 
 		h4 {
 			margin-bottom: 4px;
@@ -67,6 +75,9 @@ $project: (
 
 		h3 {
 			margin-bottom: 40px;
+			@media (max-width: $large-break) {
+				margin-bottom: 8px;
+			}
 		}
 
 		.breadcrumb-container {
@@ -81,7 +92,9 @@ $project: (
 			}
 
 			img {
-				margin-bottom: 40px;
+				margin-bottom: 2.5rem;
+				width: 100%;
+
 				&:last-child {
 					margin-bottom: 0;
 				}
@@ -90,6 +103,7 @@ $project: (
 
 		.description-container {
 			@include span(4 last);
+			margin-bottom: 4rem;
 			@media (max-width: $medium-break) {
 				@include span(12);
 			} 
@@ -108,17 +122,27 @@ $about: (
 @include with-layout($project) {
 		.page-container {
 			@include container($max-width);
-			padding: 64px 0 150px 0;
+			padding: 4rem 0 9.375rem 0;
 
 			.image-container {
-				@include span(6);
+				@include span(6 last);
+				overflow: hidden;
+				margin-bottom: 40px;
+
+				@media (max-width: $medium-break) {
+					@include span(12);
+				} 
 			}
 
 			.about-blurb {
-				@include span(6);
+				@include span(5);
+
+				@media (max-width: $medium-break) {
+					@include span(12);
+				}
 
 				p {
-					margin-top: 64px;
+					margin-top: 4rem;
 				}
 			}
 		}

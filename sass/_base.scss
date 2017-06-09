@@ -3,6 +3,18 @@
 	@include box-sizing(border-box);
 }
 
+html {
+	font-size: 16px;
+	/*REM OVERRIDE*/
+	@media (max-width: $large-break) {
+		font-size: 13px;
+	}
+
+	@media (max-width: $medium-break) {
+		font-size: 10px;
+	}
+}
+
 body {
 	font-family: $body-font;
 }

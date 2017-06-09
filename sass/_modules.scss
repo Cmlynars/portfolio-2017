@@ -6,15 +6,24 @@ nav {
 		@include span(12);
 		display: flex;
 		justify-content: space-between;
-		padding: 52px 0;
+		padding: 3.25rem 0;
+
+		.logo {
+			text-transform: uppercase;
+			letter-spacing: .5;
+			color: $primary;
+			font-family: $headline-font;
+			font-size: $base-font-size;
+		}
 
 		ul {
 			display: flex;
 
 			li {
-				margin-right: 48px;
+				margin-right: 3rem;
 				text-transform: uppercase;
 				letter-spacing: 1px;
+				font-size: $base-font-size;
 
 				a {
 
@@ -42,21 +51,20 @@ footer {
 
 	.footer-content {
 		@include container($max-width);
-		padding: 64px 0 128px 0;
+		padding: 4rem 0 8rem 0;
 		margin: 0 auto;
 
 		.footer-wrapper {
-			display: block;
+			@include span(12);
 
 			.footer-item {
-				margin-bottom: 16px;
+				margin-bottom: 1rem;
 				&:last-child {
 					margin-bottom: 0;
 				}
 			}
 
 			@media (min-width: $medium-break) {
-				@include span(12);
 				display: flex;
 				justify-content: space-between;
 
@@ -68,7 +76,7 @@ footer {
 					display: flex;
 
 					.email {
-						margin-right: 48px;
+						margin-right: 3rem;
 					} 	
 				}
 			}
@@ -76,7 +84,7 @@ footer {
 	}
 }
 
-/* === BACKGROUNDs === */
+/* === BACKGROUNDS === */
 body {
 	position: relative;
 }
@@ -95,21 +103,7 @@ body {
 .project-background {
 	@include background-image(linear-gradient(265deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, $background-color 30%, $background-color 100%));	
 }
-	/*{% if page.layout == 'default' %}*/
-	/*{% else %}*/
-	/*.background {
-	@include background-image(linear-gradient(265deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, $background-color 30%, $background-color 100%));	
-	}*/
-	/*{% endif %}*/
 
-/* === SITE HEADER === */
-.project-header {
-	margin: 135px 0;
-	
-	.site-title {
-		margin-bottom: 52px;
-	}
-}
 
 /* === PROJECT CARDS === */
 .project-card {
@@ -120,26 +114,20 @@ body {
 	@include transition-duration(.2s);
 	@include transition-timing-function(ease-in);
 	&:hover {
-		@include box-shadow($hover-shadow);
+	@include box-shadow($hover-shadow);
 	}
+
 	@media (min-width: $large-break) {
 		height: $card-height;
 	}
-
+		
 	.card-image {
 		height: $card-image-height;
-
-		/*{% for projects in site.pages %}
-        {% if projects.layout == 'project' %}
-        @include background-image(url("{{ project.image }}"));
-        {% endif %}
-        {% endfor %}*/
-        /*@include background-image(url("../img/placeholder.jpg"));*/
         background-repeat: no-repeat;	
     }
 
     .card-content {
-    	padding: 16px 24px 16px 24px;
+    	padding: 16px 1.5rem 16px 1.5rem;
 
     	h4 {
     		margin-bottom: 4px;
