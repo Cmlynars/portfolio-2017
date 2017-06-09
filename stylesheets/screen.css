@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* === SHADOWS === */
 /* line 1, ../sass/_base.scss */
 * {
-  /*border: 1px solid red !important;*/
+  border: 1px solid red !important;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -298,6 +298,39 @@ a:visted {
     margin-left: 0.96154%;
     margin-right: 0.96154%;
   }
+}
+
+/* === ABOUT PAGE === */
+/* line 109, ../sass/_layouts.scss */
+.page-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0 150px 0;
+}
+/* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.page-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 113, ../sass/_layouts.scss */
+.page-container .image-container {
+  width: 48.07692%;
+  float: left;
+  margin-left: 0.96154%;
+  margin-right: 0.96154%;
+}
+/* line 117, ../sass/_layouts.scss */
+.page-container .about-blurb {
+  width: 48.07692%;
+  float: left;
+  margin-left: 0.96154%;
+  margin-right: 0.96154%;
+}
+/* line 120, ../sass/_layouts.scss */
+.page-container .about-blurb p {
+  margin-top: 64px;
 }
 
 /* === TOP NAV === */

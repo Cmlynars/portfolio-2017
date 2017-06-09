@@ -96,3 +96,30 @@ $project: (
 		} 	
 	}
 }
+
+/* === ABOUT PAGE === */ 
+$about: (
+	columns: 12,
+	gutters: $gutter-width,
+	gutter-position: split,
+	/*debug: (image: show)*/
+	);
+
+@include with-layout($project) {
+		.page-container {
+			@include container($max-width);
+			padding: 64px 0 150px 0;
+
+			.image-container {
+				@include span(6);
+			}
+
+			.about-blurb {
+				@include span(6);
+
+				p {
+					margin-top: 64px;
+				}
+			}
+		}
+}
