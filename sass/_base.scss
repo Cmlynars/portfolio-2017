@@ -1,3 +1,18 @@
+/* ---------------------------------------------------------------------
+ Susy Grid Settings
+ ------------------------------------------------------------------------ */
+
+$susy: (
+	columns: 12,
+	gutters: .40,
+	gutter-position: split,
+	/*debug: (image: show)*/
+	);
+
+/* ---------------------------------------------------------------------
+ Base Styles
+ ------------------------------------------------------------------------ */
+
 * {
 	border: 1px solid red !important;
 	@include box-sizing(border-box);
@@ -5,7 +20,8 @@
 
 html {
 	font-size: 16px;
-	/*REM OVERRIDE*/
+
+	/*REM OVERRIDES*/
 	@media (max-width: $large-break) {
 		font-size: 13px;
 	}
@@ -17,6 +33,7 @@ html {
 
 body {
 	font-family: $body-font;
+	position: relative;
 }
 
 h1 {

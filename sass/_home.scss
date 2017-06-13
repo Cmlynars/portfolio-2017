@@ -1,0 +1,110 @@
+/* ---------------------------------------------------------------------
+ Page Container
+ ------------------------------------------------------------------------ */
+
+ .project-content {
+ 	@include container($max-width);
+ 	padding-bottom: 3.75rem;
+ }
+
+/* ---------------------------------------------------------------------
+ Page Header
+ ------------------------------------------------------------------------ */
+
+ .project-header {
+ 	@include span(12 nest);
+ 	margin: 8.4375rem 0;
+ }	
+
+ .site-title {
+ 	@include span(8);	
+ 	margin-bottom: 3.25rem;
+ }
+
+ .site-byline {
+ 	@include span(8);
+ }
+
+/* ---------------------------------------------------------------------
+ Page Header (Small Breakpoint)
+ ------------------------------------------------------------------------ */
+
+ @media (max-width: $medium-break) {
+
+ 	.site-title,
+ 	.site-byline, {
+ 		@include span(12);
+ 	}
+ }
+
+/* ---------------------------------------------------------------------
+ Project Cards (Mobile-first)
+ ------------------------------------------------------------------------ */
+
+ .project-card {
+ 	/*Mobile-first Width*/
+ 	@include span(12);
+ 	margin-bottom: gutter() * 5;	
+
+ 	/*General styles*/
+ 	@include box-shadow($card-shadow);
+ 	@include transition-property(box-shadow);
+ 	@include transition-duration(.2s);
+ 	@include transition-timing-function(ease-in);
+ 	margin-bottom: gutter() * 3;
+ 	cursor: pointer;
+ 	background-color: #fff;
+
+ 	&:hover {
+ 		@include box-shadow($hover-shadow);
+ 	}
+ }	
+
+ .card-image {
+ 	background-repeat: no-repeat;
+ 	height: 265px;
+ }
+
+ .card-content {
+ 	padding: 16px 1.5rem 16px 1.5rem;
+
+ 	h4 {
+ 		margin-bottom: 4px;
+ 	}
+
+ 	h3 {
+ 		margin-bottom: 8px;
+ 	}
+ }
+
+ /* ---------------------------------------------------------------------
+ Project Cards (Medium Breakpoint)
+ ------------------------------------------------------------------------ */
+
+ @media (min-width: $medium-break) {
+
+ 	.project-card {
+ 		@include span(6);
+ 		&:nth-child(10n+1) {
+ 			@include span(12);
+ 		}
+ 	}
+ }
+
+/* ---------------------------------------------------------------------
+ Project Cards (Large Breakpoint)
+ ------------------------------------------------------------------------ */
+
+ @media (min-width: $large-break) {
+ 	
+ 	.project-card{
+ 		@include span(4);
+ 		height: 400px;
+
+ 		&:nth-child(10n+1),
+ 		&:nth-child(10n+4),
+ 		&:nth-child(10n+5), {
+ 			@include span(8);
+ 		}
+ 	}
+ }

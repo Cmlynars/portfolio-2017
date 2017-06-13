@@ -1,0 +1,44 @@
+/* ---------------------------------------------------------------------
+ Navigation Bar
+ ------------------------------------------------------------------------ */
+ nav {
+ 	@include container ($max-width);
+ }
+
+ .nav-container {
+ 	@include span(12);
+ 	display: flex;
+ 	justify-content: space-between;
+ 	padding: 3.25rem 0;
+ }
+
+ .logo {
+ 	text-transform: uppercase;
+ 	letter-spacing: .5;
+ 	color: $primary;
+ 	font-family: $headline-font;
+ 	font-size: $base-font-size;
+ }
+
+ ul {
+ 	display: flex;
+
+ 	li {
+ 		margin-right: 3rem;
+ 		text-transform: uppercase;
+ 		letter-spacing: 1px;
+ 		font-size: $base-font-size;
+
+ 		&:last-child {
+ 			margin-right: 0;
+ 		}
+
+ 		a {
+ 			color: $secondary;
+
+ 			&:hover {
+ 				color: $accent;
+ 			}
+ 		}
+ 	}
+ }
