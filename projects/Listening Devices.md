@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Planet Finance China
-role: Head of Design
-description: dfkfjslfj
+title: Listening Devices
+role: Designer
+description: A series of conceptual headphones that incluence the behavior of the user.
 images: 
  - placeholder.jpg
  - placeholder 2.jpg

@@ -10,10 +10,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link href="{{ site.baseurl }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{{ site.baseurl }}/stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
-    <!-- Not sure if what is below is needed -->
-    <script src="{{ site.baseurl }}/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -21,20 +19,13 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
             
-            <!-- Begin Top Nav -->
-            <div {% if page.layout == 'default' %}class="background index-background"{% else %}class="background project-background"{% endif %}></div>
+            <div class="background {{ page.title }}-background"></div>
 
             {% include nav.html %}
 
             {{ content }}
             
             {% include footer.html %}
-
-
-            <!-- Begin Javascript -->
-            <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-            <script src="{{ site.baseurl }}/js/main.js"></script>
 
             <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             <script>

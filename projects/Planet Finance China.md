@@ -1,8 +1,8 @@
 ---
 layout: project
 title: Planet Finance China
-role: Head of Design
-description: dfkfjslfj
+role: Design Project Manager
+description: Employing design thinking to create financial education tools for female microloan borrowers in rural China.
 images: 
  - placeholder.jpg
  - placeholder 2.jpg

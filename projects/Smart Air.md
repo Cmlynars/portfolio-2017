@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Merphead
-role: Bunghole
-description: dfkfjslfj
+title: Smart Air
+role: Designer
+description: Reimagining the online, taobao presence for a startup in China.
 images: 
  - placeholder.jpg
  - placeholder 2.jpg

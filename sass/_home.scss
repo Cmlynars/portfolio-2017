@@ -17,12 +17,14 @@
  }	
 
  .site-title {
- 	@include span(8);	
+ 	@include span(8);
+ 	font-size: 3rem;	
  	margin-bottom: 3.25rem;
  }
 
  .site-byline {
  	@include span(8);
+ 	font-size: 1.5rem;
  }
 
 /* ---------------------------------------------------------------------

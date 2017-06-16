@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Planet Finance China
-role: Head of Design
-description: dfkfjslfj
+title: Morningstar
+role: UX Designer
+description: Improving the user experience for a 401(k) roboadvisor. 
 images: 
  - placeholder.jpg
  - placeholder 2.jpg
