@@ -1,14 +1,13 @@
 ---
 layout: project
-title: Planet Finance China
-role: Design Project Manager
-description: Employing design thinking to create financial education tools for female microloan borrowers in rural China.
-importance: primary
+title: Jiang China Design
+role: Design Mentor
+description: Teaching design thinking principles at China's first human centered design bootcamp.
 images: 
  - placeholder.jpg
  - placeholder 2.jpg
  - placeholder.jpg
-order: 4
+order: 3
 ---
 
 

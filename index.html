@@ -14,11 +14,12 @@ layout: default
         </div>
 
         <div class="project-grid">
-
-            {% for projects in site.pages %}
-            {% if projects.layout == 'project' %}
             
-            <a class="project-card" href="{{ site.baseurl }}{{ projects.url }}">
+            {% assign sorted_projects = site.pages | sort:"order" %}
+            {% for projects in sorted_projects %}
+            {% if projects.layout == 'project' %}
+          
+            <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">
                     <div class="card-image" style="background-image: url({{ site.baseurl}}/img/{{ projects.images[0] }});"></div>
                     <div class="card-content">
                         <h4>{{ projects.title }}</h4>
@@ -26,7 +27,7 @@ layout: default
                         <p>{{ projects.description }}</p>
                     </div> 
             </a>
-            
+
             {% endif %}
             {% endfor %}
 

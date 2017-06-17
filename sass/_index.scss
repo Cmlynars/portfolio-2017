@@ -87,9 +87,13 @@
 
  	.project-card {
  		@include span(6);
- 		&:nth-child(10n+1) {
+ 		&:nth-child(1) {
  			@include span(12);
  		}
+
+		&:nth-child(n+2) {
+			height: 400px;
+		}
  	}
  }
 
@@ -98,15 +102,17 @@
  ------------------------------------------------------------------------ */
 
  @media (min-width: $large-break) {
- 	
- 	.project-card{
+
+ 	.project-card {
  		@include span(4);
  		height: 400px;
 
- 		&:nth-child(10n+1),
- 		&:nth-child(10n+4),
- 		&:nth-child(10n+5), {
+ 		&:nth-child(1) {
  			@include span(8);
  		}
+ 	}
+
+ 	.primary-card {
+ 		@include span(8);
  	}
  }

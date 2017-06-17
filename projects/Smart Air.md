@@ -7,6 +7,7 @@ images:
  - placeholder.jpg
  - placeholder 2.jpg
  - placeholder.jpg
+order: 6
 ---
 
 

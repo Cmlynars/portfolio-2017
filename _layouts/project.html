@@ -18,7 +18,25 @@ layout: default
 			<p>
 				{{ content }}
 			</p>
-			<a href="{{ site.baseurl }}/{{ page.previous.url }}">Next Project</a>
+			
+			{% assign next = page.order | plus: 1 %}
+			{% for projects in site.pages %}
+			{% if projects.order == next %}
+				
+			<a class="next-project" href="{{ site.baseurl }}/{{ projects.url }}">{{ projects.title }}</a>
+			
+			{% endif %}
+			{% endfor %}
+
+			{% assign previous = page.order | minus: 1 %}
+			{% for projects in site.pages %}
+			{% if projects.order == previous %}
+
+			<a class="previous-project" href="{{ site.baseurl }}/{{ projects.url }}">{{ projects.title }}</a>
+
+			{% endif %}
+			{% endfor %}
+			
 		</div>
 
 		<div class="project_image-container">

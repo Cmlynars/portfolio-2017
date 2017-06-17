@@ -3,10 +3,12 @@ layout: project
 title: Listening Devices
 role: Designer
 description: A series of conceptual headphones that incluence the behavior of the user.
+importance: primary
 images: 
  - placeholder.jpg
  - placeholder 2.jpg
  - placeholder.jpg
+order: 5
 ---
 
 

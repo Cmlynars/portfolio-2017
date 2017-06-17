@@ -348,7 +348,7 @@ footer {
 /* ---------------------------------------------------------------------
  Page Container
  ------------------------------------------------------------------------ */
-/* line 5, ../sass/_home.scss */
+/* line 5, ../sass/_index.scss */
 .project-content {
   max-width: 1140px;
   margin-left: auto;
@@ -365,14 +365,14 @@ footer {
 /* ---------------------------------------------------------------------
  Page Header
  ------------------------------------------------------------------------ */
-/* line 14, ../sass/_home.scss */
+/* line 14, ../sass/_index.scss */
 .project-header {
   width: 100%;
   float: left;
   margin: 8.4375rem 0;
 }
 
-/* line 19, ../sass/_home.scss */
+/* line 19, ../sass/_index.scss */
 .site-title {
   width: 64.28571%;
   float: left;
@@ -382,7 +382,7 @@ footer {
   margin-bottom: 3.25rem;
 }
 
-/* line 25, ../sass/_home.scss */
+/* line 25, ../sass/_index.scss */
 .site-byline {
   width: 64.28571%;
   float: left;
@@ -395,7 +395,7 @@ footer {
  Page Header (Small Breakpoint)
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
-  /* line 36, ../sass/_home.scss */
+  /* line 36, ../sass/_index.scss */
   .site-title,
   .site-byline {
     width: 97.61905%;
@@ -407,7 +407,7 @@ footer {
 /* ---------------------------------------------------------------------
  Project Cards (Mobile-first)
  ------------------------------------------------------------------------ */
-/* line 46, ../sass/_home.scss */
+/* line 46, ../sass/_index.scss */
 .project-card {
   /*Mobile-first Width*/
   width: 97.61905%;
@@ -435,28 +435,28 @@ footer {
   cursor: pointer;
   background-color: #fff;
 }
-/* line 60, ../sass/_home.scss */
+/* line 60, ../sass/_index.scss */
 .project-card:hover {
   -moz-box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
   -webkit-box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
   box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
 }
 
-/* line 65, ../sass/_home.scss */
+/* line 65, ../sass/_index.scss */
 .card-image {
   background-repeat: no-repeat;
   height: 265px;
 }
 
-/* line 70, ../sass/_home.scss */
+/* line 70, ../sass/_index.scss */
 .card-content {
   padding: 16px 1.5rem 16px 1.5rem;
 }
-/* line 73, ../sass/_home.scss */
+/* line 73, ../sass/_index.scss */
 .card-content h4 {
   margin-bottom: 4px;
 }
-/* line 77, ../sass/_home.scss */
+/* line 77, ../sass/_index.scss */
 .card-content h3 {
   margin-bottom: 8px;
 }
@@ -465,26 +465,30 @@ footer {
 Project Cards (Medium Breakpoint)
 ------------------------------------------------------------------------ */
 @media (min-width: 768px) {
-  /* line 88, ../sass/_home.scss */
+  /* line 88, ../sass/_index.scss */
   .project-card {
     width: 47.61905%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
   }
-  /* line 90, ../sass/_home.scss */
-  .project-card:nth-child(10n+1) {
+  /* line 90, ../sass/_index.scss */
+  .project-card:nth-child(1) {
     width: 97.61905%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
+  }
+  /* line 94, ../sass/_index.scss */
+  .project-card:nth-child(n+2) {
+    height: 400px;
   }
 }
 /* ---------------------------------------------------------------------
  Project Cards (Large Breakpoint)
  ------------------------------------------------------------------------ */
 @media (min-width: 1024px) {
-  /* line 102, ../sass/_home.scss */
+  /* line 106, ../sass/_index.scss */
   .project-card {
     width: 30.95238%;
     float: left;
@@ -492,8 +496,16 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.19048%;
     height: 400px;
   }
-  /* line 106, ../sass/_home.scss */
-  .project-card:nth-child(10n+1), .project-card:nth-child(10n+4), .project-card:nth-child(10n+5) {
+  /* line 110, ../sass/_index.scss */
+  .project-card:nth-child(1) {
+    width: 64.28571%;
+    float: left;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
+  }
+
+  /* line 115, ../sass/_index.scss */
+  .primary-card {
     width: 64.28571%;
     float: left;
     margin-left: 1.19048%;
