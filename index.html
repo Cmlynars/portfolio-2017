@@ -16,7 +16,7 @@ layout: default
         <div class="project-grid">
             
             {% assign sorted_projects = site.pages | sort:"order" %}
-            {% for projects in sorted_projects %}
+            {% for project in sorted_projects %}
             {% if projects.layout == 'project' %}
           
             <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">
