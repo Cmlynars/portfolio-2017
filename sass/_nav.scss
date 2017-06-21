@@ -9,15 +9,22 @@
  	@include span(12);
  	display: flex;
  	justify-content: space-between;
- 	padding: 3.25rem 0;
+ 	align-items: center;
+ 	padding: 2.75rem 0;
  }
 
  .logo {
+ 	font-family: $logo-font;
+ 	font-size: 18px;
+ 	font-weight: 600;
  	text-transform: uppercase;
- 	letter-spacing: .5;
+ 	letter-spacing: .125rem;
  	color: $primary;
- 	font-family: $headline-font;
- 	font-size: $base-font-size;
+ 	align-self: flex-end;
+
+ 	@media (max-width: $medium-break) {
+ 		font-size: 16px;
+	}
  }
 
  ul {
@@ -25,9 +32,6 @@
 
  	li {
  		margin-right: 3rem;
- 		text-transform: uppercase;
- 		letter-spacing: 1px;
- 		font-size: $base-font-size;
 
  		&:last-child {
  			margin-right: 0;
@@ -35,7 +39,12 @@
 
  		a {
  			color: $secondary;
-
+ 			font-family: $body-font;
+ 			font-size: 14px;
+ 			letter-spacing: 1.5px;
+ 			text-transform: uppercase;
+			vertical-align: text-bottom;
+ 			
  			&:hover {
  				color: $accent;
  			}

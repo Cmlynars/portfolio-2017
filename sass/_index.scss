@@ -18,13 +18,18 @@
 
  .site-title {
  	@include span(8);
- 	font-size: 3rem;	
+ 	font-size: 2.625rem;
+ 	font-weight: 300;
+ 	line-height: 3.875rem;
+ 	letter-spacing: 1px;	
  	margin-bottom: 3.25rem;
  }
 
  .site-byline {
  	@include span(8);
- 	font-size: 1.5rem;
+ 	font-size: 1.75rem;
+ 	font-weight: 300;
+	line-height: 2.625rem;
  }
 
 /* ---------------------------------------------------------------------

@@ -23,6 +23,11 @@
 
  .footer-item {
  	/*margin-bottom: 1rem;*/
+ 	color: $secondary;
+ 	font-family: $body-font;
+ 	font-size: 14px;
+ 	letter-spacing: 1px;
+ 	
  	&:last-child {
  		margin-bottom: 0;
  	}
@@ -30,6 +35,16 @@
 
  .email {
  	margin-right: 3rem;
+ }
+
+ .icon {
+ 	height: 35px;
+ 	width: 35px;
+ 	margin-right: 1.75rem;
+
+ 	&:last-child {
+ 		margin-right: 0;
+ 	}
  }
 
 /* ---------------------------------------------------------------------

@@ -2,26 +2,40 @@
  Variables
  ------------------------------------------------------------------------ */
 
-/* === COLORS === */
-$primary: #4F5E66;
+/* === THEME 1 === */
+/*$primary: #4F5E66;
 $secondary: #7893A1;
 $tertiary: #9DA9B0;
 $accent: #4BC180;
-$background-color: rgba(254, 244, 219, 1);
-/*$background-color: rgba(237, 241, 245, 1);*/
+$background-color: rgba(237, 241, 245, 1);*/
+
+/* === THEME 2 === */
+$primary: #424242;
+$secondary: #878787;
+$tertiary: #BABDBF;
+/*$accent: #4BC180;*/
+$accent: #E69730;
+$background-color: rgba(242, 242, 242, 1);
+
 
 /* === SIZING === */
-$max-width: 1140px;
+$max-width: 1200px;
+
 
 /* === MEDIA QUERIES === */
 $medium-break: 768px; 
 $large-break: 1024px;
 
+
 /* === FONTS === */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400|Source+Sans+Pro:300,400,600,700');
-$headline-font: 'Montserrat', sans-serif;
-$body-font: 'Source Sans Pro', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500|Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
 $base-font-size: 16px;
+$headline-font: 'Hind', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+$logo-font: 'Montserrat', sans-serif;
+
 
 /* === SHADOWS === */
 $card-shadow: 0 30px 28px rgba(79, 94, 102, .2);

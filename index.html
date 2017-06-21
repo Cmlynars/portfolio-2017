@@ -7,16 +7,16 @@ layout: default
 
         <div class="project-header">
 
-            <h1 class="site-title">Chris Mlynarski</h1>
+            <h1 class="site-title">Designer and Product Strategist in Chicago by way of Beijing.</h1>
 
-            <h2 class="site-byline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec portitor imperdiet diam id suscipit.</h2>
+            <h2 class="site-byline">Primarily working on digital products but doing some other weird stuff too.</h2>
 
         </div>
 
         <div class="project-grid">
             
             {% assign sorted_projects = site.pages | sort:"order" %}
-            {% for project in sorted_projects %}
+            {% for projects in sorted_projects %}
             {% if projects.layout == 'project' %}
           
             <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">
