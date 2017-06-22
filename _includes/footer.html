@@ -1,13 +1,15 @@
+
+
  <footer>
  	<div class="footer-content">
  		<div class="footer-wrapper">
  			<p class="footer-item">Chris Mlynarski©</p>
 
- 			<div class="contact-container">
- 				<p class="email footer-item">cmlynars@gmail.com</p>
- 				<img class="icon linkedin-icon" src="{{ site.baseurl }}/icons/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/christophermlynarski/', '_blank');">
- 				<img class="icon dribbble-icon" src="{{ site.baseurl }}/icons/dribbble.svg" onclick="window.open('https://dribbble.com/chrismlynarski', '_blank');">
- 				<img class="icon github-icon" src="{{ site.baseurl }}/icons/github.svg" onclick="window.open('https://github.com/Cmlynars', '_blank');">
+ 			<div class="icons-container">
+ 				<!-- <p class="email footer-item">cmlynars@gmail.com</p> -->
+
+ 				{% include icons.html %}
+ 	
  			</div>
  		</div>
  	</div>

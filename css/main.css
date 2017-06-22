@@ -92,7 +92,7 @@ $background-color: rgba(237, 241, 245, 1);*/
  ----------------------------------------------------f-------------------- */
 /* line 16, ../sass/_base.scss */
 * {
-  border: 1px solid red !important;
+  /*border: 1px solid red !important;*/
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -162,10 +162,10 @@ p {
 /* line 71, ../sass/_base.scss */
 a {
   text-decoration: none;
-  -moz-transition-property: color;
-  -o-transition-property: color;
-  -webkit-transition-property: color;
-  transition-property: color;
+  -moz-transition-property: color, fill;
+  -o-transition-property: color, fill;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
   -moz-transition-duration: 0.09s;
   -o-transition-duration: 0.09s;
   -webkit-transition-duration: 0.09s;
@@ -185,7 +185,7 @@ a:visted {
  ------------------------------------------------------------------------ */
 /* line 4, ../sass/_nav.scss */
 nav {
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -198,10 +198,10 @@ nav:after {
 
 /* line 8, ../sass/_nav.scss */
 .nav-container {
-  width: 93.33333%;
+  width: 97.61905%;
   float: left;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -261,11 +261,11 @@ footer {
 
 /* line 8, ../sass/_footer.scss */
 .footer-content {
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto;
-  padding: 4rem 0 8rem 0;
+  padding: 3rem 0 8rem 0;
 }
 /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .footer-content:after {
@@ -276,20 +276,16 @@ footer {
 
 /* line 14, ../sass/_footer.scss */
 .footer-wrapper {
-  width: 93.33333%;
+  width: 97.61905%;
   float: left;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-/* line 20, ../sass/_footer.scss */
-.contact-container {
-  display: flex;
-}
-
-/* line 24, ../sass/_footer.scss */
+/* line 21, ../sass/_footer.scss */
 .footer-item {
   /*margin-bottom: 1rem;*/
   color: #878787;
@@ -297,50 +293,44 @@ footer {
   font-size: 14px;
   letter-spacing: 1px;
 }
-/* line 31, ../sass/_footer.scss */
+/* line 28, ../sass/_footer.scss */
 .footer-item:last-child {
   margin-bottom: 0;
 }
 
-/* line 36, ../sass/_footer.scss */
-.email {
-  margin-right: 3rem;
+/* line 33, ../sass/_footer.scss */
+.icon-wrapper {
+  fill: #BABDBF;
+  margin-right: 24px;
+  cursor: pointer;
+}
+/* line 38, ../sass/_footer.scss */
+.icon-wrapper:last-child {
+  margin-right: 0;
+}
+/* line 42, ../sass/_footer.scss */
+.icon-wrapper:hover {
+  fill: #E69730;
 }
 
-/* line 40, ../sass/_footer.scss */
+/* line 47, ../sass/_footer.scss */
 .icon {
-  height: 35px;
-  width: 35px;
-  margin-right: 1.75rem;
-}
-/* line 45, ../sass/_footer.scss */
-.icon:last-child {
-  margin-right: 0;
+  height: 25px;
+  width: 25px;
 }
 
 /* ---------------------------------------------------------------------
  Footer (Small Breakpoint)
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
-  /* line 56, ../sass/_footer.scss */
+  /* line 58, ../sass/_footer.scss */
   .footer-wrapper {
-    display: block;
+    flex-direction: column-reverse;
   }
 
-  /* line 60, ../sass/_footer.scss */
-  .contact-container {
-    display: block;
-  }
-
-  /* line 64, ../sass/_footer.scss */
-  .footer-item {
-    margin-bottom: 1rem;
-    display: block;
-  }
-
-  /* line 69, ../sass/_footer.scss */
-  .email {
-    margin-right: 0;
+  /* line 62, ../sass/_footer.scss */
+  .icons-container {
+    margin-bottom: 16px;
   }
 }
 /* ---------------------------------------------------------------------
@@ -377,7 +367,7 @@ footer {
  ------------------------------------------------------------------------ */
 /* line 5, ../sass/_index.scss */
 .project-content {
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 3.75rem;
@@ -401,10 +391,10 @@ footer {
 
 /* line 19, ../sass/_index.scss */
 .site-title {
-  width: 60%;
+  width: 64.28571%;
   float: left;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
   font-size: 2.625rem;
   font-weight: 300;
   line-height: 3.875rem;
@@ -414,10 +404,10 @@ footer {
 
 /* line 28, ../sass/_index.scss */
 .site-byline {
-  width: 60%;
+  width: 64.28571%;
   float: left;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
   font-size: 1.75rem;
   font-weight: 300;
   line-height: 2.625rem;
@@ -430,10 +420,10 @@ footer {
   /* line 41, ../sass/_index.scss */
   .site-title,
   .site-byline {
-    width: 93.33333%;
+    width: 97.61905%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
 }
 /* ---------------------------------------------------------------------
@@ -442,11 +432,11 @@ footer {
 /* line 51, ../sass/_index.scss */
 .project-card {
   /*Mobile-first Width*/
-  width: 93.33333%;
+  width: 97.61905%;
   float: left;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
-  margin-bottom: 16.66667%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
+  margin-bottom: 5.95238%;
   /*General styles*/
   -moz-box-shadow: 0 30px 28px rgba(79, 94, 102, 0.2);
   -webkit-box-shadow: 0 30px 28px rgba(79, 94, 102, 0.2);
@@ -463,7 +453,7 @@ footer {
   -o-transition-timing-function: ease-in;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
-  margin-bottom: 10%;
+  margin-bottom: 3.57143%;
   cursor: pointer;
   background-color: #fff;
 }
@@ -499,17 +489,17 @@ Project Cards (Medium Breakpoint)
 @media (min-width: 768px) {
   /* line 93, ../sass/_index.scss */
   .project-card {
-    width: 43.33333%;
+    width: 47.61905%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
   /* line 95, ../sass/_index.scss */
   .project-card:nth-child(1) {
-    width: 93.33333%;
+    width: 97.61905%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
   /* line 99, ../sass/_index.scss */
   .project-card:nth-child(n+2) {
@@ -522,26 +512,26 @@ Project Cards (Medium Breakpoint)
 @media (min-width: 1024px) {
   /* line 111, ../sass/_index.scss */
   .project-card {
-    width: 26.66667%;
+    width: 30.95238%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
     height: 400px;
   }
   /* line 115, ../sass/_index.scss */
   .project-card:nth-child(1) {
-    width: 60%;
+    width: 64.28571%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
 
   /* line 120, ../sass/_index.scss */
   .primary-card {
-    width: 60%;
+    width: 64.28571%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
 }
 /* ---------------------------------------------------------------------
@@ -549,7 +539,7 @@ Project Cards (Medium Breakpoint)
  ------------------------------------------------------------------------ */
 /* line 5, ../sass/_project.scss */
 .project_content-container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding: 4rem 0 9.375rem 0;
@@ -566,10 +556,10 @@ Project Cards (Medium Breakpoint)
  ------------------------------------------------------------------------ */
 /* line 14, ../sass/_project.scss */
 .breadcrumb-container {
-  width: 93.33333%;
+  width: 97.61905%;
   float: left;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
   display: flex;
   margin-bottom: 24px;
 }
@@ -595,10 +585,10 @@ Project Description
 ------------------------------------------------------------------------ */
 /* line 40, ../sass/_project.scss */
 .description-container {
-  width: 26.66667%;
+  width: 30.95238%;
   float: right;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
   margin-bottom: 4rem;
 }
 
@@ -618,10 +608,10 @@ Project Description (Small, Medium Breakpoint)
 @media (max-width: 1024px) {
   /* line 61, ../sass/_project.scss */
   .description-container {
-    width: 93.33333%;
+    width: 97.61905%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
 
   /* line 65, ../sass/_project.scss */
@@ -635,10 +625,10 @@ Project Description (Small, Medium Breakpoint)
 /* line 74, ../sass/_project.scss */
 .project_image-container {
   /*Mobile-first Width*/
-  width: 93.33333%;
+  width: 97.61905%;
   float: left;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
 }
 /* line 78, ../sass/_project.scss */
 .project_image-container img {
@@ -656,10 +646,10 @@ Project Description (Small, Medium Breakpoint)
 @media (min-width: 1024px) {
   /* line 95, ../sass/_project.scss */
   .project_image-container {
-    width: 53.75%;
+    width: 58.03571%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
 }
 /* ---------------------------------------------------------------------
@@ -667,7 +657,7 @@ Project Description (Small, Medium Breakpoint)
  ------------------------------------------------------------------------ */
 /* line 5, ../sass/_about.scss */
 .about_page-container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding: 4rem 0 9.375rem 0;
@@ -684,10 +674,10 @@ Project Description (Small, Medium Breakpoint)
  ------------------------------------------------------------------------ */
 /* line 15, ../sass/_about.scss */
 .about_image-container {
-  width: 43.33333%;
+  width: 47.61905%;
   float: right;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
   overflow: hidden;
   margin-bottom: 40px;
 }
@@ -698,10 +688,10 @@ Project Description (Small, Medium Breakpoint)
 @media (max-width: 768px) {
   /* line 26, ../sass/_about.scss */
   .about_image-container {
-    width: 93.33333%;
+    width: 97.61905%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
 }
 /* ---------------------------------------------------------------------
@@ -709,10 +699,10 @@ Project Description (Small, Medium Breakpoint)
  ------------------------------------------------------------------------ */
 /* line 35, ../sass/_about.scss */
 .about-blurb {
-  width: 35%;
+  width: 39.28571%;
   float: left;
-  margin-left: 3.33333%;
-  margin-right: 3.33333%;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
 }
 /* line 38, ../sass/_about.scss */
 .about-blurb p {
@@ -725,9 +715,9 @@ Project Description (Small, Medium Breakpoint)
 @media (max-width: 768px) {
   /* line 48, ../sass/_about.scss */
   .about-blurb {
-    width: 93.33333%;
+    width: 97.61905%;
     float: left;
-    margin-left: 3.33333%;
-    margin-right: 3.33333%;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
   }
 }

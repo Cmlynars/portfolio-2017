@@ -8,17 +8,14 @@
  .footer-content {
  	@include container($max-width);
  	margin: 0 auto;
- 	padding: 4rem 0 8rem 0;
+ 	padding: 3rem 0 8rem 0;
  }
 
  .footer-wrapper {
  	@include span(12);
  	display: flex;
  	justify-content: space-between;
- }
-
- .contact-container {
- 	display: flex;
+ 	align-items: center;
  }
 
  .footer-item {
@@ -33,19 +30,24 @@
  	}
  }
 
- .email {
- 	margin-right: 3rem;
- }
-
- .icon {
- 	height: 35px;
- 	width: 35px;
- 	margin-right: 1.75rem;
+ .icon-wrapper {
+ 	fill: $tertiary;
+ 	margin-right: 24px;
+ 	cursor: pointer;
 
  	&:last-child {
  		margin-right: 0;
  	}
+
+ 	&:hover {
+ 		fill: $accent;
+ 	}
  }
+
+.icon {
+	height: 25px;
+ 	width: 25px;
+}
 
 /* ---------------------------------------------------------------------
  Footer (Small Breakpoint)
@@ -54,20 +56,12 @@
  @media (max-width: $medium-break) {
 
  	.footer-wrapper {
- 		display: block;
+ 		flex-direction: column-reverse;
  	}
 
- 	.contact-container {
- 		display: block;
+ 	.icons-container {
+ 		margin-bottom: 16px;
  	} 	
 
- 	.footer-item {
- 		margin-bottom: 1rem;
- 		display: block;
- 	}
-
- 	.email {
- 		margin-right: 0;
- 	}
  }
 
