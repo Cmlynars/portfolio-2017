@@ -4,7 +4,7 @@
 
  .project-content {
  	@include container($max-width);
- 	padding-bottom: 3.75rem;
+ 	padding: 88px 0 60px 0;
  }
 
 /* ---------------------------------------------------------------------
@@ -13,23 +13,23 @@
 
  .project-header {
  	@include span(12 nest);
- 	margin: 8.4375rem 0;
+ 	margin-bottom: 126px;
  }	
 
  .site-title {
  	@include span(8);
  	font-size: 2.625rem;
- 	font-weight: 300;
  	line-height: 3.875rem;
+ 	font-weight: 300;
  	letter-spacing: 1px;	
- 	margin-bottom: 3.25rem;
+ 	margin-bottom: 16px;
  }
 
  .site-byline {
  	@include span(8);
  	font-size: 1.75rem;
+ 	line-height: 2.625rem;
  	font-weight: 300;
-	line-height: 2.625rem;
  }
 
 /* ---------------------------------------------------------------------
@@ -37,6 +37,14 @@
  ------------------------------------------------------------------------ */
 
  @media (max-width: $medium-break) {
+
+	.project-content {
+ 		padding: 32px 0 48px 0;
+ 	}
+
+ 	.project-header {
+	margin-bottom: 48px;
+ 	}
 
  	.site-title,
  	.site-byline, {
@@ -51,14 +59,13 @@
  .project-card {
  	/*Mobile-first Width*/
  	@include span(12);
- 	margin-bottom: gutter() * 5;	
+ 	margin-bottom: 24px;	
 
  	/*General styles*/
  	@include box-shadow($card-shadow);
  	@include transition-property(box-shadow);
  	@include transition-duration(.2s);
  	@include transition-timing-function(ease-in);
- 	margin-bottom: gutter() * 3;
  	cursor: pointer;
  	background-color: #fff;
 
@@ -80,7 +87,7 @@
  	}
 
  	h3 {
- 		margin-bottom: 8px;
+ 		margin-bottom: 10px;
  	}
  }
 
@@ -92,6 +99,7 @@
 
  	.project-card {
  		@include span(6);
+
  		&:nth-child(1) {
  			@include span(12);
  		}
@@ -109,15 +117,16 @@
  @media (min-width: $large-break) {
 
  	.project-card {
- 		@include span(4);
+ 		@include span(4.25);
  		height: 400px;
+ 		margin-bottom: 40px;
 
  		&:nth-child(1) {
- 			@include span(8);
+ 			@include span(7.75);
  		}
  	}
 
  	.primary-card {
- 		@include span(8);
+ 		@include span(7.75);
  	}
  }

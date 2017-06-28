@@ -2,19 +2,18 @@
  Variables
  ------------------------------------------------------------------------ */
 
-/* === THEME 1 === */
+/* === Blue Theme === */
 /*$primary: #4F5E66;
 $secondary: #7893A1;
 $tertiary: #9DA9B0;
 $accent: #4BC180;
 $background-color: rgba(237, 241, 245, 1);*/
 
-/* === THEME 2 === */
+/* === Gray Theme === */
 $primary: #424242;
-$secondary: #878787;
-$tertiary: #BABDBF;
-/*$accent: #4BC180;*/
-$accent: #E69730;
+$secondary: #555;
+$tertiary: #A8A8A8;
+$accent: #44C5A2;
 $background-color: rgba(242, 242, 242, 1);
 
 
@@ -38,5 +37,7 @@ $logo-font: 'Montserrat', sans-serif;
 
 
 /* === SHADOWS === */
-$card-shadow: 0 30px 28px rgba(79, 94, 102, .2);
-$hover-shadow: 0 40px 40px rgba(79, 94, 102, .15)
+/*$card-shadow: 0 10px 15px rgba(44, 48, 49, .15);*/
+/*$hover-shadow: 0 15px 30px rgba(44, 48, 49, .20);*/
+$card-shadow: 0 10px 15px rgba(0, 0, 0, .15);
+$hover-shadow: 0 15px 30px rgba(0, 0, 0, .20);

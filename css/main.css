@@ -72,94 +72,102 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* ---------------------------------------------------------------------
  Variables
  ------------------------------------------------------------------------ */
-/* === THEME 1 === */
+/* === Blue Theme === */
 /*$primary: #4F5E66;
 $secondary: #7893A1;
 $tertiary: #9DA9B0;
 $accent: #4BC180;
 $background-color: rgba(237, 241, 245, 1);*/
-/* === THEME 2 === */
-/*$accent: #4BC180;*/
+/* === Gray Theme === */
 /* === SIZING === */
 /* === MEDIA QUERIES === */
 /* === FONTS === */
 /* === SHADOWS === */
+/*$card-shadow: 0 10px 15px rgba(44, 48, 49, .15);*/
+/*$hover-shadow: 0 15px 30px rgba(44, 48, 49, .20);*/
 /* ---------------------------------------------------------------------
  Susy Grid Settings
  ------------------------------------------------------------------------ */
+@media (max-width: 1024px) {
+  /* line 12, ../sass/_base.scss */
+  .buffer {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+}
+
 /* ---------------------------------------------------------------------
  Base Styles
  ----------------------------------------------------f-------------------- */
-/* line 16, ../sass/_base.scss */
+/* line 23, ../sass/_base.scss */
 * {
-  /*border: 1px solid red !important;*/
+  border: 1px solid red !important;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 21, ../sass/_base.scss */
+/* line 28, ../sass/_base.scss */
 html {
   font-size: 16px;
   /*REM OVERRIDES*/
 }
 @media (max-width: 1024px) {
-  /* line 21, ../sass/_base.scss */
+  /* line 28, ../sass/_base.scss */
   html {
     font-size: 13px;
   }
 }
 @media (max-width: 768px) {
-  /* line 21, ../sass/_base.scss */
+  /* line 28, ../sass/_base.scss */
   html {
     font-size: 10px;
   }
 }
 
-/* line 34, ../sass/_base.scss */
+/* line 41, ../sass/_base.scss */
 body {
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
 
-/* line 39, ../sass/_base.scss */
+/* line 46, ../sass/_base.scss */
 h1 {
   font-family: "Hind", sans-serif;
   color: #424242;
 }
 
-/* line 44, ../sass/_base.scss */
+/* line 51, ../sass/_base.scss */
 h2 {
-  color: #BABDBF;
+  color: #A8A8A8;
 }
 
-/* line 48, ../sass/_base.scss */
+/* line 55, ../sass/_base.scss */
 h3 {
   color: #424242;
-  font-size: 26px;
-  text-transform: uppercase;
+  font-size: 24px;
+  /*text-transform: uppercase;*/
   font-weight: 600;
   letter-spacing: .25px;
 }
 
-/* line 56, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 h4 {
-  color: #BABDBF;
+  color: #A8A8A8;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* line 63, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 p {
-  color: #878787;
+  color: #555;
   font-size: 16px;
   line-height: 21px;
-  font-weight: 400;
   letter-spacing: .25px;
 }
 
-/* line 71, ../sass/_base.scss */
+/* line 77, ../sass/_base.scss */
 a {
   text-decoration: none;
   -moz-transition-property: color, fill;
@@ -175,7 +183,7 @@ a {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 77, ../sass/_base.scss */
+/* line 83, ../sass/_base.scss */
 a:visted {
   color: inherit;
 }
@@ -239,7 +247,7 @@ ul li:last-child {
 }
 /* line 40, ../sass/_nav.scss */
 ul li a {
-  color: #878787;
+  color: #555;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -248,7 +256,7 @@ ul li a {
 }
 /* line 48, ../sass/_nav.scss */
 ul li a:hover {
-  color: #E69730;
+  color: #44C5A2;
 }
 
 /* ---------------------------------------------------------------------
@@ -288,7 +296,7 @@ footer {
 /* line 21, ../sass/_footer.scss */
 .footer-item {
   /*margin-bottom: 1rem;*/
-  color: #878787;
+  color: #555;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
@@ -300,7 +308,7 @@ footer {
 
 /* line 33, ../sass/_footer.scss */
 .icon-wrapper {
-  fill: #BABDBF;
+  fill: #A8A8A8;
   margin-right: 24px;
   cursor: pointer;
 }
@@ -310,7 +318,7 @@ footer {
 }
 /* line 42, ../sass/_footer.scss */
 .icon-wrapper:hover {
-  fill: #E69730;
+  fill: #44C5A2;
 }
 
 /* line 47, ../sass/_footer.scss */
@@ -370,7 +378,7 @@ footer {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 3.75rem;
+  padding: 88px 0 60px 0;
 }
 /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .project-content:after {
@@ -386,7 +394,7 @@ footer {
 .project-header {
   width: 100%;
   float: left;
-  margin: 8.4375rem 0;
+  margin-bottom: 126px;
 }
 
 /* line 19, ../sass/_index.scss */
@@ -396,10 +404,10 @@ footer {
   margin-left: 1.19048%;
   margin-right: 1.19048%;
   font-size: 2.625rem;
-  font-weight: 300;
   line-height: 3.875rem;
+  font-weight: 300;
   letter-spacing: 1px;
-  margin-bottom: 3.25rem;
+  margin-bottom: 16px;
 }
 
 /* line 28, ../sass/_index.scss */
@@ -409,8 +417,8 @@ footer {
   margin-left: 1.19048%;
   margin-right: 1.19048%;
   font-size: 1.75rem;
-  font-weight: 300;
   line-height: 2.625rem;
+  font-weight: 300;
 }
 
 /* ---------------------------------------------------------------------
@@ -418,6 +426,16 @@ footer {
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
   /* line 41, ../sass/_index.scss */
+  .project-content {
+    padding: 32px 0 48px 0;
+  }
+
+  /* line 45, ../sass/_index.scss */
+  .project-header {
+    margin-bottom: 48px;
+  }
+
+  /* line 49, ../sass/_index.scss */
   .site-title,
   .site-byline {
     width: 97.61905%;
@@ -429,18 +447,18 @@ footer {
 /* ---------------------------------------------------------------------
  Project Cards (Mobile-first)
  ------------------------------------------------------------------------ */
-/* line 51, ../sass/_index.scss */
+/* line 59, ../sass/_index.scss */
 .project-card {
   /*Mobile-first Width*/
   width: 97.61905%;
   float: left;
   margin-left: 1.19048%;
   margin-right: 1.19048%;
-  margin-bottom: 5.95238%;
+  margin-bottom: 24px;
   /*General styles*/
-  -moz-box-shadow: 0 30px 28px rgba(79, 94, 102, 0.2);
-  -webkit-box-shadow: 0 30px 28px rgba(79, 94, 102, 0.2);
-  box-shadow: 0 30px 28px rgba(79, 94, 102, 0.2);
+  -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   -moz-transition-property: box-shadow;
   -o-transition-property: box-shadow;
   -webkit-transition-property: box-shadow;
@@ -453,55 +471,54 @@ footer {
   -o-transition-timing-function: ease-in;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
-  margin-bottom: 3.57143%;
   cursor: pointer;
   background-color: #fff;
 }
-/* line 65, ../sass/_index.scss */
+/* line 72, ../sass/_index.scss */
 .project-card:hover {
-  -moz-box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
-  -webkit-box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
-  box-shadow: 0 40px 40px rgba(79, 94, 102, 0.15);
+  -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* line 70, ../sass/_index.scss */
+/* line 77, ../sass/_index.scss */
 .card-image {
   background-repeat: no-repeat;
   height: 265px;
 }
 
-/* line 75, ../sass/_index.scss */
+/* line 82, ../sass/_index.scss */
 .card-content {
   padding: 16px 1.5rem 16px 1.5rem;
 }
-/* line 78, ../sass/_index.scss */
+/* line 85, ../sass/_index.scss */
 .card-content h4 {
   margin-bottom: 4px;
 }
-/* line 82, ../sass/_index.scss */
+/* line 89, ../sass/_index.scss */
 .card-content h3 {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 /* ---------------------------------------------------------------------
 Project Cards (Medium Breakpoint)
 ------------------------------------------------------------------------ */
 @media (min-width: 768px) {
-  /* line 93, ../sass/_index.scss */
+  /* line 100, ../sass/_index.scss */
   .project-card {
     width: 47.61905%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
   }
-  /* line 95, ../sass/_index.scss */
+  /* line 103, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 97.61905%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
   }
-  /* line 99, ../sass/_index.scss */
+  /* line 107, ../sass/_index.scss */
   .project-card:nth-child(n+2) {
     height: 400px;
   }
@@ -510,25 +527,26 @@ Project Cards (Medium Breakpoint)
  Project Cards (Large Breakpoint)
  ------------------------------------------------------------------------ */
 @media (min-width: 1024px) {
-  /* line 111, ../sass/_index.scss */
+  /* line 119, ../sass/_index.scss */
   .project-card {
-    width: 30.95238%;
+    width: 33.03571%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
     height: 400px;
+    margin-bottom: 40px;
   }
-  /* line 115, ../sass/_index.scss */
+  /* line 124, ../sass/_index.scss */
   .project-card:nth-child(1) {
-    width: 64.28571%;
+    width: 62.20238%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
   }
 
-  /* line 120, ../sass/_index.scss */
+  /* line 129, ../sass/_index.scss */
   .primary-card {
-    width: 64.28571%;
+    width: 62.20238%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
@@ -569,60 +587,28 @@ Project Cards (Medium Breakpoint)
 }
 /* line 23, ../sass/_project.scss */
 .breadcrumb-container a {
-  color: #E69730;
+  color: #44C5A2;
 }
 /* line 26, ../sass/_project.scss */
 .breadcrumb-container a:hover {
-  color: #cb7d18;
+  color: #6bd1b5;
 }
 /* line 30, ../sass/_project.scss */
 .breadcrumb-container a:visted {
   color: inherit;
 }
 
-/* ---------------------------------------------------------------------
-Project Description
------------------------------------------------------------------------- */
-/* line 40, ../sass/_project.scss */
-.description-container {
-  width: 30.95238%;
-  float: right;
-  margin-left: 1.19048%;
-  margin-right: 1.19048%;
-  margin-bottom: 4rem;
-}
-
-/* line 47, ../sass/_project.scss */
-.project-description {
-  margin-bottom: 4px;
-}
-
-/* line 51, ../sass/_project.scss */
-.project-title {
-  margin-bottom: 40px;
-}
-
-/* ---------------------------------------------------------------------
-Project Description (Small, Medium Breakpoint)
------------------------------------------------------------------------- */
+/*Hide at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 61, ../sass/_project.scss */
-  .description-container {
-    width: 97.61905%;
-    float: left;
-    margin-left: 1.19048%;
-    margin-right: 1.19048%;
-  }
-
-  /* line 65, ../sass/_project.scss */
-  .project-title {
-    margin-bottom: 8px;
+  /* line 39, ../sass/_project.scss */
+  .breadcrumb-container {
+    display: none;
   }
 }
 /* ---------------------------------------------------------------------
  Images (Mobile-first)
  ------------------------------------------------------------------------ */
-/* line 74, ../sass/_project.scss */
+/* line 48, ../sass/_project.scss */
 .project_image-container {
   /*Mobile-first Width*/
   width: 97.61905%;
@@ -630,21 +616,19 @@ Project Description (Small, Medium Breakpoint)
   margin-left: 1.19048%;
   margin-right: 1.19048%;
 }
-/* line 78, ../sass/_project.scss */
+/* line 52, ../sass/_project.scss */
 .project_image-container img {
   margin-bottom: 2.5rem;
   width: 100%;
 }
-/* line 82, ../sass/_project.scss */
+/* line 56, ../sass/_project.scss */
 .project_image-container img:last-child {
   margin-bottom: 0;
 }
 
-/* ---------------------------------------------------------------------
- Images (Small Breakpoint)
- ------------------------------------------------------------------------ */
+/*Shrink at Large Breakpoint*/
 @media (min-width: 1024px) {
-  /* line 95, ../sass/_project.scss */
+  /* line 65, ../sass/_project.scss */
   .project_image-container {
     width: 58.03571%;
     float: left;
@@ -652,6 +636,129 @@ Project Description (Small, Medium Breakpoint)
     margin-right: 1.19048%;
   }
 }
+/* ---------------------------------------------------------------------
+Project Description
+------------------------------------------------------------------------ */
+/* line 75, ../sass/_project.scss */
+.description-container {
+  width: 30.95238%;
+  float: right;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
+  margin-bottom: 24px;
+}
+
+/* line 80, ../sass/_project.scss */
+.project-description {
+  margin-bottom: 4px;
+}
+
+/* line 84, ../sass/_project.scss */
+.project-title {
+  margin-bottom: 40px;
+}
+
+/*Adjust at Small Breakpoint*/
+@media (max-width: 1024px) {
+  /* line 92, ../sass/_project.scss */
+  .description-container {
+    width: 97.61905%;
+    float: left;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
+  }
+
+  /* line 96, ../sass/_project.scss */
+  .project-title {
+    margin-bottom: 8px;
+  }
+}
+/* ---------------------------------------------------------------------
+ Links Container
+ ------------------------------------------------------------------------ */
+/* line 105, ../sass/_project.scss */
+.links-container {
+  width: 30.95238%;
+  float: right;
+  margin-left: 1.19048%;
+  margin-right: 1.19048%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Widen at Small Breakpoint*/
+@media (max-width: 1024px) {
+  /* line 116, ../sass/_project.scss */
+  .links-container {
+    width: 97.61905%;
+    float: left;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
+    margin-top: 24px;
+  }
+}
+/* line 122, ../sass/_project.scss */
+.single-link-container {
+  display: flex;
+  -moz-transition-property: color, fill;
+  -o-transition-property: color, fill;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -moz-transition-duration: 0.09s;
+  -o-transition-duration: 0.09s;
+  -webkit-transition-duration: 0.09s;
+  transition-duration: 0.09s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 129, ../sass/_project.scss */
+.single-link-container:hover .project-link {
+  color: #44C5A2;
+}
+/* line 133, ../sass/_project.scss */
+.single-link-container:hover .arrow {
+  stroke: #44C5A2;
+}
+
+/* line 139, ../sass/_project.scss */
+.project-link {
+  font-size: 16px;
+  color: #A8A8A8;
+  -moz-transition-property: color, fill;
+  -o-transition-property: color, fill;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -moz-transition-duration: 0.09s;
+  -o-transition-duration: 0.09s;
+  -webkit-transition-duration: 0.09s;
+  transition-duration: 0.09s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 148, ../sass/_project.scss */
+.arrow {
+  stroke: #A8A8A8;
+  -moz-transition-property: color, fill;
+  -o-transition-property: color, fill;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -moz-transition-duration: 0.09s;
+  -o-transition-duration: 0.09s;
+  -webkit-transition-duration: 0.09s;
+  transition-duration: 0.09s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
 /* ---------------------------------------------------------------------
  Page Container
  ------------------------------------------------------------------------ */

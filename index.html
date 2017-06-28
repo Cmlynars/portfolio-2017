@@ -3,7 +3,7 @@ title: home
 layout: default
 ---
 
-    <div class="project-content">
+    <div class="buffer project-content">
 
         <div class="project-header">
 
@@ -22,7 +22,7 @@ layout: default
             <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">
                     <div class="card-image" style="background-image: url({{ site.baseurl}}/img/{{ projects.images[0] }});"></div>
                     <div class="card-content">
-                        <h4>{{ projects.title }}</h4>
+                        <h4>{{ projects.role }} • {{ projects.date }}</h4>
                         <h3>{{ projects.title }}</h3>
                         <p>{{ projects.description }}</p>
                     </div> 

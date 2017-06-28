@@ -24,7 +24,7 @@
  		color: $accent;
 
  		&:hover {
- 			color: darken( $accent, 10% );
+ 			color: lighten( $accent, 10% );
  		}
 
  		&:visted {
@@ -33,39 +33,13 @@
  	}
  }
 
- /* ---------------------------------------------------------------------
- Project Description
- ------------------------------------------------------------------------ */
+ /*Hide at Small Breakpoint*/
 
- .description-container {
- 	@include span(4 last);
- 	margin-bottom: 4rem;
- 	
- } 	
-
-
- .project-description {
- 	margin-bottom: 4px;
+ @media (max-width: $large-break) {
+ 	.breadcrumb-container {
+ 		display: none;
+ 	}
  }
-
- .project-title {
- 	margin-bottom: 40px;
- }
- 
-
- /* ---------------------------------------------------------------------
- Project Description (Small, Medium Breakpoint)
- ------------------------------------------------------------------------ */	
-
-@media (max-width: $large-break) {
-	.description-container {
-		@include span(12);
-	}
-
-	.project-title {
-		margin-bottom: 8px;
-	}	
-}
 
 /* ---------------------------------------------------------------------
  Images (Mobile-first)
@@ -85,14 +59,98 @@
  	}
  }
 
-
-
-/* ---------------------------------------------------------------------
- Images (Small Breakpoint)
- ------------------------------------------------------------------------ */
+ /*Shrink at Large Breakpoint*/
 
  @media (min-width: $large-break) {
  	.project_image-container {
- 		@include span(7.25 first);
+ 		@include span(7.25);
  	}
  }
+
+
+ /* ---------------------------------------------------------------------
+ Project Description
+ ------------------------------------------------------------------------ */
+
+ .description-container {
+ 	@include span(4 last);
+ 	margin-bottom: 24px;
+ } 	
+
+ .project-description {
+ 	margin-bottom: 4px;
+ }
+
+ .project-title {
+ 	margin-bottom: 40px;
+ }
+ 
+ /*Adjust at Small Breakpoint*/	
+
+ @media (max-width: $large-break) {
+
+ 	.description-container {
+ 		@include span(12);
+ 	}
+
+ 	.project-title {
+ 		margin-bottom: 8px;
+ 	}	
+ }
+
+/* ---------------------------------------------------------------------
+ Links Container
+ ------------------------------------------------------------------------ */
+
+ .links-container {
+ 	@include span(4 last);
+ 	display: flex;
+ 	flex-direction: row-reverse;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+
+ /*Widen at Small Breakpoint*/
+
+ @media (max-width: $large-break) {
+ 	.links-container {
+ 		@include span(12);
+ 		margin-top: 24px;
+ 	}
+ }
+
+ .single-link-container {
+ 	display: flex;
+ 	@include transition-property(color, fill);
+	@include transition-duration(.09s);
+	@include transition-timing-function(ease-in);
+
+ 	&:hover {
+ 		.project-link {
+ 			color: $accent;
+ 		}
+
+ 		.arrow {
+ 			stroke: $accent;
+ 		}
+ 	}
+ }
+
+ .project-link {
+ 	font-size: 16px;
+ 	color: $tertiary;
+
+ 	@include transition-property(color, fill);
+	@include transition-duration(.09s);
+	@include transition-timing-function(ease-in);
+ }
+
+ .arrow {
+ 	stroke: $tertiary;
+
+ 	@include transition-property(color, fill);
+	@include transition-duration(.09s);
+	@include transition-timing-function(ease-in);
+ }
+
+
