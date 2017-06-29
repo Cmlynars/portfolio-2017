@@ -27,14 +27,6 @@ layout: default
 		</div>
 
 		<div class="links-container">
-			{% assign next = page.order | plus: 1 %}
-			{% for projects in site.pages %}
-			{% if projects.order == next %}
-				
-			<a class="single-link-container" href="{{ site.baseurl }}/{{ projects.url }}"><p class="project-link">Next</p>{% include right_arrow.html %}</a>
-			
-			{% endif %}
-			{% endfor %}
 
 			{% assign previous = page.order | minus: 1 %}
 			{% for projects in site.pages %}
@@ -42,6 +34,15 @@ layout: default
 
 			<a class="single-link-container" href="{{ site.baseurl }}/{{ projects.url }}">{% include left_arrow.html %}<p class="project-link">Previous</p></a>
 
+			{% endif %}
+			{% endfor %}
+
+			{% assign next = page.order | plus: 1 %}
+			{% for projects in site.pages %}
+			{% if projects.order == next %}
+				
+			<a class="single-link-container" href="{{ site.baseurl }}/{{ projects.url }}"><p class="project-link">Next</p>{% include right_arrow.html %}</a>
+			
 			{% endif %}
 			{% endfor %}
 		</div>
