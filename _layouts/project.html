@@ -3,48 +3,50 @@ title: Project
 layout: default
 ---
 
-	<section class="buffer project_content-container">
+<section class="buffer project_content-container">
 
-		<div class="breadcrumb-container">
-			<p><a href="{{ site.baseurl }}/">All Projects</a></p>
-			<p class="current-project">/ {{ page.title }}</p>
-		</div>
+	<div class="breadcrumb-container">
+		<p><a href="{{ site.baseurl }}/">All Projects</a></p>
+		<p class="current-project">/ {{ page.title }}</p>
+	</div>
 
-		<div class="description-container">
-			<h4 class="project-description">{{ page.role }}</h4>
-			<h3 class="project-title">
-				{{ page.title }}
-			</h3>
-			<p>
-				{{ content }}
-			</p>
-		</div>
+	<div class="description-container">
+		<h4 class="project-description">{{ page.role }}</h4>
+		<h3 class="project-title">
+			{{ page.title }}
+		</h3>
+		<p>
+			{{ content }}
+		</p>
+	</div>
 
-		<div class="project_image-container">
-			{% for image in page.images %}
-			<img src="{{ site.baseurl }}/img/{{ image }}" alt="">
-			{% endfor %}
-		</div>
-
-		<div class="links-container">
-
-			{% assign previous = page.order | minus: 1 %}
-			{% for projects in site.pages %}
-			{% if projects.order == previous %}
-
-			<a class="single-link-container" href="{{ site.baseurl }}/{{ projects.url }}">{% include left_arrow.html %}<p class="project-link">Previous</p></a>
-
-			{% endif %}
-			{% endfor %}
-
-			{% assign next = page.order | plus: 1 %}
-			{% for projects in site.pages %}
-			{% if projects.order == next %}
-				
-			<a class="single-link-container" href="{{ site.baseurl }}/{{ projects.url }}"><p class="project-link">Next</p>{% include right_arrow.html %}</a>
-			
-			{% endif %}
-			{% endfor %}
-		</div>
+	<div class="project_image-container">
 		
-	</section>
+	{% for image in page.project_images %}
+	<img src="{{ site.baseurl }}/img/{{ page.title }}/{{ image }}" alt="">
+	{% endfor %}
+		
+	</div>
+
+	<div class="links-container">
+
+		{% assign previous = page.order | minus: 1 %}
+		{% for projects in site.pages %}
+		{% if projects.order == previous %}
+
+		<a class="single-link-container" href="{{ site.baseurl }}/{{ projects.url }}">{% include left_arrow.html %}<p class="project-link">Previous</p></a>
+
+		{% endif %}
+		{% endfor %}
+
+		{% assign next = page.order | plus: 1 %}
+		{% for projects in site.pages %}
+		{% if projects.order == next %}
+
+		<a class="single-link-container" href="{{ site.baseurl }}/{{ projects.url }}"><p class="project-link">Next</p>{% include right_arrow.html %}</a>
+
+		{% endif %}
+		{% endfor %}
+	</div>
+
+</section>

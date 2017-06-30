@@ -2,8 +2,9 @@
 layout: project
 title: Morningstar
 role: UX Designer
-description: Improving the user experience for a 401(k) roboadvisor. 
-images: 
+date: Apr 2015 - Apr 2016 
+description: Improving the user experience of a 401(k) roboadvisor. 
+project_images: 
  - placeholder.jpg
  - placeholder 2.jpg
  - placeholder.jpg

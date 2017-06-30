@@ -7,9 +7,9 @@ layout: default
 
         <div class="project-header">
 
-            <h1 class="site-title">Designer and Product Strategist in Chicago by way of Beijing.</h1>
+            <h1 class="site-title">Designer and Product Strategist in Chicago by way of China.</h1>
 
-            <h2 class="site-byline">Primarily working on digital products but doing some other weird stuff too.</h2>
+            <h2 class="site-byline">Primarily working on digital products and doing some other weird stuff, too.</h2>
 
         </div>
 
@@ -20,9 +20,9 @@ layout: default
             {% if projects.layout == 'project' %}
           
             <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">
-                    <div class="card-image" style="background-image: url({{ site.baseurl}}/img/{{ projects.images[0] }});"></div>
+                    <div class="card-image" style="background-image: url({{ site.baseurl}}/img/{{ projects.title }}/{{ projects.card_image }});"></div>
                     <div class="card-content">
-                        <h4>{{ projects.role }} • {{ projects.date }}</h4>
+                        <h4>{{ projects.role }} {% if projects.date %}• {{ projects.date }}{% endif %}</h4>
                         <h3>{{ projects.title }}</h3>
                         <p>{{ projects.description }}</p>
                     </div> 

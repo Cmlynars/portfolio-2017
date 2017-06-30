@@ -2,8 +2,10 @@
 layout: project
 title: Jiang China Design
 role: Design Mentor
-description: Teaching design thinking principles at China's first human centered design bootcamp.
-images: 
+date: Summer 2015
+description: Teaching Design Thinking at China's first Human-centered Design bootcamp.
+card_image: placeholder.jpg
+project_images: 
  - placeholder.jpg
  - placeholder 2.jpg
  - placeholder.jpg

@@ -1,9 +1,10 @@
 ---
 layout: project
 title: Smart Air
-role: Designer
-description: Reimagining the online, taobao presence for a startup in China.
-images: 
+role: Freelance Designer
+description: Reimagining the taobao store presence for a startup in China.
+card_image: placeholder.jpg
+project_images: 
  - placeholder.jpg
  - placeholder 2.jpg
  - placeholder.jpg

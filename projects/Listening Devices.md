@@ -2,13 +2,14 @@
 layout: project
 title: Listening Devices
 role: Designer
-description: A series of conceptual headphones that incluence the behavior of the user.
-importance: primary
-images: 
+description: A series of conceptual, over-ear headphones designed to influence the behavior of the wearer.
+card_image: placeholder.jpg
+project_images: 
  - placeholder.jpg
  - placeholder 2.jpg
  - placeholder.jpg
 order: 5
+importance: primary
 ---
 
 
