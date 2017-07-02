@@ -14,5 +14,10 @@ importance: primary
 ---
 
 
-I man
+• Manage all design projects including web product, iOS and android product, website, user reseach initiatives and usability testing, email creation, and some front-end development responsibilities.
+• Designed and shipped new dashboard homepage for customers
+• Completed re-designs for 100 screen experiences including the customer application and the verifications experience
+• Developed email template for UI elements to standardize
+• Rolling out entirely new brand across all products 
+• Coordinating accross all company departments to deliver experiences and mockups 
 

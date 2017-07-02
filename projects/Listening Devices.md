@@ -12,6 +12,7 @@ order: 5
 importance: primary
 ---
 
+Designed a series of conceptual, over-ear headphones to convey and encourage the intentions of the wearer, specifically: intimacy, attention, isolation.<br><br>
 
-My name is Chris and this is what I'm going to be writing about today. My name is Chris and this is what I'm going to be writing about today. My name is Chris and this is what I'm going to be writing about today. My name is Chris and this is what I'm going to be writing about today. My name is Chris and this is what I'm going to be writing about today.
+Headphones are used for more than just listening to audio recordings. By designing for the additional uses of over-ear headphones, the form proposes new relationships between the object and the wearer.
 
