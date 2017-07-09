@@ -19,11 +19,11 @@ layout: default
             {% for projects in sorted_projects %}
             {% if projects.layout == 'project' %}
           
-            <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">
-                    <div class="card-image" style="background-image: url({{ site.baseurl}}/img/{{ projects.title }}/{{ projects.card_image }});"></div>
+            <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">                    
+                 <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.title }}/{{ projects.card_image }}");"></div>
                     <div class="card-content">
                         <h4>{{ projects.role }} {% if projects.date %}• {{ projects.date }}{% endif %}</h4>
-                        <h3>{{ projects.title }}</h3>
+                        <h3>{{ projects.pretty_title }}</h3>
                         <p>{{ projects.description }}</p>
                     </div> 
             </a>

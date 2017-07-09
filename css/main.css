@@ -77,14 +77,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 $secondary: #7893A1;
 $tertiary: #9DA9B0;
 $accent: #4BC180;
+$link-hover: lighten( $accent, 10% );
 $background-color: rgba(237, 241, 245, 1);*/
 /* === Gray Theme === */
 /* === SIZING === */
 /* === MEDIA QUERIES === */
 /* === FONTS === */
 /* === SHADOWS === */
-/*$card-shadow: 0 10px 15px rgba(44, 48, 49, .15);*/
-/*$hover-shadow: 0 15px 30px rgba(44, 48, 49, .20);*/
 /* ---------------------------------------------------------------------
  Susy Grid Settings
  ------------------------------------------------------------------------ */
@@ -379,7 +378,52 @@ footer {
 }
 
 /* line 16, ../sass/_background.scss */
-.project-background {
+.avant-background {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 75%, #f2f2f2 75%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 75%, #f2f2f2 75%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 75%, #f2f2f2 75%, #f2f2f2 100%);
+}
+
+/* line 20, ../sass/_background.scss */
+.jiang_china_design-background {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzNCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 34%, #f2f2f2 34%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 34%, #f2f2f2 34%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 34%, #f2f2f2 34%, #f2f2f2 100%);
+}
+
+/* line 24, ../sass/_background.scss */
+.listening_devices-background {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+}
+
+/* line 28, ../sass/_background.scss */
+.morningstar-background {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNTclIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI1NyUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 57%, #f2f2f2 57%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 57%, #f2f2f2 57%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 57%, #f2f2f2 57%, #f2f2f2 100%);
+}
+
+/* line 32, ../sass/_background.scss */
+.planet_finance_china-background {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNDYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI0NiUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 46%, #f2f2f2 46%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 46%, #f2f2f2 46%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 46%, #f2f2f2 46%, #f2f2f2 100%);
+}
+
+/* line 36, ../sass/_background.scss */
+.smart_air-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
   background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
@@ -501,18 +545,20 @@ footer {
 /* line 77, ../sass/_index.scss */
 .card-image {
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 265px;
 }
 
-/* line 82, ../sass/_index.scss */
+/* line 84, ../sass/_index.scss */
 .card-content {
   padding: 16px 1.5rem 16px 1.5rem;
 }
-/* line 85, ../sass/_index.scss */
+/* line 87, ../sass/_index.scss */
 .card-content h4 {
   margin-bottom: 4px;
 }
-/* line 89, ../sass/_index.scss */
+/* line 91, ../sass/_index.scss */
 .card-content h3 {
   margin-bottom: 10px;
 }
@@ -521,21 +567,21 @@ footer {
 Project Cards (Medium Breakpoint)
 ------------------------------------------------------------------------ */
 @media (min-width: 768px) {
-  /* line 100, ../sass/_index.scss */
+  /* line 102, ../sass/_index.scss */
   .project-card {
     width: 47.61905%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
   }
-  /* line 103, ../sass/_index.scss */
+  /* line 105, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 97.61905%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
   }
-  /* line 107, ../sass/_index.scss */
+  /* line 109, ../sass/_index.scss */
   .project-card:nth-child(n+2) {
     height: 400px;
   }
@@ -544,7 +590,7 @@ Project Cards (Medium Breakpoint)
  Project Cards (Large Breakpoint)
  ------------------------------------------------------------------------ */
 @media (min-width: 1024px) {
-  /* line 119, ../sass/_index.scss */
+  /* line 121, ../sass/_index.scss */
   .project-card {
     width: 33.03571%;
     float: left;
@@ -553,7 +599,7 @@ Project Cards (Medium Breakpoint)
     height: 400px;
     margin-bottom: 40px;
   }
-  /* line 124, ../sass/_index.scss */
+  /* line 126, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 62.20238%;
     float: left;
@@ -561,7 +607,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.19048%;
   }
 
-  /* line 129, ../sass/_index.scss */
+  /* line 131, ../sass/_index.scss */
   .primary-card {
     width: 62.20238%;
     float: left;
@@ -622,14 +668,10 @@ Project Cards (Medium Breakpoint)
 .breadcrumb-container a:hover {
   color: #6bd1b5;
 }
-/* line 38, ../sass/_project.scss */
-.breadcrumb-container a:visted {
-  color: inherit;
-}
 
 /*Hide at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 47, ../sass/_project.scss */
+  /* line 43, ../sass/_project.scss */
   .breadcrumb-container {
     display: none;
   }
@@ -637,7 +679,7 @@ Project Cards (Medium Breakpoint)
 /* ---------------------------------------------------------------------
  Images (Mobile-first)
  ------------------------------------------------------------------------ */
-/* line 56, ../sass/_project.scss */
+/* line 52, ../sass/_project.scss */
 .project_image-container {
   /*Mobile-first Width*/
   width: 97.61905%;
@@ -645,19 +687,19 @@ Project Cards (Medium Breakpoint)
   margin-left: 1.19048%;
   margin-right: 1.19048%;
 }
-/* line 60, ../sass/_project.scss */
+/* line 56, ../sass/_project.scss */
 .project_image-container img {
   margin-bottom: 2.5rem;
   width: 100%;
 }
-/* line 64, ../sass/_project.scss */
+/* line 60, ../sass/_project.scss */
 .project_image-container img:last-child {
   margin-bottom: 0;
 }
 
 /*Shrink at Large Breakpoint*/
 @media (min-width: 1024px) {
-  /* line 73, ../sass/_project.scss */
+  /* line 69, ../sass/_project.scss */
   .project_image-container {
     width: 58.03571%;
     float: left;
@@ -668,7 +710,7 @@ Project Cards (Medium Breakpoint)
 /* ---------------------------------------------------------------------
 Project Description
 ------------------------------------------------------------------------ */
-/* line 83, ../sass/_project.scss */
+/* line 79, ../sass/_project.scss */
 .description-container {
   width: 30.95238%;
   float: right;
@@ -677,19 +719,19 @@ Project Description
   margin-bottom: 24px;
 }
 
-/* line 88, ../sass/_project.scss */
+/* line 84, ../sass/_project.scss */
 .project-description {
   margin-bottom: 4px;
 }
 
-/* line 92, ../sass/_project.scss */
+/* line 88, ../sass/_project.scss */
 .project-title {
   margin-bottom: 40px;
 }
 
 /*Adjust at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 100, ../sass/_project.scss */
+  /* line 96, ../sass/_project.scss */
   .description-container {
     width: 97.61905%;
     float: left;
@@ -697,7 +739,7 @@ Project Description
     margin-right: 1.19048%;
   }
 
-  /* line 104, ../sass/_project.scss */
+  /* line 100, ../sass/_project.scss */
   .project-title {
     margin-bottom: 16px;
   }
@@ -705,7 +747,7 @@ Project Description
 /* ---------------------------------------------------------------------
  Links Container
  ------------------------------------------------------------------------ */
-/* line 113, ../sass/_project.scss */
+/* line 109, ../sass/_project.scss */
 .links-container {
   width: 30.95238%;
   float: right;
@@ -718,7 +760,7 @@ Project Description
 
 /*Widen at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 123, ../sass/_project.scss */
+  /* line 119, ../sass/_project.scss */
   .links-container {
     width: 97.61905%;
     float: left;
@@ -728,29 +770,29 @@ Project Description
     justify-content: center;
   }
 }
-/* line 130, ../sass/_project.scss */
+/* line 126, ../sass/_project.scss */
 .single-link-container {
   display: flex;
   color: #A8A8A8;
   stroke: #A8A8A8;
   /*Space between links at less than large breakpoint*/
 }
-/* line 136, ../sass/_project.scss */
+/* line 132, ../sass/_project.scss */
 .single-link-container:hover .project-link {
   color: #44C5A2;
 }
-/* line 140, ../sass/_project.scss */
+/* line 136, ../sass/_project.scss */
 .single-link-container:hover .arrow {
   stroke: #44C5A2;
 }
 @media (max-width: 1024px) {
-  /* line 130, ../sass/_project.scss */
+  /* line 126, ../sass/_project.scss */
   .single-link-container {
     margin: 0 16px;
   }
 }
 
-/* line 151, ../sass/_project.scss */
+/* line 147, ../sass/_project.scss */
 .project-link {
   font-size: 16px;
   color: #A8A8A8;
@@ -767,16 +809,16 @@ Project Description
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 159, ../sass/_project.scss */
+/* line 155, ../sass/_project.scss */
 .project-link:nth-child(1) {
   margin-right: 6px;
 }
-/* line 163, ../sass/_project.scss */
+/* line 159, ../sass/_project.scss */
 .project-link:nth-child(2) {
   margin-left: 6px;
 }
 
-/* line 168, ../sass/_project.scss */
+/* line 164, ../sass/_project.scss */
 .arrow {
   stroke: #A8A8A8;
   -moz-transition-property: color, fill;
@@ -863,11 +905,21 @@ Project Description
   }
 }
 
+/* line 54, ../sass/_about.scss */
+.about-link {
+  color: #44C5A2;
+  font-weight: 600;
+}
+/* line 58, ../sass/_about.scss */
+.about-link:hover {
+  color: #6bd1b5;
+}
+
 /* ---------------------------------------------------------------------
  About Blurb (Small, Medium Breakpoint)
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
-  /* line 59, ../sass/_about.scss */
+  /* line 68, ../sass/_about.scss */
   .about-blurb {
     width: 97.61905%;
     float: left;

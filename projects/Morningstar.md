@@ -1,19 +1,18 @@
 ---
 layout: project
-title: Morningstar
+title: morningstar
+pretty_title: Morningstar
 role: UX Designer
 date: Apr 2015 - Apr 2016 
 description: Improving the user experience of a 401(k) roboadvisor. 
-project_images: 
- - placeholder.jpg
- - placeholder 2.jpg
- - placeholder.jpg
+card_image: card_image.jpg
 order: 2
 ---
 
+I worked as a UX Designer on Morningstar's 401(k) robo-advisor product, Retirement Manager.<br><br>
 
-• Worked with developers, content strategists, product managers, and other designers in an agile environment to build a retirement management application that can be accessed by 25 million individual investors
-• Distilled complex financial methodology into simple, user-centered designs and wireframes
-• Built interactive prototypes using HTML, CSS, and Javascript for usability testing and to convey the desired user experience to developers
-• Conducted all aspects of the usability testing process including writing scripts, sourcing test participants, and summarizing actionable results
-• Collaborated with the behavioral insights team to improve choice architecture, reduce decision fatigue, and A/B test labor illusion concepts within the application
+I conducted all aspects of the usability testing process including script writing, participant sourcing, and building interactive prototypes using HTML, CSS, and Javascript.<br><br>
+
+I provided sketched and high-fidelity wireframes with a team of other designers and content strategists to simplify complex financial information and user interactions.<br><br>
+
+By collaborating with the behavioral insights team, we improved the product's choice architecture, reduced decision fatigue, and A/B tested labor illusion concepts to improve the product experience. 

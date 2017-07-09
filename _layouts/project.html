@@ -7,13 +7,13 @@ layout: default
 
 	<div class="breadcrumb-container">
 		<p><a href="{{ site.baseurl }}/">All Projects</a></p>
-		<p class="current-project">/ {{ page.title }}</p>
+		<p class="current-project">/ {{ page.pretty_title }}</p>
 	</div>
 
 	<div class="description-container">
-		<h4 class="project-description">{{ page.role }}</h4>
+		<h4 class="project-description">{{ page.role }} {% if page.date %}• {{ page.date }}{% endif %}</h4>
 		<h3 class="project-title">
-			{{ page.title }}
+			{{ page.pretty_title }}
 		</h3>
 		<p>
 			{{ content }}
@@ -21,10 +21,15 @@ layout: default
 	</div>
 
 	<div class="project_image-container">
-		
-	{% for image in page.project_images %}
-	<img src="{{ site.baseurl }}/img/{{ page.title }}/{{ image }}" alt="">
+
+	{% capture location %}img/{{ page.title }}{% endcapture %}
+
+	{% for image in site.static_files %}
+	{% if image.path contains location %}
+		<img src="{{ site.baseurl }}{{ image.path }}" alt="project image" />
+	{% endif %}
 	{% endfor %}
+	
 		
 	</div>
 

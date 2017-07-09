@@ -32,11 +32,7 @@
  		color: $accent;
 
  		&:hover {
- 			color: lighten( $accent, 10% );
- 		}
-
- 		&:visted {
- 			color: inherit;
+ 			color: $link-hover;
  		}
  	}
  }
