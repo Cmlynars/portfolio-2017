@@ -14,7 +14,7 @@
  }
 
  .avant-background {
- 	@include background-image(linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, $background-color 75%, $background-color 100%));	
+ 	@include background-image(linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, $background-color 45%, $background-color 100%));	
  }
 
  .jiang_china_design-background {

@@ -5,7 +5,7 @@ pretty_title: Jiang China Design
 role: Design Mentor
 date: Summer 2015
 description: Teaching Design Thinking at China's first Human-centered Design bootcamp.
-card_image: card_image.jpeg
+card_image: jiang_china_design.jpeg
 order: 3
 ---
 

@@ -20,7 +20,7 @@ layout: default
             {% if projects.layout == 'project' %}
           
             <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">                    
-                 <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.title }}/{{ projects.card_image }}");"></div>
+                 <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}");"></div>
                     <div class="card-content">
                         <h4>{{ projects.role }} {% if projects.date %}• {{ projects.date }}{% endif %}</h4>
                         <h3>{{ projects.pretty_title }}</h3>

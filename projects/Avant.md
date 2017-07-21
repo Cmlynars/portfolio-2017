@@ -5,7 +5,7 @@ pretty_title: Avant
 role: Head of Design
 date: Apr 2016 - Present
 description: Leading all design projects at a fintech company making it easier for middle-income consumers to borrow money online.
-card_image: placeholder.jpg
+card_image: avant.jpg
 order: 1
 importance: primary
 ---

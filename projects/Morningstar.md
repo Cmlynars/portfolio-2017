@@ -5,7 +5,7 @@ pretty_title: Morningstar
 role: UX Designer
 date: Apr 2015 - Apr 2016 
 description: Improving the user experience of a 401(k) roboadvisor. 
-card_image: card_image.jpg
+card_image: morningstar.jpg
 order: 2
 ---
 
