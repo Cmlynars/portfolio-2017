@@ -71,7 +71,7 @@
  	background-repeat: no-repeat;
  	background-position: center;
  	background-size: cover;
- 	height: 265px;
+ 	height: 200px;
  }
 
  .card-content {
@@ -102,6 +102,10 @@
 		&:nth-child(n+2) {
 			height: 400px;
 		}
+ 	}
+
+ 	.card-image {
+ 		height: 265px;
  	}
  }
 

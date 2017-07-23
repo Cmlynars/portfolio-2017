@@ -84,15 +84,14 @@ $background-color: rgba(237, 241, 245, 1);*/
 /* === MEDIA QUERIES === */
 /* === FONTS === */
 /* === SHADOWS === */
-/*$card-shadow: 0 10px 15px rgba(0, 0, 0, .15);*/
 /* ---------------------------------------------------------------------
  Susy Grid Settings
  ------------------------------------------------------------------------ */
 @media (max-width: 1024px) {
   /* line 12, ../sass/_base.scss */
   .buffer {
-    margin-left: 16px !important;
-    margin-right: 16px !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
   }
 }
 
@@ -455,11 +454,11 @@ footer {
 @media (max-width: 768px) {
   /* line 42, ../sass/_background.scss */
   .home-background {
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxNCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxNSUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
     background-size: 100%;
-    background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 14%, #f2f2f2 14%, #f2f2f2 100%);
-    background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 14%, #f2f2f2 14%, #f2f2f2 100%);
-    background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 14%, #f2f2f2 14%, #f2f2f2 100%);
+    background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
+    background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
+    background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
   }
 }
 /* ---------------------------------------------------------------------
@@ -541,9 +540,9 @@ footer {
   margin-right: 1.19048%;
   margin-bottom: 24px;
   /*General styles*/
-  -moz-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   -moz-transition-property: box-shadow;
   -o-transition-property: box-shadow;
   -webkit-transition-property: box-shadow;
@@ -571,7 +570,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 265px;
+  height: 200px;
 }
 
 /* line 77, ../sass/_index.scss */
@@ -609,12 +608,17 @@ Project Cards (Medium Breakpoint)
   .project-card:nth-child(n+2) {
     height: 400px;
   }
+
+  /* line 107, ../sass/_index.scss */
+  .card-image {
+    height: 265px;
+  }
 }
 /* ---------------------------------------------------------------------
  Project Cards (Large Breakpoint)
  ------------------------------------------------------------------------ */
 @media (min-width: 1024px) {
-  /* line 114, ../sass/_index.scss */
+  /* line 118, ../sass/_index.scss */
   .project-card {
     width: 33.03571%;
     float: left;
@@ -623,7 +627,7 @@ Project Cards (Medium Breakpoint)
     height: 400px;
     margin-bottom: 40px;
   }
-  /* line 119, ../sass/_index.scss */
+  /* line 123, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 62.20238%;
     float: left;
@@ -631,7 +635,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.19048%;
   }
 
-  /* line 124, ../sass/_index.scss */
+  /* line 128, ../sass/_index.scss */
   .primary-card {
     width: 62.20238%;
     float: left;
@@ -818,7 +822,7 @@ Project Description
 @media (max-width: 1024px) {
   /* line 131, ../sass/_project.scss */
   .single-link-container {
-    margin: 0 110px;
+    margin: 0 40px;
   }
 }
 
