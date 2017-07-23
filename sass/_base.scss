@@ -28,7 +28,7 @@ $susy: (
 html {
 	font-size: 16px;
 
-	/*REM OVERRIDES*/
+	/*REM OVERRIDES FOR SPACING*/
 	@media (max-width: $large-break) {
 		font-size: 13px;
 	}
@@ -46,10 +46,27 @@ body {
 h1 {
 	font-family: $headline-font;
 	color: $primary;
+	font-size: 38px;
+	line-height: 58px;
+ 	font-weight: 300;
+ 	letter-spacing: 1px;
+
+ 	@media (max-width: $medium-break) {
+ 		font-size: 26px;
+ 		line-height: 42px;
+ 	}
 }
 
 h2 {
 	color: $tertiary;
+	font-size: 26px;
+ 	line-height: 38px;
+ 	font-weight: 300;
+
+ 	@media (max-width: $medium-break) {
+ 		font-size: 21px;
+ 		line-height: 32px;
+ 	}
 }
 
 h3 {

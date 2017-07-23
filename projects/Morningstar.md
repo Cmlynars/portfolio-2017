@@ -5,7 +5,7 @@ pretty_title: Morningstar
 role: UX Designer
 date: Apr 2015 - Apr 2016 
 description: Improving the user experience of a 401(k) roboadvisor. 
-card_image: morningstar.jpg
+card_image: morningstar.png
 order: 2
 ---
 
@@ -15,4 +15,6 @@ I conducted all aspects of the usability testing process including script writin
 
 I provided sketched and high-fidelity wireframes with a team of other designers and content strategists to simplify complex financial information and user interactions.<br><br>
 
-By collaborating with the behavioral insights team, we improved the product's choice architecture, reduced decision fatigue, and A/B tested labor illusion concepts to improve the product experience. 
+By collaborating with the behavioral insights team, we improved the product's choice architecture, reduced decision fatigue, and A/B tested labor illusion concepts to improve the product experience.<br><br>
+
+Screenshots of the product are not displayed due to legal reasons.

@@ -26,7 +26,7 @@
  }
 
  .morningstar-background {
- 	@include background-image(linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 57%, $background-color 57%, $background-color 100%));	
+ 	@include background-image(linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 61%, $background-color 61%, $background-color 100%));	
  }
 
  .planet_finance_china-background {
@@ -35,4 +35,11 @@
 
  .smart_air-background {
  	@include background-image(linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, $background-color 30%, $background-color 100%));	
+ }
+
+ @media (max-width: $medium-break) {
+
+ 	.home-background {
+ 		@include background-image(linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, $background-color 14%, $background-color 100%));	
+ 	}
  }

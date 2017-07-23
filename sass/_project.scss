@@ -5,14 +5,14 @@
  .project_content-container {
  	@include container($max-width);
  	padding: 64px 0 150px 0;
-	
-	 @media (max-width: $large-break) {
-	 	padding: 32px 0 75px 0;
-	 }
 
-	 @media (max-width: $medium-break) {
-	 	padding: 24px 0 40px 0;
-	 }
+ 	@media (max-width: $large-break) {
+ 		padding: 32px 0 75px 0;
+ 	}
+
+ 	@media (max-width: $medium-break) {
+ 		padding: 24px 0 40px 0;
+ 	}
  }
 
 /* ---------------------------------------------------------------------
@@ -94,12 +94,18 @@
  @media (max-width: $large-break) {
 
  	.description-container {
- 		@include span(12);
+ 		@include span(10);
  	}
 
  	.project-title {
  		margin-bottom: 16px;
  	}	
+ }
+
+ @media (max-width: $medium-break) {
+ 	.description-container {
+ 		@include span(12);
+ 	}
  }
 
 /* ---------------------------------------------------------------------
@@ -114,7 +120,6 @@
  }
 
  /*Widen at Small Breakpoint*/
-
  @media (max-width: $large-break) {
  	.links-container {
  		@include span(12);
@@ -125,48 +130,50 @@
 
  .single-link-container {
  	display: flex;
- 	color: $tertiary;
- 	stroke: $tertiary;
 
  	&:hover {
  		.project-link {
- 			color: $accent;
+ 			color: $link-hover;
  		}
 
  		.arrow {
- 			stroke: $accent;
+ 			stroke: $link-hover;
  		}
  	}
 
- 	/*Space between links at less than large breakpoint*/
-	@media (max-width: $large-break) {
-	margin: 0 16px;
-	}
+ 	@media (max-width: $large-break) {
+	margin: 0 110px;
+ 	}
  }
+
+ 
+ 
+
+
 
  .project-link {
  	font-size: 16px;
- 	color: $tertiary;
+ 	color: $accent;
 
  	@include transition-property(color, fill);
-	@include transition-duration(.09s);
-	@include transition-timing-function(ease-in);
+ 	@include transition-duration(.09s);
+ 	@include transition-timing-function(ease-in);
 
-	&:nth-child(1) { 
-		margin-right: 6px;
-	}
+ 	&:nth-child(1) { 
+ 		margin-right: 6px;
+ 	}
 
-	&:nth-child(2) { 
-		margin-left: 6px;
-	}
+ 	&:nth-child(2) { 
+ 		margin-left: 6px;
+ 	}
  }
 
  .arrow {
- 	stroke: $tertiary;
+ 	stroke: $accent;
 
  	@include transition-property(color, fill);
-	@include transition-duration(.09s);
-	@include transition-timing-function(ease-in);
+ 	@include transition-duration(.09s);
+ 	@include transition-timing-function(ease-in);
  }
 
 
