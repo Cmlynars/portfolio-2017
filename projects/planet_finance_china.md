@@ -4,7 +4,7 @@ title: planet_finance_china
 pretty_title: Planet Finance China
 role: Design Manager
 date: Oct 2013 - Jul 2014
-description: Creating financial education tools for microloan borrowers using Human-centered design.
+description: Creating financial education tools for female microloan borrowers in rural China using Human-centered Design.
 card_image: planet_finance_china.jpeg
 order: 4
 importance: primary

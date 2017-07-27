@@ -20,7 +20,7 @@ $background-color: rgba(242, 242, 242, 1);
 
 
 /* === SIZING === */
-$max-width: 1140px;
+$max-width: 1200px;
 
 
 /* === MEDIA QUERIES === */
@@ -29,9 +29,7 @@ $large-break: 1024px;
 
 
 /* === FONTS === */
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500|Open+Sans:300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+@import url('https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:600|Open+Sans:300,400,700');
 $base-font-size: 16px;
 $headline-font: 'Hind', sans-serif;
 $body-font: 'Open Sans', sans-serif;

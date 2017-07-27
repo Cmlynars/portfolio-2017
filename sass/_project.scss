@@ -24,16 +24,17 @@
  	display: flex;
  	margin-bottom: 24px;
 
- 	.current-project {
- 		margin-left: 4px;
- 	}
-
  	a {
  		color: $accent;
 
  		&:hover {
  			color: $link-hover;
  		}
+ 	}
+
+ 	.current-project {
+ 		margin-left: 4px;
+ 		color: $tertiary;
  	}
  }
 
@@ -67,7 +68,7 @@
 
  @media (min-width: $large-break) {
  	.project_image-container {
- 		@include span(7.25);
+ 		@include span(7.5);
  	}
  }
 
@@ -145,11 +146,6 @@
 	margin: 0 40px;
  	}
  }
-
- 
- 
-
-
 
  .project-link {
  	font-size: 16px;
