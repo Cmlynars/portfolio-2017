@@ -184,7 +184,7 @@ h4 {
 @media (max-width: 768px) {
   /* line 84, ../sass/_base.scss */
   h4 {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -204,17 +204,18 @@ h5 {
 p {
   color: #555;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 22px;
   letter-spacing: .25px;
 }
 @media (max-width: 768px) {
   /* line 103, ../sass/_base.scss */
   p {
     font-size: 15px;
+    line-height: 20px;
   }
 }
 
-/* line 114, ../sass/_base.scss */
+/* line 115, ../sass/_base.scss */
 a {
   text-decoration: none;
   -moz-transition-property: color, fill;
@@ -230,7 +231,7 @@ a {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 120, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 a:visted {
   color: inherit;
 }
@@ -315,74 +316,86 @@ footer {
 }
 
 /* line 8, ../sass/_footer.scss */
-.footer-content {
+.footer-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin: 0 auto;
-  padding: 3rem 0 8rem 0;
 }
 /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-.footer-content:after {
+.footer-container:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 14, ../sass/_footer.scss */
-.footer-wrapper {
+/* line 12, ../sass/_footer.scss */
+.footer-content {
   width: 97.61905%;
   float: left;
   margin-left: 1.19048%;
   margin-right: 1.19048%;
+  padding: 3rem 0 8rem 0;
+}
+
+/* line 17, ../sass/_footer.scss */
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* line 21, ../sass/_footer.scss */
+/* line 23, ../sass/_footer.scss */
 .footer-item {
   color: #A8A8A8;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
 }
-/* line 27, ../sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
 .footer-item:last-child {
   margin-bottom: 0;
 }
 
-/* line 32, ../sass/_footer.scss */
+/* line 34, ../sass/_footer.scss */
 .icon-wrapper {
   fill: #A8A8A8;
   margin-right: 24px;
   cursor: pointer;
 }
-/* line 37, ../sass/_footer.scss */
+/* line 39, ../sass/_footer.scss */
 .icon-wrapper:last-child {
   margin-right: 0;
 }
-/* line 41, ../sass/_footer.scss */
+/* line 43, ../sass/_footer.scss */
 .icon-wrapper:hover {
   fill: #44C5A2;
 }
 
-/* line 46, ../sass/_footer.scss */
+/* line 48, ../sass/_footer.scss */
 .icon {
   height: 25px;
   width: 25px;
 }
 
 /* ---------------------------------------------------------------------
+ Footer (Medium Breakpoint)
+ ------------------------------------------------------------------------ */
+@media (max-width: 1024px) {
+  /* line 58, ../sass/_footer.scss */
+  .footer-border {
+    border-top: 1px solid #E4E4E4;
+  }
+}
+/* ---------------------------------------------------------------------
  Footer (Small Breakpoint)
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
-  /* line 57, ../sass/_footer.scss */
+  /* line 70, ../sass/_footer.scss */
   .footer-wrapper {
     flex-direction: column-reverse;
   }
 
-  /* line 61, ../sass/_footer.scss */
+  /* line 74, ../sass/_footer.scss */
   .icons-container {
     margin-bottom: 16px;
   }
@@ -407,7 +420,17 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
 }
 
-/* line 16, ../sass/_background.scss */
+@media (max-width: 768px) {
+  /* line 18, ../sass/_background.scss */
+  .home-background {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxNSUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
+    background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
+    background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
+  }
+}
+/* line 23, ../sass/_background.scss */
 .avant-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNDUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI0NSUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -416,7 +439,7 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 45%, #f2f2f2 45%, #f2f2f2 100%);
 }
 
-/* line 20, ../sass/_background.scss */
+/* line 27, ../sass/_background.scss */
 .jiang_china_design-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzNCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -425,7 +448,7 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 34%, #f2f2f2 34%, #f2f2f2 100%);
 }
 
-/* line 24, ../sass/_background.scss */
+/* line 31, ../sass/_background.scss */
 .listening_devices-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -434,7 +457,7 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
 }
 
-/* line 28, ../sass/_background.scss */
+/* line 35, ../sass/_background.scss */
 .morningstar-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNjElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI2MSUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -443,7 +466,7 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 61%, #f2f2f2 61%, #f2f2f2 100%);
 }
 
-/* line 32, ../sass/_background.scss */
+/* line 39, ../sass/_background.scss */
 .planet_finance_china-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNDYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI0NiUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -452,7 +475,7 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 46%, #f2f2f2 46%, #f2f2f2 100%);
 }
 
-/* line 36, ../sass/_background.scss */
+/* line 43, ../sass/_background.scss */
 .smart_air-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -461,14 +484,10 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
 }
 
-@media (max-width: 768px) {
-  /* line 42, ../sass/_background.scss */
-  .home-background {
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxNSUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-    background-size: 100%;
-    background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
-    background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
-    background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 15%, #f2f2f2 15%, #f2f2f2 100%);
+@media (max-width: 1024px) {
+  /* line 48, ../sass/_background.scss */
+  .avant-background, .jiang_china_design-background, .listening_devices-background, .morningstar-background, .planet_finance_china-background, .smart_air-background {
+    display: none;
   }
 }
 /* ---------------------------------------------------------------------
@@ -585,7 +604,7 @@ footer {
 
 /* line 77, ../sass/_index.scss */
 .card-content {
-  padding: 16px 1.5rem 18px 1.5rem;
+  padding: 16px 1.5rem 16px 1.5rem;
 }
 /* line 80, ../sass/_index.scss */
 .card-content h3 {
@@ -682,13 +701,13 @@ Project Cards (Medium Breakpoint)
 @media (max-width: 1024px) {
   /* line 5, ../sass/_project.scss */
   .project_content-container {
-    padding: 32px 0 75px 0;
+    padding: 32px 0 36px 0;
   }
 }
 @media (max-width: 768px) {
   /* line 5, ../sass/_project.scss */
   .project_content-container {
-    padding: 24px 0 40px 0;
+    padding: 24px 0 32px 0;
   }
 }
 
@@ -769,18 +788,20 @@ Project Description
 }
 
 /* line 85, ../sass/_project.scss */
-.project-description {
+.project-title {
   margin-bottom: 4px;
 }
 
 /* line 89, ../sass/_project.scss */
-.project-title {
-  margin-bottom: 40px;
+.project-description {
+  color: #A8A8A8;
+  font-weight: 400;
+  margin-bottom: 32px;
 }
 
 /*Adjust at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 97, ../sass/_project.scss */
+  /* line 99, ../sass/_project.scss */
   .description-container {
     width: 80.95238%;
     float: left;
@@ -788,13 +809,18 @@ Project Description
     margin-right: 1.19048%;
   }
 
-  /* line 101, ../sass/_project.scss */
+  /* line 103, ../sass/_project.scss */
   .project-title {
-    margin-bottom: 16px;
+    margin-bottom: 6px;
+  }
+
+  /* line 107, ../sass/_project.scss */
+  .project-description {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
-  /* line 107, ../sass/_project.scss */
+  /* line 113, ../sass/_project.scss */
   .description-container {
     width: 97.61905%;
     float: left;
@@ -805,7 +831,7 @@ Project Description
 /* ---------------------------------------------------------------------
  Links Container
  ------------------------------------------------------------------------ */
-/* line 116, ../sass/_project.scss */
+/* line 122, ../sass/_project.scss */
 .links-container {
   width: 30.95238%;
   float: right;
@@ -818,36 +844,36 @@ Project Description
 
 /*Widen at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 125, ../sass/_project.scss */
+  /* line 131, ../sass/_project.scss */
   .links-container {
     width: 97.61905%;
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
-    margin-top: 24px;
+    margin-top: 32px;
     justify-content: center;
   }
 }
-/* line 132, ../sass/_project.scss */
+/* line 138, ../sass/_project.scss */
 .single-link-container {
   display: flex;
 }
-/* line 136, ../sass/_project.scss */
+/* line 142, ../sass/_project.scss */
 .single-link-container:hover .project-link {
   color: #6bd1b5;
 }
-/* line 140, ../sass/_project.scss */
+/* line 146, ../sass/_project.scss */
 .single-link-container:hover .arrow {
   stroke: #6bd1b5;
 }
 @media (max-width: 1024px) {
-  /* line 132, ../sass/_project.scss */
+  /* line 138, ../sass/_project.scss */
   .single-link-container {
     margin: 0 40px;
   }
 }
 
-/* line 150, ../sass/_project.scss */
+/* line 156, ../sass/_project.scss */
 .project-link {
   font-size: 16px;
   color: #44C5A2;
@@ -864,16 +890,16 @@ Project Description
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 158, ../sass/_project.scss */
+/* line 164, ../sass/_project.scss */
 .project-link:nth-child(1) {
   margin-right: 6px;
 }
-/* line 162, ../sass/_project.scss */
+/* line 168, ../sass/_project.scss */
 .project-link:nth-child(2) {
   margin-left: 6px;
 }
 
-/* line 167, ../sass/_project.scss */
+/* line 173, ../sass/_project.scss */
 .arrow {
   stroke: #44C5A2;
   -moz-transition-property: color, fill;

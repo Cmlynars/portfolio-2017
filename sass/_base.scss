@@ -87,7 +87,7 @@ h4 {
 	font-weight: 700;
 
 	@media (max-width: $medium-break) {
-	font-size: 14px;	
+	font-size: 15px;	
 	}
 }
 
@@ -103,11 +103,12 @@ h5 {
 p {
 	color: $secondary;
 	font-size: 16px;
-	line-height: 21px;
+	line-height: 22px;
 	letter-spacing: .25px;
 
 	@media (max-width: $medium-break) {
-	font-size: 15px;	
+	font-size: 15px;
+	line-height: 20px	
 	}
 }
 

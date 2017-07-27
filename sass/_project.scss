@@ -7,11 +7,11 @@
  	padding: 64px 0 150px 0;
 
  	@media (max-width: $large-break) {
- 		padding: 32px 0 75px 0;
+ 		padding: 32px 0 36px 0;
  	}
 
  	@media (max-width: $medium-break) {
- 		padding: 24px 0 40px 0;
+ 		padding: 24px 0 32px 0;
  	}
  }
 
@@ -82,12 +82,14 @@
  	margin-bottom: 24px;
  } 	
 
- .project-description {
+.project-title {
  	margin-bottom: 4px;
  }
 
- .project-title {
- 	margin-bottom: 40px;
+ .project-description {
+ 	color: $tertiary;
+ 	font-weight: 400;
+ 	margin-bottom: 32px;
  }
  
  /*Adjust at Small Breakpoint*/	
@@ -99,8 +101,12 @@
  	}
 
  	.project-title {
- 		margin-bottom: 16px;
+ 		margin-bottom: 6px;
  	}	
+
+ 	.project-description {
+ 		margin-bottom: 20px;
+ 	}
  }
 
  @media (max-width: $medium-break) {
@@ -124,7 +130,7 @@
  @media (max-width: $large-break) {
  	.links-container {
  		@include span(12);
- 		margin-top: 24px;
+ 		margin-top: 32px;
  		justify-content: center;
  	}
  }

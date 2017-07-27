@@ -1,16 +1,19 @@
+<footer>
+	<div class="buffer">
+		<div class="footer-container">
 
+			<div {% if page.title == 'home' %} class="footer-content" {% else %} class="footer-content footer-border" {% endif %}>
+				<div class="footer-wrapper">
+					<p class="footer-item">Chris Mlynarski©</p>
 
- <footer>
- 	<div class="footer-content buffer">
- 		<div class="footer-wrapper">
- 			<p class="footer-item">Chris Mlynarski©</p>
+					<div class="icons-container">
+						<!-- <p class="email footer-item">cmlynars@gmail.com</p> -->
 
- 			<div class="icons-container">
- 				<!-- <p class="email footer-item">cmlynars@gmail.com</p> -->
+						{% include social_icons.html %}
 
- 				{% include social_icons.html %}
- 	
- 			</div>
- 		</div>
- 	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
