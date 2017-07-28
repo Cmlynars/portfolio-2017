@@ -11,10 +11,10 @@ layout: default
 	</div>
 
 	<div class="description-container">
+		<div class="project-description"><h4>{{ page.role }}</h4><h5>{% if page.date %}• {{ page.date }}{% endif %}</h5></div>
 		<h3 class="project-title">
 			{{ page.pretty_title }}
 		</h3>
-		<h4 class="project-description">{{ page.role }} {% if page.date %}• {{ page.date }}{% endif %}</h4>
 		<p>
 			{{ content }}
 		</p>

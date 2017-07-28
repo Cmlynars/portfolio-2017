@@ -44,7 +44,7 @@ body {
 }
 
 h1 {
-	font-family: $headline-font;
+	font-family: $body-font;
 	color: $primary;
 	font-size: 38px;
 	line-height: 58px;
@@ -73,18 +73,19 @@ h3 {
 	color: $primary;
 	font-family: $headline-font;
 	font-size: 28px;
-	font-weight: 600;
-	letter-spacing: .25px;
+	font-weight: 300;
+	letter-spacing: .5px;
 	
 	@media (max-width: $medium-break) {
-	font-size: 21px;	
+	font-size: 24px;	
 	}
 }
 
 h4 {
 	color: $primary;
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 400;
+	letter-spacing: .25px;
 
 	@media (max-width: $medium-break) {
 	font-size: 15px;	
@@ -93,7 +94,9 @@ h4 {
 
 h5 {
 	color: $tertiary;
-	font-size: 15px;
+	font-size: 16px;
+	letter-spacing: .25px;
+	font-weight: 300;
 
 	@media (max-width: $medium-break) {
 	font-size: 14px;	
@@ -104,7 +107,7 @@ p {
 	color: $secondary;
 	font-size: 16px;
 	line-height: 22px;
-	letter-spacing: .25px;
+	letter-spacing: .5px;
 
 	@media (max-width: $medium-break) {
 	font-size: 15px;

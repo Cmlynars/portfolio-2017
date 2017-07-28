@@ -79,17 +79,20 @@
 
  .description-container {
  	@include span(4 last);
- 	margin-bottom: 24px;
+ 	margin-bottom: 3rem;
  } 	
 
 .project-title {
- 	margin-bottom: 4px;
+ 	margin-bottom: 2rem;
  }
 
  .project-description {
- 	color: $tertiary;
- 	font-weight: 400;
- 	margin-bottom: 32px;
+ 	display: flex;
+ 	margin-bottom: 13px;
+
+ 	h4 {
+ 		margin-right: 4px;
+ 	}
  }
  
  /*Adjust at Small Breakpoint*/	
@@ -98,14 +101,6 @@
 
  	.description-container {
  		@include span(10);
- 	}
-
- 	.project-title {
- 		margin-bottom: 6px;
- 	}	
-
- 	.project-description {
- 		margin-bottom: 20px;
  	}
  }
 
