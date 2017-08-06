@@ -17,4 +17,3 @@ The scope of work includes all web experiences for two financial products, iOS a
 My team has designed multiple, 100 plus screen experiences including a new dashboard homepage, application process, and verifications experience. <br><br>
 
 I am also responsible for rolling out a completely new, modern brand across all products and communications channels.
-

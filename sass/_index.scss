@@ -56,9 +56,9 @@
 
  	/*General styles*/
  	@include box-shadow($card-shadow);
- 	@include transition-property(box-shadow);
+ 	/*@include transition-property(box-shadow);
  	@include transition-duration(.2s);
- 	@include transition-timing-function(ease-in);
+ 	@include transition-timing-function(ease-in);*/
  	cursor: pointer;
  	background-color: #fff;
 
@@ -66,6 +66,11 @@
  		@include box-shadow($hover-shadow);
  	}
  }	
+
+/*AOS Animation Fade-up Override*/
+.project-card[data-aos="fade-up"] {
+	@include transition-property(all);
+}
 
  .card-image {
  	background-repeat: no-repeat;
@@ -91,7 +96,7 @@
 
  /* ---------------------------------------------------------------------
  Project Cards (Medium Breakpoint)
- ------------------------------------------------------------------------ */
+ ------------------------------------------------------------------------ 
 
  @media (min-width: $medium-break) {
 

@@ -52,7 +52,7 @@ h1 {
  	letter-spacing: 1px;
 
  	@media (max-width: $medium-break) {
- 		font-size: 26px;
+ 		font-size: 28px;
  		line-height: 42px;
  	}
 }
@@ -86,10 +86,6 @@ h4 {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: .25px;
-
-	@media (max-width: $medium-break) {
-	font-size: 15px;	
-	}
 }
 
 h5 {
@@ -97,10 +93,6 @@ h5 {
 	font-size: 16px;
 	letter-spacing: .25px;
 	font-weight: 300;
-
-	@media (max-width: $medium-break) {
-	font-size: 14px;	
-	}
 }
 
 p {

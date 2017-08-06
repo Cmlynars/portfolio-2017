@@ -19,7 +19,7 @@ layout: default
             {% for projects in sorted_projects %}
             {% if projects.layout == 'project' %}
           
-            <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}">                    
+            <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}" data-aos="fade-up">                    
                  <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}");"></div>
                     <div class="card-content">
                     <div class="card-details">
