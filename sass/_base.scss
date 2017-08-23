@@ -117,3 +117,11 @@ a {
 		color: inherit;
 	}
 }
+
+ .inline-link {
+ 	color: $accent;
+
+ 	&:hover {
+ 			color: $link-hover;
+ 		}	
+ }

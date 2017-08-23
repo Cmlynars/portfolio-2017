@@ -227,6 +227,15 @@ a:visted {
   color: inherit;
 }
 
+/* line 121, ../sass/_base.scss */
+.inline-link {
+  color: #44C5A2;
+}
+/* line 124, ../sass/_base.scss */
+.inline-link:hover {
+  color: #6bd1b5;
+}
+
 /* ---------------------------------------------------------------------
  Navigation Bar
  ------------------------------------------------------------------------ */
@@ -468,11 +477,11 @@ footer {
 
 /* line 43, ../sass/_background.scss */
 .smart_air-background {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzglIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzOCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
-  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
-  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
-  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 38%, #f2f2f2 38%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 38%, #f2f2f2 38%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 38%, #f2f2f2 38%, #f2f2f2 100%);
 }
 
 @media (max-width: 1024px) {
@@ -610,31 +619,35 @@ footer {
   align-items: baseline;
 }
 
- /* ---------------------------------------------------------------------
- Project Cards (Medium Breakpoint)
- ------------------------------------------------------------------------ 
-
- @media (min-width: $medium-break) {
-
- 	.project-card {
- 		@include span(6);
- 		height: 408px;
-
- 		&:nth-child(1) {
- 			@include span(12);
- 		}
-
- 		.card-image {
- 			height: 265px;
- 		}
-
- 		.card-content {
- 			padding-bottom: 0px;
- 		}
- 	}
- }
-
- /*One-off heigh adjustment for cards with long descriptions*/
+/* ---------------------------------------------------------------------
+Project Cards (Medium Breakpoint)
+------------------------------------------------------------------------ */
+@media (min-width: 768px) {
+  /* line 103, ../sass/_index.scss */
+  .project-card {
+    width: 47.61905%;
+    float: left;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
+    height: 408px;
+  }
+  /* line 107, ../sass/_index.scss */
+  .project-card:nth-child(1) {
+    width: 97.61905%;
+    float: left;
+    margin-left: 1.19048%;
+    margin-right: 1.19048%;
+  }
+  /* line 111, ../sass/_index.scss */
+  .project-card .card-image {
+    height: 265px;
+  }
+  /* line 115, ../sass/_index.scss */
+  .project-card .card-content {
+    padding-bottom: 0px;
+  }
+}
+/*One-off heigh adjustment for cards with long descriptions*/
 @media (min-width: 768px) and (max-width: 1024px) {
   /* line 123, ../sass/_index.scss */
   .project-card:nth-child(4), .project-card:nth-child(5) {
@@ -966,21 +979,11 @@ Project Description
   }
 }
 
-/* line 54, ../sass/_about.scss */
-.about-link {
-  color: #44C5A2;
-  font-weight: 600;
-}
-/* line 58, ../sass/_about.scss */
-.about-link:hover {
-  color: #6bd1b5;
-}
-
 /* ---------------------------------------------------------------------
  About Blurb (Small, Medium Breakpoint)
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
-  /* line 68, ../sass/_about.scss */
+  /* line 60, ../sass/_about.scss */
   .about-blurb {
     width: 97.61905%;
     float: left;
