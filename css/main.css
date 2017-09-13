@@ -229,6 +229,24 @@ a:visted {
   color: #6bd1b5;
 }
 
+/* line 124, ../sass/_base.scss */
+.arrow {
+  stroke: #44C5A2;
+  fill: #44C5A2;
+  -moz-transition-property: color, fill, -moz-transform;
+  -o-transition-property: color, fill, -o-transform;
+  -webkit-transition-property: color, fill, -webkit-transform;
+  transition-property: color, fill, transform;
+  -moz-transition-duration: 0.09s;
+  -o-transition-duration: 0.09s;
+  -webkit-transition-duration: 0.09s;
+  transition-duration: 0.09s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
 /* ---------------------------------------------------------------------
  Navigation Bar
  ------------------------------------------------------------------------ */
@@ -538,7 +556,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 230px;
+  height: 250px;
 }
 
 /* line 71, ../sass/_index.scss */
@@ -645,20 +663,14 @@ Project Cards (Medium Breakpoint)
 @media (max-width: 1024px) {
   /* line 5, ../sass/_project.scss */
   .project_content-container {
-    padding: 32px 0 36px 0;
-  }
-}
-@media (max-width: 768px) {
-  /* line 5, ../sass/_project.scss */
-  .project_content-container {
-    padding: 24px 0 32px 0;
+    padding: 40px 0 48px 0;
   }
 }
 
 /* ---------------------------------------------------------------------
  Breadcrumb
  ------------------------------------------------------------------------ */
-/* line 22, ../sass/_project.scss */
+/* line 18, ../sass/_project.scss */
 .breadcrumb-container {
   width: 96.875%;
   float: left;
@@ -667,15 +679,15 @@ Project Cards (Medium Breakpoint)
   display: flex;
   margin-bottom: 24px;
 }
-/* line 27, ../sass/_project.scss */
+/* line 23, ../sass/_project.scss */
 .breadcrumb-container a {
   color: #44C5A2;
 }
-/* line 30, ../sass/_project.scss */
+/* line 26, ../sass/_project.scss */
 .breadcrumb-container a:hover {
   color: #6bd1b5;
 }
-/* line 35, ../sass/_project.scss */
+/* line 31, ../sass/_project.scss */
 .breadcrumb-container .current-project {
   margin-left: 4px;
   color: #A8A8A8;
@@ -683,7 +695,7 @@ Project Cards (Medium Breakpoint)
 
 /*Hide at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 44, ../sass/_project.scss */
+  /* line 40, ../sass/_project.scss */
   .breadcrumb-container {
     display: none;
   }
@@ -691,7 +703,7 @@ Project Cards (Medium Breakpoint)
 /* ---------------------------------------------------------------------
  Images (Mobile-first)
  ------------------------------------------------------------------------ */
-/* line 53, ../sass/_project.scss */
+/* line 49, ../sass/_project.scss */
 .project_image-container {
   /*Mobile-first Width*/
   width: 96.875%;
@@ -699,19 +711,19 @@ Project Cards (Medium Breakpoint)
   margin-left: 1.5625%;
   margin-right: 1.5625%;
 }
-/* line 57, ../sass/_project.scss */
+/* line 53, ../sass/_project.scss */
 .project_image-container img {
   margin-bottom: 2.5rem;
   width: 100%;
 }
-/* line 61, ../sass/_project.scss */
+/* line 57, ../sass/_project.scss */
 .project_image-container img:last-child {
   margin-bottom: 0;
 }
 
 /*Shrink at Large Breakpoint*/
 @media (min-width: 1024px) {
-  /* line 70, ../sass/_project.scss */
+  /* line 66, ../sass/_project.scss */
   .project_image-container {
     width: 59.375%;
     float: left;
@@ -719,7 +731,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.5625%;
     /*AOS Animation Fade Override*/
   }
-  /* line 74, ../sass/_project.scss */
+  /* line 70, ../sass/_project.scss */
   .project_image-container img[data-aos="fade"] {
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -730,42 +742,43 @@ Project Cards (Medium Breakpoint)
 /* ---------------------------------------------------------------------
 Project Description
 ------------------------------------------------------------------------ */
-/* line 88, ../sass/_project.scss */
+/* line 84, ../sass/_project.scss */
 .description-container {
   width: 30.20833%;
   float: right;
   margin-left: 1.5625%;
   margin-right: 1.5625%;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
-/* line 93, ../sass/_project.scss */
+/* line 89, ../sass/_project.scss */
 .project-title {
   margin-bottom: 2rem;
 }
 
-/* line 97, ../sass/_project.scss */
+/* line 93, ../sass/_project.scss */
 .project-description {
   display: flex;
   margin-bottom: 13px;
 }
-/* line 101, ../sass/_project.scss */
+/* line 97, ../sass/_project.scss */
 .project-description h4 {
   margin-right: 4px;
 }
 
 /*Adjust at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 110, ../sass/_project.scss */
+  /* line 106, ../sass/_project.scss */
   .description-container {
     width: 80.20833%;
     float: left;
     margin-left: 1.5625%;
     margin-right: 1.5625%;
+    margin-bottom: 48px;
   }
 }
 @media (max-width: 768px) {
-  /* line 116, ../sass/_project.scss */
+  /* line 113, ../sass/_project.scss */
   .description-container {
     width: 96.875%;
     float: left;
@@ -776,7 +789,7 @@ Project Description
 /* ---------------------------------------------------------------------
  Links Container
  ------------------------------------------------------------------------ */
-/* line 125, ../sass/_project.scss */
+/* line 122, ../sass/_project.scss */
 .links-container {
   width: 30.20833%;
   float: right;
@@ -789,7 +802,7 @@ Project Description
 
 /*Widen at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 134, ../sass/_project.scss */
+  /* line 131, ../sass/_project.scss */
   .links-container {
     width: 96.875%;
     float: left;
@@ -799,26 +812,31 @@ Project Description
     justify-content: center;
   }
 }
-/* line 141, ../sass/_project.scss */
+/* line 138, ../sass/_project.scss */
 .single-link-container {
   display: flex;
 }
-/* line 145, ../sass/_project.scss */
+/* line 142, ../sass/_project.scss */
 .single-link-container:hover .project-link {
   color: #6bd1b5;
 }
-/* line 149, ../sass/_project.scss */
+/* line 146, ../sass/_project.scss */
 .single-link-container:hover .arrow {
   stroke: #6bd1b5;
+  fill: #6bd1b5;
 }
 @media (max-width: 1024px) {
-  /* line 141, ../sass/_project.scss */
+  /* line 138, ../sass/_project.scss */
   .single-link-container {
     margin: 0 40px;
   }
 }
+/* line 156, ../sass/_project.scss */
+.single-link-container svg {
+  margin-top: 4px;
+}
 
-/* line 159, ../sass/_project.scss */
+/* line 161, ../sass/_project.scss */
 .project-link {
   font-size: 16px;
   color: #44C5A2;
@@ -835,30 +853,13 @@ Project Description
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 167, ../sass/_project.scss */
+/* line 169, ../sass/_project.scss */
 .project-link:nth-child(1) {
-  margin-right: 6px;
+  margin-right: 8px;
 }
-/* line 171, ../sass/_project.scss */
+/* line 173, ../sass/_project.scss */
 .project-link:nth-child(2) {
-  margin-left: 6px;
-}
-
-/* line 176, ../sass/_project.scss */
-.arrow {
-  stroke: #44C5A2;
-  -moz-transition-property: color, fill;
-  -o-transition-property: color, fill;
-  -webkit-transition-property: color, fill;
-  transition-property: color, fill;
-  -moz-transition-duration: 0.09s;
-  -o-transition-duration: 0.09s;
-  -webkit-transition-duration: 0.09s;
-  transition-duration: 0.09s;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
+  margin-left: 8px;
 }
 
 /* ---------------------------------------------------------------------

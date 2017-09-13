@@ -7,11 +7,7 @@
  	padding: 64px 0 150px 0;
 
  	@media (max-width: $large-break) {
- 		padding: 32px 0 36px 0;
- 	}
-
- 	@media (max-width: $medium-break) {
- 		padding: 24px 0 32px 0;
+ 		padding: 40px 0 48px 0;
  	}
  }
 
@@ -87,7 +83,7 @@
 
  .description-container {
  	@include span(4 last);
- 	margin-bottom: 48px;
+ 	margin-bottom: 24px;
  } 	
 
 .project-title {
@@ -109,6 +105,7 @@
 
  	.description-container {
  		@include span(10);
+ 		margin-bottom: 48px;
  	}
  }
 
@@ -148,11 +145,16 @@
 
  		.arrow {
  			stroke: $link-hover;
+ 			fill: $link-hover;
  		}
  	}
 
  	@media (max-width: $large-break) {
 	margin: 0 40px;
+ 	}
+
+ 	svg {
+ 		margin-top: 4px;
  	}
  }
 
@@ -165,20 +167,13 @@
  	@include transition-timing-function(ease-in);
 
  	&:nth-child(1) { 
- 		margin-right: 6px;
+ 		margin-right: 8px;
  	}
 
  	&:nth-child(2) { 
- 		margin-left: 6px;
+ 		margin-left: 8px;
  	}
  }
 
- .arrow {
- 	stroke: $accent;
-
- 	@include transition-property(color, fill);
- 	@include transition-duration(.09s);
- 	@include transition-timing-function(ease-in);
- }
 
 
