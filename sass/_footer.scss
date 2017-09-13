@@ -50,16 +50,9 @@
  	width: 25px;
  }
 
-/* ---------------------------------------------------------------------
- Footer (Medium Breakpoint)
- ------------------------------------------------------------------------ */
-
- @media (max-width: $large-break) {
- 	.footer-border {
- 		border-top: 1px solid #E4E4E4;
- 	}
+ .footer-border {
+ 	border-top: 1px solid #E4E4E4;
  }
-
 
 /* ---------------------------------------------------------------------
  Footer (Small Breakpoint)
