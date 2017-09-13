@@ -431,6 +431,15 @@ footer {
   }
 }
 /* line 23, ../sass/_background.scss */
+.about-background {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI1NiUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 56%, #f2f2f2 56%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 56%, #f2f2f2 56%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 56%, #f2f2f2 56%, #f2f2f2 100%);
+}
+
+/* line 27, ../sass/_background.scss */
 .avant-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNDUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI0NSUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -439,16 +448,16 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 45%, #f2f2f2 45%, #f2f2f2 100%);
 }
 
-/* line 27, ../sass/_background.scss */
+/* line 31, ../sass/_background.scss */
 .jiang_china_design-background {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzNCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTIuNSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEyLjUlIiBzdG9wLWNvbG9yPSIjZjJmMmYyIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjJmMmYyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
-  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 34%, #f2f2f2 34%, #f2f2f2 100%);
-  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 34%, #f2f2f2 34%, #f2f2f2 100%);
-  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 34%, #f2f2f2 34%, #f2f2f2 100%);
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 12.5%, #f2f2f2 12.5%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 12.5%, #f2f2f2 12.5%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 12.5%, #f2f2f2 12.5%, #f2f2f2 100%);
 }
 
-/* line 31, ../sass/_background.scss */
+/* line 35, ../sass/_background.scss */
 .listening_devices-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -457,7 +466,7 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
 }
 
-/* line 35, ../sass/_background.scss */
+/* line 39, ../sass/_background.scss */
 .morningstar-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNjElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI2MSUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -466,16 +475,16 @@ footer {
   background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 61%, #f2f2f2 61%, #f2f2f2 100%);
 }
 
-/* line 39, ../sass/_background.scss */
+/* line 43, ../sass/_background.scss */
 .planet_finance_china-background {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNDYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI0NiUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTclIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxNyUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
-  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 46%, #f2f2f2 46%, #f2f2f2 100%);
-  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 46%, #f2f2f2 46%, #f2f2f2 100%);
-  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 46%, #f2f2f2 46%, #f2f2f2 100%);
+  background-image: -moz-linear-gradient(285deg, #ffffff 0%, #ffffff 17%, #f2f2f2 17%, #f2f2f2 100%);
+  background-image: -webkit-linear-gradient(285deg, #ffffff 0%, #ffffff 17%, #f2f2f2 17%, #f2f2f2 100%);
+  background-image: linear-gradient(165deg, #ffffff 0%, #ffffff 17%, #f2f2f2 17%, #f2f2f2 100%);
 }
 
-/* line 43, ../sass/_background.scss */
+/* line 47, ../sass/_background.scss */
 .smart_air-background {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iLTAuMDkxNTA2IiB4Mj0iMC42NTg0OTQiIHkyPSIxLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzglIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzOCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -485,8 +494,8 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  /* line 48, ../sass/_background.scss */
-  .avant-background, .jiang_china_design-background, .listening_devices-background, .morningstar-background, .planet_finance_china-background, .smart_air-background {
+  /* line 52, ../sass/_background.scss */
+  .about-background, .avant-background, .jiang_china_design-background, .listening_devices-background, .morningstar-background, .planet_finance_china-background, .smart_air-background {
     display: none;
   }
 }
@@ -773,12 +782,32 @@ Project Cards (Medium Breakpoint)
     float: left;
     margin-left: 1.19048%;
     margin-right: 1.19048%;
+    /*AOS Animation Fade Override*/
+  }
+  /* line 73, ../sass/_project.scss */
+  .project_image-container img {
+    -moz-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+  }
+  /* line 76, ../sass/_project.scss */
+  .project_image-container img:hover {
+    -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+  /* line 82, ../sass/_project.scss */
+  .project_image-container img[data-aos="fade"] {
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
   }
 }
 /* ---------------------------------------------------------------------
 Project Description
 ------------------------------------------------------------------------ */
-/* line 80, ../sass/_project.scss */
+/* line 96, ../sass/_project.scss */
 .description-container {
   width: 30.95238%;
   float: right;
@@ -787,24 +816,24 @@ Project Description
   margin-bottom: 2rem;
 }
 
-/* line 85, ../sass/_project.scss */
+/* line 101, ../sass/_project.scss */
 .project-title {
   margin-bottom: 2rem;
 }
 
-/* line 89, ../sass/_project.scss */
+/* line 105, ../sass/_project.scss */
 .project-description {
   display: flex;
   margin-bottom: 13px;
 }
-/* line 93, ../sass/_project.scss */
+/* line 109, ../sass/_project.scss */
 .project-description h4 {
   margin-right: 4px;
 }
 
 /*Adjust at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 102, ../sass/_project.scss */
+  /* line 118, ../sass/_project.scss */
   .description-container {
     width: 80.95238%;
     float: left;
@@ -813,7 +842,7 @@ Project Description
   }
 }
 @media (max-width: 768px) {
-  /* line 108, ../sass/_project.scss */
+  /* line 124, ../sass/_project.scss */
   .description-container {
     width: 97.61905%;
     float: left;
@@ -824,7 +853,7 @@ Project Description
 /* ---------------------------------------------------------------------
  Links Container
  ------------------------------------------------------------------------ */
-/* line 117, ../sass/_project.scss */
+/* line 133, ../sass/_project.scss */
 .links-container {
   width: 30.95238%;
   float: right;
@@ -837,7 +866,7 @@ Project Description
 
 /*Widen at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 126, ../sass/_project.scss */
+  /* line 142, ../sass/_project.scss */
   .links-container {
     width: 97.61905%;
     float: left;
@@ -847,26 +876,26 @@ Project Description
     justify-content: center;
   }
 }
-/* line 133, ../sass/_project.scss */
+/* line 149, ../sass/_project.scss */
 .single-link-container {
   display: flex;
 }
-/* line 137, ../sass/_project.scss */
+/* line 153, ../sass/_project.scss */
 .single-link-container:hover .project-link {
   color: #6bd1b5;
 }
-/* line 141, ../sass/_project.scss */
+/* line 157, ../sass/_project.scss */
 .single-link-container:hover .arrow {
   stroke: #6bd1b5;
 }
 @media (max-width: 1024px) {
-  /* line 133, ../sass/_project.scss */
+  /* line 149, ../sass/_project.scss */
   .single-link-container {
     margin: 0 40px;
   }
 }
 
-/* line 151, ../sass/_project.scss */
+/* line 167, ../sass/_project.scss */
 .project-link {
   font-size: 16px;
   color: #44C5A2;
@@ -883,16 +912,16 @@ Project Description
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 159, ../sass/_project.scss */
+/* line 175, ../sass/_project.scss */
 .project-link:nth-child(1) {
   margin-right: 6px;
 }
-/* line 163, ../sass/_project.scss */
+/* line 179, ../sass/_project.scss */
 .project-link:nth-child(2) {
   margin-left: 6px;
 }
 
-/* line 168, ../sass/_project.scss */
+/* line 184, ../sass/_project.scss */
 .arrow {
   stroke: #44C5A2;
   -moz-transition-property: color, fill;
@@ -917,7 +946,7 @@ Project Description
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 32px 0 75px 0;
+  padding: 32px 0 120px 0;
 }
 /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .about_page-container:after {
@@ -937,7 +966,7 @@ Project Description
  ------------------------------------------------------------------------ */
 /* line 18, ../sass/_about.scss */
 .about_image-container {
-  width: 47.61905%;
+  width: 43.45238%;
   float: right;
   margin-left: 1.19048%;
   margin-right: 1.19048%;
@@ -963,7 +992,7 @@ Project Description
  ------------------------------------------------------------------------ */
 /* line 39, ../sass/_about.scss */
 .about-blurb {
-  width: 39.28571%;
+  width: 43.45238%;
   float: left;
   margin-left: 1.19048%;
   margin-right: 1.19048%;

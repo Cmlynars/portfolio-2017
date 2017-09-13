@@ -4,7 +4,7 @@
 
  .about_page-container {
  	@include container($max-width);
- 	padding: 32px 0 75px 0;
+ 	padding: 32px 0 120px 0;
 
  	@media (max-width: $medium-break) {
  		padding: 24px 0 32px 0;
@@ -16,7 +16,7 @@
  ------------------------------------------------------------------------ */
 
  .about_image-container {
- 	@include span(6 last);
+ 	@include span(5.5 last);
  	margin-bottom: 40px;
 
  	img {
@@ -37,7 +37,7 @@
  ------------------------------------------------------------------------ */
 
  .about-blurb {
- 	@include span(5);
+ 	@include span(5.5);
 
  	h3 {
  		margin-bottom: 40px;
