@@ -57,7 +57,7 @@
  }	
 
 /*AOS Animation Fade-up Override*/
-.project-card[data-aos="fade-up"] {
+.project-card[data-aos="fade"] {
 	@include transition-property(all);
 }
 

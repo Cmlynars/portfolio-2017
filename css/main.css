@@ -613,7 +613,7 @@ footer {
 
 /*AOS Animation Fade-up Override*/
 /* line 60, ../sass/_index.scss */
-.project-card[data-aos="fade-up"] {
+.project-card[data-aos="fade"] {
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
