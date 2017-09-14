@@ -95,7 +95,7 @@ $background-color: rgba(237, 241, 245, 1);*/
 
 /* ---------------------------------------------------------------------
  Base Styles
- ----------------------------------------------------f-------------------- */
+ ------------------------------------------------------------------------ */
 /* line 23, ../sass/_base.scss */
 * {
   /*border: 1px solid red !important;*/
@@ -220,16 +220,74 @@ a:visted {
   color: inherit;
 }
 
-/* line 116, ../sass/_base.scss */
-.inline-link {
-  color: #44C5A2;
+/* ---------------------------------------------------------------------
+ Global Link Styles
+ ------------------------------------------------------------------------ */
+/* line 120, ../sass/_base.scss */
+.single-link-container {
+  display: flex;
 }
-/* line 119, ../sass/_base.scss */
-.inline-link:hover {
+/* line 124, ../sass/_base.scss */
+.single-link-container:hover .project-link {
   color: #6bd1b5;
 }
+/* line 128, ../sass/_base.scss */
+.single-link-container:hover .arrow {
+  stroke: #6bd1b5;
+  fill: #6bd1b5;
+}
+/* line 133, ../sass/_base.scss */
+.single-link-container:hover .right-arrow {
+  transform: translateX(4px);
+}
+/* line 137, ../sass/_base.scss */
+.single-link-container:hover .left-arrow {
+  transform: translateX(-4px);
+}
+/* line 142, ../sass/_base.scss */
+.single-link-container svg {
+  margin-top: 5px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 120ms;
+  -o-transition-duration: 120ms;
+  -webkit-transition-duration: 120ms;
+  transition-duration: 120ms;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
 
-/* line 124, ../sass/_base.scss */
+/* line 150, ../sass/_base.scss */
+.project-link {
+  font-size: 16px;
+  color: #44C5A2;
+  -moz-transition-property: color, fill;
+  -o-transition-property: color, fill;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -moz-transition-duration: 0.09s;
+  -o-transition-duration: 0.09s;
+  -webkit-transition-duration: 0.09s;
+  transition-duration: 0.09s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 158, ../sass/_base.scss */
+.project-link:nth-child(1) {
+  margin-right: 8px;
+}
+/* line 162, ../sass/_base.scss */
+.project-link:nth-child(2) {
+  margin-left: 8px;
+}
+
+/* line 167, ../sass/_base.scss */
 .arrow {
   stroke: #44C5A2;
   fill: #44C5A2;
@@ -245,6 +303,17 @@ a:visted {
   -o-transition-timing-function: ease-in;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
+}
+
+/*Links within blocks of text*/
+/* line 178, ../sass/_base.scss */
+.inline-link {
+  color: #44C5A2;
+  display: inline-block;
+}
+/* line 182, ../sass/_base.scss */
+.inline-link:hover {
+  color: #6bd1b5;
 }
 
 /* ---------------------------------------------------------------------
@@ -345,7 +414,7 @@ footer {
   float: left;
   margin-left: 1.5625%;
   margin-right: 1.5625%;
-  padding: 3rem 0 8rem 0;
+  padding: 2.5rem 0 8rem 0;
 }
 
 /* line 17, ../sass/_footer.scss */
@@ -568,23 +637,34 @@ footer {
   margin-bottom: 2px;
 }
 /* line 78, ../sass/_index.scss */
-.card-content .inline-link {
-  margin-top: 10px;
+.card-content .single-link-container {
+  margin-top: 8px;
 }
 
 /* line 83, ../sass/_index.scss */
 .card-details {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 12px;
   align-items: baseline;
+}
+/* line 88, ../sass/_index.scss */
+.card-details h4 {
+  margin-right: 4px;
+}
+
+/*This limits the hover area of the link*/
+/* line 94, ../sass/_index.scss */
+.index-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ---------------------------------------------------------------------
 Project Cards (Medium Breakpoint)
 ------------------------------------------------------------------------ */
 @media (min-width: 768px) {
-  /* line 96, ../sass/_index.scss */
+  /* line 106, ../sass/_index.scss */
   .project-card {
     width: 46.875%;
     float: left;
@@ -593,25 +673,25 @@ Project Cards (Medium Breakpoint)
     height: 408px;
     margin-bottom: 48px;
   }
-  /* line 101, ../sass/_index.scss */
+  /* line 111, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 96.875%;
     float: left;
     margin-left: 1.5625%;
     margin-right: 1.5625%;
   }
-  /* line 105, ../sass/_index.scss */
+  /* line 115, ../sass/_index.scss */
   .project-card .card-image {
     height: 265px;
   }
-  /* line 109, ../sass/_index.scss */
+  /* line 119, ../sass/_index.scss */
   .project-card .card-content {
     padding-bottom: 0px;
   }
 }
 /*One-off heigh adjustment for cards with long descriptions*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 117, ../sass/_index.scss */
+  /* line 127, ../sass/_index.scss */
   .project-card:nth-child(4), .project-card:nth-child(5) {
     height: 426px;
   }
@@ -620,7 +700,7 @@ Project Cards (Medium Breakpoint)
  Project Cards (Large Breakpoint)
  ------------------------------------------------------------------------ */
 @media (min-width: 1024px) {
-  /* line 128, ../sass/_index.scss */
+  /* line 138, ../sass/_index.scss */
   .project-card {
     width: 34.375%;
     float: left;
@@ -628,7 +708,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.5625%;
     margin-bottom: 56px;
   }
-  /* line 132, ../sass/_index.scss */
+  /* line 142, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 59.375%;
     float: left;
@@ -636,7 +716,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.5625%;
   }
 
-  /* line 137, ../sass/_index.scss */
+  /* line 147, ../sass/_index.scss */
   .primary-card {
     width: 59.375%;
     float: left;
@@ -790,7 +870,7 @@ Project Description
  Links Container
  ------------------------------------------------------------------------ */
 /* line 122, ../sass/_project.scss */
-.links-container {
+.project-links-container {
   width: 30.20833%;
   float: right;
   margin-left: 1.5625%;
@@ -799,11 +879,17 @@ Project Description
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  /* line 128, ../sass/_project.scss */
+  .project-links-container .single-link-container {
+    margin: 0 40px;
+  }
+}
 
 /*Widen at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 131, ../sass/_project.scss */
-  .links-container {
+  /* line 137, ../sass/_project.scss */
+  .project-links-container {
     width: 96.875%;
     float: left;
     margin-left: 1.5625%;
@@ -812,56 +898,6 @@ Project Description
     justify-content: center;
   }
 }
-/* line 138, ../sass/_project.scss */
-.single-link-container {
-  display: flex;
-}
-/* line 142, ../sass/_project.scss */
-.single-link-container:hover .project-link {
-  color: #6bd1b5;
-}
-/* line 146, ../sass/_project.scss */
-.single-link-container:hover .arrow {
-  stroke: #6bd1b5;
-  fill: #6bd1b5;
-}
-@media (max-width: 1024px) {
-  /* line 138, ../sass/_project.scss */
-  .single-link-container {
-    margin: 0 40px;
-  }
-}
-/* line 156, ../sass/_project.scss */
-.single-link-container svg {
-  margin-top: 4px;
-}
-
-/* line 161, ../sass/_project.scss */
-.project-link {
-  font-size: 16px;
-  color: #44C5A2;
-  -moz-transition-property: color, fill;
-  -o-transition-property: color, fill;
-  -webkit-transition-property: color, fill;
-  transition-property: color, fill;
-  -moz-transition-duration: 0.09s;
-  -o-transition-duration: 0.09s;
-  -webkit-transition-duration: 0.09s;
-  transition-duration: 0.09s;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-}
-/* line 169, ../sass/_project.scss */
-.project-link:nth-child(1) {
-  margin-right: 8px;
-}
-/* line 173, ../sass/_project.scss */
-.project-link:nth-child(2) {
-  margin-left: 8px;
-}
-
 /* ---------------------------------------------------------------------
  Page Container
  ------------------------------------------------------------------------ */

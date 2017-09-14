@@ -3,42 +3,47 @@ title: home
 layout: default
 ---
 
-    <div class="buffer project-content">
+<div class="buffer project-content">
 
-        <div class="project-header">
+    <div class="project-header">
 
-            <h1 class="site-title">Designer and Product Strategist in Chicago by way of China.</h1>
+        <h1 class="site-title">Designer and Product Strategist in Chicago by way of China.</h1>
 
-            <h2 class="site-byline">Primarily working on digital products and doing some other weird stuff, too.</h2>
+        <h2 class="site-byline">Primarily working on digital products and doing some other weird stuff, too.</h2>
 
-        </div>
-
-        <div class="project-grid">
-            
-            {% assign sorted_projects = site.pages | sort:"order" %}
-            {% for projects in sorted_projects %}
-            {% if projects.layout == 'project' %}
-          
-            <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}" data-aos="fade-up">                    
-                 <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}");"></div>
-                    <div class="card-content">
-                    <div class="card-details">
-                        <h4>{{ projects.role }}</h4> 
-                        <h5>
-                        {% if projects.date %}{{ projects.date }}{% endif %}
-                        </h5>
-                    </div>
-                        <h3>{{ projects.pretty_title }}</h3>
-                        <p>{{ projects.description }}</p>
-                        <p class="inline-link">View project</p> 
-                    </div>
-            </a>
-
-            {% endif %}
-            {% endfor %}
-
-        </div>
     </div>
+
+    <div class="project-grid">
+
+        {% assign sorted_projects = site.pages | sort:"order" %}
+        {% for projects in sorted_projects %}
+        {% if projects.layout == 'project' %}
+
+        <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}" data-aos="fade">                    
+           <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}");"></div>
+           <div class="card-content">
+            <div class="card-details">
+                <h4>{{ projects.role }}</h4> 
+                <h5>
+                    {% if projects.date %}• {{ projects.date }}{% endif %}
+                </h5>
+            </div>
+            <h3>{{ projects.pretty_title }}</h3>
+            <p>{{ projects.description }}</p>
+            <div class="index-link-container">
+                <div class="single-link-container">                            
+                    <p class="project-link">View project</p>
+                    {% include right_arrow.html %}
+                </div>
+            </div>
+        </div>
+    </a>
+
+    {% endif %}
+    {% endfor %}
+
+</div>
+</div>
 
 
 

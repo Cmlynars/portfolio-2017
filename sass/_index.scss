@@ -75,17 +75,27 @@
  		margin-bottom: 2px;
  	}
 
- 	.inline-link {
- 		margin-top: 10px;
+ 	.single-link-container {
+ 		margin-top: 8px;
  	}
  }
 
  .card-details {
  	display: flex;
- 	justify-content: space-between;
  	margin-bottom: 12px;
  	align-items: baseline;
+
+ 	h4 {
+ 		margin-right: 4px;
+ 	}
  }
+
+/*This limits the hover area of the link*/
+ .index-link-container {
+	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+}
 
  /* ---------------------------------------------------------------------
  Project Cards (Medium Breakpoint)
