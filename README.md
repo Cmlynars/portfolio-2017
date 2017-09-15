@@ -5,9 +5,9 @@ Chris Mlynarski's portfolio of work
 
 
 project setup
-=============
+-------------
 
-required:
+Required:
 - jekyll
 	gem install jekyll
 	https://jekyllrb.com/docs/installation/
@@ -16,7 +16,7 @@ required:
 	install node
 	https://nodejs.org/download
 
-to run site locally:
+To run site locally:
 - "npm install" to install aos animation library
 - run "jekyll serve" from directory containing the cloned repository
 - site will be created at "localhost:4000/portfolio/" by default
