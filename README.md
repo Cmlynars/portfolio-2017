@@ -9,11 +9,15 @@ project setup
 
 Required:
 - jekyll
+
 	gem install jekyll
+
 	https://jekyllrb.com/docs/installation/
 
 - node (for animation library)
+
 	install node
+	
 	https://nodejs.org/download
 
 To run site locally:
