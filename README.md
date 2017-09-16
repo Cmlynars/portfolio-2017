@@ -8,19 +8,15 @@ project setup
 -------------
 
 Required:
+
 - jekyll
-
-	gem install jekyll
-
-	https://jekyllrb.com/docs/installation/
-
+- susy
+- compass/sass
 - node (for animation library)
 
-	install node
-	
-	https://nodejs.org/download
-
 To run site locally:
+
+- Use bundler to install required gems or install gems individually
 - "npm install" to install aos animation library
 - run "jekyll serve" from directory containing the cloned repository
 - site will be created at "localhost:4000/portfolio/" by default

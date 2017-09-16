@@ -4,7 +4,7 @@
 
  $susy: (
  	columns: 12,
- 	gutters: .6,
+ 	gutters: .5,
  	gutter-position: split,
  	/*debug: (image: show)*/
  	);
@@ -89,7 +89,7 @@
  }
 
  h5 {
- 	color: $tertiary;
+ 	color: $secondary;
  	font-size: 16px;
  	letter-spacing: .25px;
  	font-weight: 300;

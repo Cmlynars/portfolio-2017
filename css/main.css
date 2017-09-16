@@ -185,7 +185,7 @@ h4 {
 
 /* line 91, ../sass/_base.scss */
 h5 {
-  color: #A8A8A8;
+  color: #898989;
   font-size: 16px;
   letter-spacing: .25px;
   font-weight: 300;
@@ -321,7 +321,7 @@ a:visted {
  ------------------------------------------------------------------------ */
 /* line 4, ../sass/_nav.scss */
 nav {
-  max-width: 1200px;
+  max-width: 1130px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -334,10 +334,10 @@ nav:after {
 
 /* line 8, ../sass/_nav.scss */
 .nav-container {
-  width: 96.875%;
+  width: 97.22222%;
   float: left;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -397,7 +397,7 @@ footer {
 
 /* line 8, ../sass/_footer.scss */
 .footer-container {
-  max-width: 1200px;
+  max-width: 1130px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -410,10 +410,10 @@ footer {
 
 /* line 12, ../sass/_footer.scss */
 .footer-content {
-  width: 96.875%;
+  width: 97.22222%;
   float: left;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
   padding: 2.5rem 0 8rem 0;
 }
 
@@ -481,7 +481,7 @@ footer {
  ------------------------------------------------------------------------ */
 /* line 5, ../sass/_index.scss */
 .project-content {
-  max-width: 1200px;
+  max-width: 1130px;
   margin-left: auto;
   margin-right: auto;
   padding: 88px 0 60px 0;
@@ -505,19 +505,19 @@ footer {
 
 /* line 19, ../sass/_index.scss */
 .site-title {
-  width: 63.54167%;
+  width: 63.88889%;
   float: left;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
   margin-bottom: 16px;
 }
 
 /* line 24, ../sass/_index.scss */
 .site-byline {
-  width: 63.54167%;
+  width: 63.88889%;
   float: left;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
 }
 
 /* ---------------------------------------------------------------------
@@ -537,10 +537,10 @@ footer {
   /* line 42, ../sass/_index.scss */
   .site-title,
   .site-byline {
-    width: 96.875%;
+    width: 97.22222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
   }
 }
 /* ---------------------------------------------------------------------
@@ -549,10 +549,10 @@ footer {
 /* line 52, ../sass/_index.scss */
 .project-card {
   /*Mobile-first Width*/
-  width: 96.875%;
+  width: 97.22222%;
   float: left;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
   margin-bottom: 24px;
   cursor: pointer;
 }
@@ -612,19 +612,19 @@ Project Cards (Medium Breakpoint)
 @media (min-width: 768px) {
   /* line 106, ../sass/_index.scss */
   .project-card {
-    width: 46.875%;
+    width: 47.22222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
     height: 408px;
     margin-bottom: 48px;
   }
   /* line 111, ../sass/_index.scss */
   .project-card:nth-child(1) {
-    width: 96.875%;
+    width: 97.22222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
   }
   /* line 115, ../sass/_index.scss */
   .project-card .card-image {
@@ -648,26 +648,26 @@ Project Cards (Medium Breakpoint)
 @media (min-width: 1024px) {
   /* line 138, ../sass/_index.scss */
   .project-card {
-    width: 34.375%;
+    width: 34.72222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
     margin-bottom: 56px;
   }
   /* line 142, ../sass/_index.scss */
   .project-card:nth-child(1) {
-    width: 59.375%;
+    width: 59.72222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
   }
 
   /* line 147, ../sass/_index.scss */
   .primary-card {
-    width: 59.375%;
+    width: 59.72222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
   }
 }
 /* ---------------------------------------------------------------------
@@ -675,7 +675,7 @@ Project Cards (Medium Breakpoint)
  ------------------------------------------------------------------------ */
 /* line 5, ../sass/_project.scss */
 .project_content-container {
-  max-width: 1200px;
+  max-width: 1130px;
   margin-left: auto;
   margin-right: auto;
   padding: 64px 0 150px 0;
@@ -698,10 +698,10 @@ Project Cards (Medium Breakpoint)
  ------------------------------------------------------------------------ */
 /* line 18, ../sass/_project.scss */
 .breadcrumb-container {
-  width: 96.875%;
+  width: 97.22222%;
   float: left;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
   display: flex;
   margin-bottom: 24px;
 }
@@ -732,10 +732,10 @@ Project Cards (Medium Breakpoint)
 /* line 49, ../sass/_project.scss */
 .project_image-container {
   /*Mobile-first Width*/
-  width: 96.875%;
+  width: 97.22222%;
   float: left;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
 }
 /* line 53, ../sass/_project.scss */
 .project_image-container img {
@@ -751,10 +751,10 @@ Project Cards (Medium Breakpoint)
 @media (min-width: 1024px) {
   /* line 66, ../sass/_project.scss */
   .project_image-container {
-    width: 59.375%;
+    width: 59.72222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
     /*AOS Animation Fade Override*/
   }
   /* line 70, ../sass/_project.scss */
@@ -770,10 +770,10 @@ Project Description
 ------------------------------------------------------------------------ */
 /* line 84, ../sass/_project.scss */
 .description-container {
-  width: 30.20833%;
+  width: 30.55556%;
   float: right;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
   margin-bottom: 24px;
 }
 
@@ -796,20 +796,20 @@ Project Description
 @media (max-width: 1024px) {
   /* line 106, ../sass/_project.scss */
   .description-container {
-    width: 80.20833%;
+    width: 80.55556%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-    margin-bottom: 48px;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
   /* line 113, ../sass/_project.scss */
   .description-container {
-    width: 96.875%;
+    width: 97.22222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
   }
 }
 /* ---------------------------------------------------------------------
@@ -817,10 +817,10 @@ Project Description
  ------------------------------------------------------------------------ */
 /* line 122, ../sass/_project.scss */
 .project-links-container {
-  width: 30.20833%;
+  width: 30.55556%;
   float: right;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -836,10 +836,10 @@ Project Description
 @media (max-width: 1024px) {
   /* line 137, ../sass/_project.scss */
   .project-links-container {
-    width: 96.875%;
+    width: 97.22222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
     margin-top: 32px;
     justify-content: center;
   }
@@ -849,7 +849,7 @@ Project Description
  ------------------------------------------------------------------------ */
 /* line 5, ../sass/_about.scss */
 .about_page-container {
-  max-width: 1200px;
+  max-width: 1130px;
   margin-left: auto;
   margin-right: auto;
   padding: 32px 0 120px 0;
@@ -872,10 +872,10 @@ Project Description
  ------------------------------------------------------------------------ */
 /* line 18, ../sass/_about.scss */
 .about_image-container {
-  width: 42.70833%;
+  width: 43.05556%;
   float: right;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
   margin-bottom: 40px;
 }
 /* line 22, ../sass/_about.scss */
@@ -887,10 +887,10 @@ Project Description
 @media (max-width: 768px) {
   /* line 30, ../sass/_about.scss */
   .about_image-container {
-    width: 96.875%;
+    width: 97.22222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
   }
 }
 /* ---------------------------------------------------------------------
@@ -898,10 +898,10 @@ Project Description
  ------------------------------------------------------------------------ */
 /* line 39, ../sass/_about.scss */
 .about-blurb {
-  width: 42.70833%;
+  width: 43.05556%;
   float: left;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
+  margin-left: 1.38889%;
+  margin-right: 1.38889%;
 }
 /* line 42, ../sass/_about.scss */
 .about-blurb h3 {
@@ -920,9 +920,9 @@ Project Description
 @media (max-width: 768px) {
   /* line 60, ../sass/_about.scss */
   .about-blurb {
-    width: 96.875%;
+    width: 97.22222%;
     float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
+    margin-left: 1.38889%;
+    margin-right: 1.38889%;
   }
 }
