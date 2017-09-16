@@ -2,8 +2,8 @@
 layout: project
 title: smart_air
 pretty_title: Smart Air
-role: Freelance Designer
-description: Reimagining the taobao store presence for a startup in China.
+role: Visual Design
+description: Reimagining the taobao digital store presence for a startup in China.
 card_image: smart_air.png
 order: 6
 ---

@@ -16,8 +16,9 @@ Required:
 
 To run site locally:
 
-- Use bundler to install required gems or install gems individually
+- use bundler to install required gems or install gems individually
 - "npm install" to install aos animation library
+- run "compass watch" to compile sass to css
 - run "jekyll serve" from directory containing the cloned repository
 - site will be created at "localhost:4000/portfolio/" by default
 
