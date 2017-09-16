@@ -14,4 +14,4 @@ I co-led a five-person team to research and design a suite of financial educatio
 
 I conducted on-site user interviews and focus groups in Chinese to asses and understand the microloan credit cycle, household cash flows, and financial literacy levels. Research findings guided the design and development of four financial tools to reach borrowers and credit officers at different points in the borrowing experience. <br><br>
 
-This project was my first exposure to human-centered design. Seeing the ability of the design process to solve problems outside the aesthetic inspired me to become a designer.
+This project was my first exposure to human-centered design. Seeing the ability of the design process to solve problems outside the aesthetic inspired me to pursue a career in design.
