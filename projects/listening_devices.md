@@ -4,7 +4,7 @@ title: listening_devices
 pretty_title: Listening Devices
 role: Designer
 description: A series of conceptual, over-ear headphones designed to influence the behavior of the wearer.
-card_image: placeholder.jpg
+card_image: 
 order: 5
 importance: primary
 ---
