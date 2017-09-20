@@ -7,9 +7,9 @@ layout: default
 
     <div class="project-header">
 
-        <h1 class="site-title">Designer and Product Strategist in Chicago by way of China.</h1>
+        <h1 class="site-title" data-aos="fade" data-aos-delay="100" data-aos-duration="800">Designer and Product Strategist in Chicago by way of China.</h1>
 
-        <h2 class="site-byline">Primarily working on digital products and doing some other weird stuff, too.</h2>
+        <h2 class="site-byline" data-aos="fade" data-aos-delay="400" data-aos-duration="800">Primarily working on digital products and doing some other weird stuff, too.</h2>
 
     </div>
 
@@ -19,7 +19,7 @@ layout: default
         {% for projects in sorted_projects %}
         {% if projects.layout == 'project' %}
 
-        <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}" data-aos="fade">                    
+        <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}" data-aos="fade" {% if projects.order == 1 or projects.order == 2 %} data-aos-delay="800" data-aos-duration="800"{% else %} data-aos-delay="0" data-aos-duration="500" {% endif %}>                    
            <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}");"></div>
            <div class="card-content">
             <div class="card-details">

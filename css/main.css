@@ -348,11 +348,8 @@ nav:after {
 .logo {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .125rem;
+  letter-spacing: .05rem;
   color: #212121;
-  align-self: flex-end;
 }
 @media (max-width: 768px) {
   /* line 16, ../sass/_nav.scss */
@@ -361,30 +358,35 @@ nav:after {
   }
 }
 
-/* line 30, ../sass/_nav.scss */
+/* line 27, ../sass/_nav.scss */
 ul {
   display: flex;
 }
-/* line 33, ../sass/_nav.scss */
+/* line 30, ../sass/_nav.scss */
 ul li {
   margin-right: 3rem;
 }
-/* line 36, ../sass/_nav.scss */
+/* line 33, ../sass/_nav.scss */
 ul li:last-child {
   margin-right: 0;
 }
-/* line 40, ../sass/_nav.scss */
+/* line 37, ../sass/_nav.scss */
 ul li a {
   color: #898989;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  vertical-align: text-bottom;
+  font-size: 16px;
+  letter-spacing: 1px;
+  /*text-transform: uppercase;*/
 }
-/* line 48, ../sass/_nav.scss */
+/* line 44, ../sass/_nav.scss */
 ul li a:hover {
   color: #44C5A2;
+}
+@media (max-width: 768px) {
+  /* line 37, ../sass/_nav.scss */
+  ul li a {
+    font-size: 15px;
+  }
 }
 
 /* ---------------------------------------------------------------------

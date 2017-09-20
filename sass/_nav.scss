@@ -16,11 +16,8 @@
  .logo {
  	font-family: $logo-font;
  	font-size: 18px;
- 	font-weight: 600;
- 	text-transform: uppercase;
- 	letter-spacing: .125rem;
+ 	letter-spacing: .05rem;
  	color: $primary;
- 	align-self: flex-end;
 
  	@media (max-width: $medium-break) {
  		font-size: 16px;
@@ -40,14 +37,17 @@
  		a {
  			color: $secondary;
  			font-family: $body-font;
- 			font-size: 14px;
- 			letter-spacing: 1.5px;
- 			text-transform: uppercase;
-			vertical-align: text-bottom;
+ 			font-size: 16px;
+ 			letter-spacing: 1px;
+ 			/*text-transform: uppercase;*/
  			
  			&:hover {
  				color: $accent;
  			}
+
+ 			@media (max-width: $medium-break) {
+ 		font-size: 15px;
+			}
  		}
  	}
  }
