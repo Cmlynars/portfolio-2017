@@ -4,7 +4,6 @@ layout: default
 ---
 
 <section class="buffer project_content-container">
-
 	<div class="breadcrumb-container">
 		<p><a href="{{ site.baseurl }}/">All Projects</a></p>
 		<p class="current-project">/ {{ page.pretty_title }}</p>
@@ -22,19 +21,19 @@ layout: default
 
 	<div class="project_image-container">
 
-	{% capture location %}img/{{ page.title }}{% endcapture %}
+		{% capture location %}img/{{ page.title }}{% endcapture %}
+		{% for image in site.static_files %}
+		{% if image.path contains location %}
 
-	{% for image in site.static_files %}
-	{% if image.path contains location %}
 		<img src="{{ site.baseurl }}{{ image.path }}" alt="project image" data-aos="fade" data-aos-duration="500"/>
-	{% endif %}
-	{% endfor %}
-	
+
+		{% endif %}
+		{% endfor %}
 		
 	</div>
 	
 	<div class="project-links-container">
-	
+
 		{% assign previous = page.order | minus: 1 %}
 		{% for projects in site.pages %}
 		{% if projects.order == previous %}
@@ -52,6 +51,6 @@ layout: default
 
 		{% endif %}
 		{% endfor %}
-	</div>
 
+	</div>
 </section>

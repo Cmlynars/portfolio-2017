@@ -1,16 +1,13 @@
 ---
 title: home
+pretty_title: Home
 layout: default
 ---
 
 <div class="buffer project-content">
-
     <div class="project-header">
-
         <h1 class="site-title" data-aos="fade" data-aos-delay="100" data-aos-duration="800">Designer and Product Strategist in Chicago by way of China.</h1>
-
         <h2 class="site-byline" data-aos="fade" data-aos-delay="400" data-aos-duration="800">Primarily working on digital products and doing some other weird stuff, too.</h2>
-
     </div>
 
     <div class="project-grid">
@@ -18,10 +15,10 @@ layout: default
         {% assign sorted_projects = site.pages | sort:"order" %}
         {% for projects in sorted_projects %}
         {% if projects.layout == 'project' %}
-
+        
         <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}" data-aos="fade" {% if projects.order == 1 or projects.order == 2 %} data-aos-delay="800" data-aos-duration="800"{% else %} data-aos-delay="0" data-aos-duration="500" {% endif %}>                    
-           <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}");"></div>
-           <div class="card-content">
+         <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}");"></div>
+         <div class="card-content">
             <div class="card-details">
                 <h4>{{ projects.role }}</h4> 
                 <h5>
