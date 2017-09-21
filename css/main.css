@@ -96,7 +96,7 @@ $background-color: rgba(237, 241, 245, 1);*/
 /* ---------------------------------------------------------------------
  Base Styles
  ------------------------------------------------------------------------ */
-/* line 23, ../sass/_base.scss */
+/* line 24, ../sass/_base.scss */
 * {
   /*border: 1px solid red !important;*/
   -moz-box-sizing: border-box;
@@ -104,31 +104,31 @@ $background-color: rgba(237, 241, 245, 1);*/
   box-sizing: border-box;
 }
 
-/* line 28, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 html {
   font-size: 16px;
   /*REM OVERRIDES FOR SPACING*/
 }
 @media (max-width: 1024px) {
-  /* line 28, ../sass/_base.scss */
+  /* line 29, ../sass/_base.scss */
   html {
     font-size: 13px;
   }
 }
 @media (max-width: 768px) {
-  /* line 28, ../sass/_base.scss */
+  /* line 29, ../sass/_base.scss */
   html {
     font-size: 10px;
   }
 }
 
-/* line 41, ../sass/_base.scss */
+/* line 42, ../sass/_base.scss */
 body {
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
 h1 {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -138,14 +138,14 @@ h1 {
   letter-spacing: 1px;
 }
 @media (max-width: 768px) {
-  /* line 46, ../sass/_base.scss */
+  /* line 47, ../sass/_base.scss */
   h1 {
     font-size: 28px;
     line-height: 42px;
   }
 }
 
-/* line 60, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 h2 {
   color: #A8A8A8;
   font-size: 26px;
@@ -153,14 +153,14 @@ h2 {
   font-weight: 300;
 }
 @media (max-width: 768px) {
-  /* line 60, ../sass/_base.scss */
+  /* line 61, ../sass/_base.scss */
   h2 {
     font-size: 21px;
     line-height: 32px;
   }
 }
 
-/* line 72, ../sass/_base.scss */
+/* line 73, ../sass/_base.scss */
 h3 {
   color: #212121;
   font-family: "Hind", sans-serif;
@@ -169,13 +169,13 @@ h3 {
   letter-spacing: .5px;
 }
 @media (max-width: 768px) {
-  /* line 72, ../sass/_base.scss */
+  /* line 73, ../sass/_base.scss */
   h3 {
     font-size: 24px;
   }
 }
 
-/* line 84, ../sass/_base.scss */
+/* line 85, ../sass/_base.scss */
 h4 {
   color: #212121;
   font-size: 16px;
@@ -183,7 +183,7 @@ h4 {
   letter-spacing: .25px;
 }
 
-/* line 91, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 h5 {
   color: #898989;
   font-size: 16px;
@@ -191,7 +191,7 @@ h5 {
   font-weight: 300;
 }
 
-/* line 98, ../sass/_base.scss */
+/* line 99, ../sass/_base.scss */
 p {
   color: #898989;
   font-size: 16px;
@@ -199,7 +199,7 @@ p {
   letter-spacing: .5px;
 }
 
-/* line 105, ../sass/_base.scss */
+/* line 106, ../sass/_base.scss */
 a {
   text-decoration: none;
   -moz-transition-property: color, fill;
@@ -215,7 +215,7 @@ a {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 111, ../sass/_base.scss */
+/* line 112, ../sass/_base.scss */
 a:visted {
   color: inherit;
 }
@@ -223,28 +223,28 @@ a:visted {
 /* ---------------------------------------------------------------------
  Global Link Styles
  ------------------------------------------------------------------------ */
-/* line 120, ../sass/_base.scss */
+/* line 122, ../sass/_base.scss */
 .single-link-container {
   display: flex;
 }
-/* line 124, ../sass/_base.scss */
+/* line 126, ../sass/_base.scss */
 .single-link-container:hover .project-link {
   color: #6bd1b5;
 }
-/* line 128, ../sass/_base.scss */
+/* line 130, ../sass/_base.scss */
 .single-link-container:hover .arrow {
   stroke: #6bd1b5;
   fill: #6bd1b5;
 }
-/* line 133, ../sass/_base.scss */
+/* line 135, ../sass/_base.scss */
 .single-link-container:hover .right-arrow {
   transform: translateX(4px);
 }
-/* line 137, ../sass/_base.scss */
+/* line 139, ../sass/_base.scss */
 .single-link-container:hover .left-arrow {
   transform: translateX(-4px);
 }
-/* line 142, ../sass/_base.scss */
+/* line 144, ../sass/_base.scss */
 .single-link-container svg {
   margin-top: 5px;
   -moz-transition-property: all;
@@ -261,7 +261,7 @@ a:visted {
   transition-timing-function: ease-in;
 }
 
-/* line 150, ../sass/_base.scss */
+/* line 152, ../sass/_base.scss */
 .project-link {
   font-size: 16px;
   color: #44C5A2;
@@ -278,16 +278,16 @@ a:visted {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 158, ../sass/_base.scss */
+/* line 160, ../sass/_base.scss */
 .project-link:nth-child(1) {
   margin-right: 8px;
 }
-/* line 162, ../sass/_base.scss */
+/* line 164, ../sass/_base.scss */
 .project-link:nth-child(2) {
   margin-left: 8px;
 }
 
-/* line 167, ../sass/_base.scss */
+/* line 169, ../sass/_base.scss */
 .arrow {
   stroke: #44C5A2;
   fill: #44C5A2;
@@ -306,12 +306,12 @@ a:visted {
 }
 
 /*Links within blocks of text*/
-/* line 178, ../sass/_base.scss */
+/* line 179, ../sass/_base.scss */
 .inline-link {
   color: #44C5A2;
   display: inline-block;
 }
-/* line 182, ../sass/_base.scss */
+/* line 183, ../sass/_base.scss */
 .inline-link:hover {
   color: #6bd1b5;
 }
@@ -319,7 +319,7 @@ a:visted {
 /* ---------------------------------------------------------------------
  Navigation Bar
  ------------------------------------------------------------------------ */
-/* line 4, ../sass/_nav.scss */
+/* line 5, ../sass/_nav.scss */
 nav {
   max-width: 1130px;
   margin-left: auto;
@@ -332,7 +332,7 @@ nav:after {
   clear: both;
 }
 
-/* line 8, ../sass/_nav.scss */
+/* line 9, ../sass/_nav.scss */
 .nav-container {
   width: 97.22222%;
   float: left;
@@ -344,7 +344,7 @@ nav:after {
   padding: 2.75rem 0;
 }
 
-/* line 16, ../sass/_nav.scss */
+/* line 17, ../sass/_nav.scss */
 .logo {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -352,25 +352,25 @@ nav:after {
   color: #212121;
 }
 @media (max-width: 768px) {
-  /* line 16, ../sass/_nav.scss */
+  /* line 17, ../sass/_nav.scss */
   .logo {
     font-size: 16px;
   }
 }
 
-/* line 27, ../sass/_nav.scss */
+/* line 28, ../sass/_nav.scss */
 ul {
   display: flex;
 }
-/* line 30, ../sass/_nav.scss */
+/* line 31, ../sass/_nav.scss */
 ul li {
   margin-right: 3rem;
 }
-/* line 33, ../sass/_nav.scss */
+/* line 34, ../sass/_nav.scss */
 ul li:last-child {
   margin-right: 0;
 }
-/* line 37, ../sass/_nav.scss */
+/* line 38, ../sass/_nav.scss */
 ul li a {
   color: #898989;
   font-family: "Open Sans", sans-serif;
@@ -378,12 +378,12 @@ ul li a {
   letter-spacing: 1px;
   /*text-transform: uppercase;*/
 }
-/* line 44, ../sass/_nav.scss */
+/* line 45, ../sass/_nav.scss */
 ul li a:hover {
   color: #44C5A2;
 }
 @media (max-width: 768px) {
-  /* line 37, ../sass/_nav.scss */
+  /* line 38, ../sass/_nav.scss */
   ul li a {
     font-size: 15px;
   }
@@ -392,12 +392,12 @@ ul li a:hover {
 /* ---------------------------------------------------------------------
  Footer
  ------------------------------------------------------------------------ */
-/* line 4, ../sass/_footer.scss */
+/* line 5, ../sass/_footer.scss */
 footer {
   background-color: #fff;
 }
 
-/* line 8, ../sass/_footer.scss */
+/* line 9, ../sass/_footer.scss */
 .footer-container {
   max-width: 1130px;
   margin-left: auto;
@@ -410,7 +410,7 @@ footer {
   clear: both;
 }
 
-/* line 12, ../sass/_footer.scss */
+/* line 13, ../sass/_footer.scss */
 .footer-content {
   width: 97.22222%;
   float: left;
@@ -419,47 +419,47 @@ footer {
   padding: 2.5rem 0 8rem 0;
 }
 
-/* line 17, ../sass/_footer.scss */
+/* line 18, ../sass/_footer.scss */
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* line 23, ../sass/_footer.scss */
+/* line 24, ../sass/_footer.scss */
 .footer-item {
   color: #A8A8A8;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
 }
-/* line 29, ../sass/_footer.scss */
+/* line 30, ../sass/_footer.scss */
 .footer-item:last-child {
   margin-bottom: 0;
 }
 
-/* line 34, ../sass/_footer.scss */
+/* line 35, ../sass/_footer.scss */
 .icon-wrapper {
   fill: #A8A8A8;
   margin-right: 24px;
   cursor: pointer;
 }
-/* line 39, ../sass/_footer.scss */
+/* line 40, ../sass/_footer.scss */
 .icon-wrapper:last-child {
   margin-right: 0;
 }
-/* line 43, ../sass/_footer.scss */
+/* line 44, ../sass/_footer.scss */
 .icon-wrapper:hover {
   fill: #44C5A2;
 }
 
-/* line 48, ../sass/_footer.scss */
+/* line 49, ../sass/_footer.scss */
 .icon {
   height: 25px;
   width: 25px;
 }
 
-/* line 53, ../sass/_footer.scss */
+/* line 54, ../sass/_footer.scss */
 .footer-border {
   border-top: 1px solid #E4E4E4;
 }
@@ -468,12 +468,12 @@ footer {
  Footer (Small Breakpoint)
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
-  /* line 63, ../sass/_footer.scss */
+  /* line 65, ../sass/_footer.scss */
   .footer-wrapper {
     flex-direction: column-reverse;
   }
 
-  /* line 67, ../sass/_footer.scss */
+  /* line 69, ../sass/_footer.scss */
   .icons-container {
     margin-bottom: 16px;
   }
@@ -498,14 +498,14 @@ footer {
 /* ---------------------------------------------------------------------
  Page Header
  ------------------------------------------------------------------------ */
-/* line 14, ../sass/_index.scss */
+/* line 15, ../sass/_index.scss */
 .project-header {
   width: 100%;
   float: left;
   margin-bottom: 88px;
 }
 
-/* line 19, ../sass/_index.scss */
+/* line 20, ../sass/_index.scss */
 .site-title {
   width: 63.88889%;
   float: left;
@@ -514,7 +514,7 @@ footer {
   margin-bottom: 16px;
 }
 
-/* line 24, ../sass/_index.scss */
+/* line 25, ../sass/_index.scss */
 .site-byline {
   width: 63.88889%;
   float: left;
@@ -526,17 +526,17 @@ footer {
  Page Header (Small Breakpoint)
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
-  /* line 34, ../sass/_index.scss */
+  /* line 36, ../sass/_index.scss */
   .project-content {
     padding: 32px 0 48px 0;
   }
 
-  /* line 38, ../sass/_index.scss */
+  /* line 40, ../sass/_index.scss */
   .project-header {
     margin-bottom: 48px;
   }
 
-  /* line 42, ../sass/_index.scss */
+  /* line 44, ../sass/_index.scss */
   .site-title,
   .site-byline {
     width: 97.22222%;
@@ -548,7 +548,7 @@ footer {
 /* ---------------------------------------------------------------------
  Project Cards (Mobile-first)
  ------------------------------------------------------------------------ */
-/* line 52, ../sass/_index.scss */
+/* line 55, ../sass/_index.scss */
 .project-card {
   /*Mobile-first Width*/
   width: 97.22222%;
@@ -560,7 +560,7 @@ footer {
 }
 
 /*AOS Animation Fade-up Override*/
-/* line 60, ../sass/_index.scss */
+/* line 63, ../sass/_index.scss */
 .project-card[data-aos="fade"] {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -568,7 +568,7 @@ footer {
   transition-property: all;
 }
 
-/* line 64, ../sass/_index.scss */
+/* line 67, ../sass/_index.scss */
 .card-image {
   background-repeat: no-repeat;
   background-position: center;
@@ -576,32 +576,32 @@ footer {
   height: 250px;
 }
 
-/* line 71, ../sass/_index.scss */
+/* line 74, ../sass/_index.scss */
 .card-content {
   padding: 16px 0 16px 0;
 }
-/* line 74, ../sass/_index.scss */
+/* line 77, ../sass/_index.scss */
 .card-content h3 {
   margin-bottom: 2px;
 }
-/* line 78, ../sass/_index.scss */
+/* line 81, ../sass/_index.scss */
 .card-content .single-link-container {
   margin-top: 8px;
 }
 
-/* line 83, ../sass/_index.scss */
+/* line 86, ../sass/_index.scss */
 .card-details {
   display: flex;
   margin-bottom: 12px;
   align-items: baseline;
 }
-/* line 88, ../sass/_index.scss */
+/* line 91, ../sass/_index.scss */
 .card-details h4 {
   margin-right: 4px;
 }
 
 /*This limits the hover area of the link*/
-/* line 94, ../sass/_index.scss */
+/* line 97, ../sass/_index.scss */
 .index-link-container {
   display: flex;
   justify-content: space-between;
@@ -612,7 +612,7 @@ footer {
 Project Cards (Medium Breakpoint)
 ------------------------------------------------------------------------ */
 @media (min-width: 768px) {
-  /* line 106, ../sass/_index.scss */
+  /* line 110, ../sass/_index.scss */
   .project-card {
     width: 47.22222%;
     float: left;
@@ -621,25 +621,25 @@ Project Cards (Medium Breakpoint)
     height: 408px;
     margin-bottom: 48px;
   }
-  /* line 111, ../sass/_index.scss */
+  /* line 115, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 97.22222%;
     float: left;
     margin-left: 1.38889%;
     margin-right: 1.38889%;
   }
-  /* line 115, ../sass/_index.scss */
+  /* line 119, ../sass/_index.scss */
   .project-card .card-image {
     height: 265px;
   }
-  /* line 119, ../sass/_index.scss */
+  /* line 123, ../sass/_index.scss */
   .project-card .card-content {
     padding-bottom: 0px;
   }
 }
 /*One-off heigh adjustment for cards with long descriptions*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 127, ../sass/_index.scss */
+  /* line 131, ../sass/_index.scss */
   .project-card:nth-child(4), .project-card:nth-child(5) {
     height: 426px;
   }
@@ -648,7 +648,7 @@ Project Cards (Medium Breakpoint)
  Project Cards (Large Breakpoint)
  ------------------------------------------------------------------------ */
 @media (min-width: 1024px) {
-  /* line 138, ../sass/_index.scss */
+  /* line 143, ../sass/_index.scss */
   .project-card {
     width: 34.72222%;
     float: left;
@@ -656,7 +656,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.38889%;
     margin-bottom: 56px;
   }
-  /* line 142, ../sass/_index.scss */
+  /* line 147, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 59.72222%;
     float: left;
@@ -664,7 +664,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.38889%;
   }
 
-  /* line 147, ../sass/_index.scss */
+  /* line 152, ../sass/_index.scss */
   .primary-card {
     width: 59.72222%;
     float: left;
@@ -698,7 +698,7 @@ Project Cards (Medium Breakpoint)
 /* ---------------------------------------------------------------------
  Breadcrumb
  ------------------------------------------------------------------------ */
-/* line 18, ../sass/_project.scss */
+/* line 19, ../sass/_project.scss */
 .breadcrumb-container {
   width: 97.22222%;
   float: left;
@@ -707,15 +707,15 @@ Project Cards (Medium Breakpoint)
   display: flex;
   margin-bottom: 24px;
 }
-/* line 23, ../sass/_project.scss */
+/* line 24, ../sass/_project.scss */
 .breadcrumb-container a {
   color: #44C5A2;
 }
-/* line 26, ../sass/_project.scss */
+/* line 27, ../sass/_project.scss */
 .breadcrumb-container a:hover {
   color: #6bd1b5;
 }
-/* line 31, ../sass/_project.scss */
+/* line 32, ../sass/_project.scss */
 .breadcrumb-container .current-project {
   margin-left: 4px;
   color: #A8A8A8;
@@ -723,7 +723,7 @@ Project Cards (Medium Breakpoint)
 
 /*Hide at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 40, ../sass/_project.scss */
+  /* line 41, ../sass/_project.scss */
   .breadcrumb-container {
     display: none;
   }
@@ -731,7 +731,7 @@ Project Cards (Medium Breakpoint)
 /* ---------------------------------------------------------------------
  Images (Mobile-first)
  ------------------------------------------------------------------------ */
-/* line 49, ../sass/_project.scss */
+/* line 51, ../sass/_project.scss */
 .project_image-container {
   /*Mobile-first Width*/
   width: 97.22222%;
@@ -739,19 +739,19 @@ Project Cards (Medium Breakpoint)
   margin-left: 1.38889%;
   margin-right: 1.38889%;
 }
-/* line 53, ../sass/_project.scss */
+/* line 55, ../sass/_project.scss */
 .project_image-container img {
   margin-bottom: 2.5rem;
   width: 100%;
 }
-/* line 57, ../sass/_project.scss */
+/* line 59, ../sass/_project.scss */
 .project_image-container img:last-child {
   margin-bottom: 0;
 }
 
 /*Shrink at Large Breakpoint*/
 @media (min-width: 1024px) {
-  /* line 66, ../sass/_project.scss */
+  /* line 68, ../sass/_project.scss */
   .project_image-container {
     width: 59.72222%;
     float: left;
@@ -759,7 +759,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.38889%;
     /*AOS Animation Fade Override*/
   }
-  /* line 70, ../sass/_project.scss */
+  /* line 72, ../sass/_project.scss */
   .project_image-container img[data-aos="fade"] {
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -778,25 +778,33 @@ Project Description
   margin-right: 1.38889%;
   margin-bottom: 24px;
 }
+/* line 88, ../sass/_project.scss */
+.description-container p {
+  margin-bottom: 16px;
+}
+/* line 91, ../sass/_project.scss */
+.description-container p:last-child {
+  margin-bottom: 0;
+}
 
-/* line 89, ../sass/_project.scss */
+/* line 97, ../sass/_project.scss */
 .project-title {
   margin-bottom: 2rem;
 }
 
-/* line 93, ../sass/_project.scss */
+/* line 101, ../sass/_project.scss */
 .project-description {
   display: flex;
   margin-bottom: 13px;
 }
-/* line 97, ../sass/_project.scss */
+/* line 105, ../sass/_project.scss */
 .project-description h4 {
   margin-right: 4px;
 }
 
 /*Adjust at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 106, ../sass/_project.scss */
+  /* line 114, ../sass/_project.scss */
   .description-container {
     width: 80.55556%;
     float: left;
@@ -806,7 +814,7 @@ Project Description
   }
 }
 @media (max-width: 768px) {
-  /* line 113, ../sass/_project.scss */
+  /* line 121, ../sass/_project.scss */
   .description-container {
     width: 97.22222%;
     float: left;
@@ -817,7 +825,7 @@ Project Description
 /* ---------------------------------------------------------------------
  Links Container
  ------------------------------------------------------------------------ */
-/* line 122, ../sass/_project.scss */
+/* line 131, ../sass/_project.scss */
 .project-links-container {
   width: 30.55556%;
   float: right;
@@ -828,7 +836,7 @@ Project Description
   align-items: center;
 }
 @media (max-width: 1024px) {
-  /* line 128, ../sass/_project.scss */
+  /* line 137, ../sass/_project.scss */
   .project-links-container .single-link-container {
     margin: 0 40px;
   }
@@ -836,7 +844,7 @@ Project Description
 
 /*Widen at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 137, ../sass/_project.scss */
+  /* line 146, ../sass/_project.scss */
   .project-links-container {
     width: 97.22222%;
     float: left;
@@ -850,45 +858,45 @@ Project Description
  Page Container
  ------------------------------------------------------------------------ */
 /* line 5, ../sass/_about.scss */
-.about_page-container {
+.about-page-container {
   max-width: 1130px;
   margin-left: auto;
   margin-right: auto;
-  padding: 32px 0 120px 0;
+  padding: 56px 0 120px 0;
 }
 /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-.about_page-container:after {
+.about-page-container:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (max-width: 768px) {
   /* line 5, ../sass/_about.scss */
-  .about_page-container {
-    padding: 24px 0 32px 0;
+  .about-page-container {
+    padding: 24px 0 48px 0;
   }
 }
 
 /* ---------------------------------------------------------------------
  Image Container
  ------------------------------------------------------------------------ */
-/* line 18, ../sass/_about.scss */
-.about_image-container {
+/* line 19, ../sass/_about.scss */
+.about-image-container {
   width: 43.05556%;
   float: right;
   margin-left: 1.38889%;
   margin-right: 1.38889%;
   margin-bottom: 40px;
 }
-/* line 22, ../sass/_about.scss */
-.about_image-container img {
+/* line 23, ../sass/_about.scss */
+.about-image-container img {
   width: 100%;
 }
 
 /*Full width at small breakpoint*/
 @media (max-width: 768px) {
-  /* line 30, ../sass/_about.scss */
-  .about_image-container {
+  /* line 31, ../sass/_about.scss */
+  .about-image-container {
     width: 97.22222%;
     float: left;
     margin-left: 1.38889%;
@@ -898,29 +906,35 @@ Project Description
 /* ---------------------------------------------------------------------
  About Blurb
  ------------------------------------------------------------------------ */
-/* line 39, ../sass/_about.scss */
+/* line 41, ../sass/_about.scss */
 .about-blurb {
   width: 43.05556%;
   float: left;
   margin-left: 1.38889%;
   margin-right: 1.38889%;
 }
-/* line 42, ../sass/_about.scss */
+/* line 44, ../sass/_about.scss */
 .about-blurb h3 {
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
-@media (max-width: 768px) {
-  /* line 48, ../sass/_about.scss */
-  .about-blurb h3 {
-    margin-bottom: 16px;
-  }
+/* line 48, ../sass/_about.scss */
+.about-blurb p {
+  margin-bottom: 16px;
+}
+/* line 51, ../sass/_about.scss */
+.about-blurb p:nth-last-child(2) {
+  margin-bottom: 24px;
+}
+/* line 55, ../sass/_about.scss */
+.about-blurb p:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------------------------------------------------------------------
  About Blurb (Small, Medium Breakpoint)
  ------------------------------------------------------------------------ */
 @media (max-width: 768px) {
-  /* line 60, ../sass/_about.scss */
+  /* line 67, ../sass/_about.scss */
   .about-blurb {
     width: 97.22222%;
     float: left;

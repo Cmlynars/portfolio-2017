@@ -7,6 +7,7 @@
  	padding: 88px 0 60px 0;
  }
 
+
 /* ---------------------------------------------------------------------
  Page Header
  ------------------------------------------------------------------------ */
@@ -24,6 +25,7 @@
  .site-byline {
  	@include span(8);
  }
+
 
 /* ---------------------------------------------------------------------
  Page Header (Small Breakpoint)
@@ -45,6 +47,7 @@
  	}
  }
 
+
 /* ---------------------------------------------------------------------
  Project Cards (Mobile-first)
  ------------------------------------------------------------------------ */
@@ -56,10 +59,10 @@
  	cursor: pointer;
  }	
 
-/*AOS Animation Fade-up Override*/
-.project-card[data-aos="fade"] {
-	@include transition-property(all);
-}
+ /*AOS Animation Fade-up Override*/
+ .project-card[data-aos="fade"] {
+ 	@include transition-property(all);
+ }
 
  .card-image {
  	background-repeat: no-repeat;
@@ -90,12 +93,13 @@
  	}
  }
 
-/*This limits the hover area of the link*/
+ /*This limits the hover area of the link*/
  .index-link-container {
-	display: flex;
+ 	display: flex;
  	justify-content: space-between;
  	align-items: center;
-}
+ }
+
 
  /* ---------------------------------------------------------------------
  Project Cards (Medium Breakpoint)
@@ -128,6 +132,7 @@
  		height: 426px;
  	}
  }
+
 
 /* ---------------------------------------------------------------------
  Project Cards (Large Breakpoint)

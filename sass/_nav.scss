@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------------------
  Navigation Bar
  ------------------------------------------------------------------------ */
+ 
  nav {
  	@include container ($max-width);
  }
@@ -21,7 +22,7 @@
 
  	@media (max-width: $medium-break) {
  		font-size: 16px;
-	}
+ 	}
  }
 
  ul {
@@ -46,8 +47,8 @@
  			}
 
  			@media (max-width: $medium-break) {
- 		font-size: 15px;
-			}
+ 				font-size: 15px;
+ 			}
  		}
  	}
  }
