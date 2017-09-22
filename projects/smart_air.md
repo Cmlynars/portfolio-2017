@@ -1,7 +1,7 @@
 ---
 layout: project
 title: smart_air
-pretty_title: Smart Air
+pretty_title: Smart Air 聪明空气
 role: Visual Design
 description: Reimagining the taobao digital store presence for a startup in China.
 card_image: smart_air.png

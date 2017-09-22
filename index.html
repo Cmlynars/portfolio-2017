@@ -21,7 +21,7 @@ layout: default
             <div class="card-content">
                 <div class="card-details">
                     <h4>{{ projects.role }}</h4> 
-                    <h5>{% if projects.date %}• {{ projects.date }}{% endif %}</h5>
+                    <h5>{% if projects.date %}<span class="separator">•</span>{{ projects.date }}{% endif %}</h5>
                 </div>
                 <h3>{{ projects.pretty_title }}</h3>
                 <p>{{ projects.description }}</p>

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: planet_finance_china
-pretty_title: Planet Finance China
+pretty_title: Planet Finance China 沛丰中国
 role: Design Project Manager
 date: Oct 2013 - Jul 2014
 description: Using Human-centered Design to create financial education tools for female microloan borrowers in rural China.

@@ -86,10 +86,19 @@
  .card-details {
  	display: flex;
  	margin-bottom: 12px;
- 	align-items: baseline;
 
- 	h4 {
- 		margin-right: 4px;
+ 	.separator {
+ 		margin: 0 5px;
+ 	}
+
+ 	/*Queries for detail seapartion at smaller breakpoints*/
+ 	@media (max-width: $medium-break) {
+ 		justify-content: space-between;
+
+ 		.separator {
+ 			display: none;
+ 		}
+
  	}
  }
 

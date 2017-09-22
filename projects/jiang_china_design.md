@@ -1,7 +1,7 @@
 ---
 layout: project
 title: jiang_china_design
-pretty_title: Jiang China Design
+pretty_title: Jiang China Design 匠
 role: Design Mentor
 date: Summer 2015
 description: Teaching Design Thinking at China's first Human-centered Design bootcamp.

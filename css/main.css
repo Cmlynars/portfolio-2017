@@ -115,7 +115,7 @@ html {
     font-size: 13px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 29, ../sass/_base.scss */
   html {
     font-size: 10px;
@@ -137,7 +137,7 @@ h1 {
   font-weight: 300;
   letter-spacing: 1px;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 47, ../sass/_base.scss */
   h1 {
     font-size: 28px;
@@ -152,7 +152,7 @@ h2 {
   line-height: 38px;
   font-weight: 300;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 61, ../sass/_base.scss */
   h2 {
     font-size: 21px;
@@ -168,7 +168,7 @@ h3 {
   font-weight: 300;
   letter-spacing: .5px;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 73, ../sass/_base.scss */
   h3 {
     font-size: 24px;
@@ -351,7 +351,7 @@ nav:after {
   letter-spacing: .05rem;
   color: #212121;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 17, ../sass/_nav.scss */
   .logo {
     font-size: 16px;
@@ -382,7 +382,7 @@ ul li a {
 ul li a:hover {
   color: #44C5A2;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 38, ../sass/_nav.scss */
   ul li a {
     font-size: 15px;
@@ -467,7 +467,7 @@ footer {
 /* ---------------------------------------------------------------------
  Footer (Small Breakpoint)
  ------------------------------------------------------------------------ */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 65, ../sass/_footer.scss */
   .footer-wrapper {
     flex-direction: column-reverse;
@@ -525,7 +525,7 @@ footer {
 /* ---------------------------------------------------------------------
  Page Header (Small Breakpoint)
  ------------------------------------------------------------------------ */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 36, ../sass/_index.scss */
   .project-content {
     padding: 32px 0 48px 0;
@@ -593,15 +593,25 @@ footer {
 .card-details {
   display: flex;
   margin-bottom: 12px;
-  align-items: baseline;
+  /*Queries for detail seapartion at smaller breakpoints*/
 }
-/* line 91, ../sass/_index.scss */
-.card-details h4 {
-  margin-right: 4px;
+/* line 90, ../sass/_index.scss */
+.card-details .separator {
+  margin: 0 5px;
+}
+@media (max-width: 850px) {
+  /* line 86, ../sass/_index.scss */
+  .card-details {
+    justify-content: space-between;
+  }
+  /* line 98, ../sass/_index.scss */
+  .card-details .separator {
+    display: none;
+  }
 }
 
 /*This limits the hover area of the link*/
-/* line 97, ../sass/_index.scss */
+/* line 106, ../sass/_index.scss */
 .index-link-container {
   display: flex;
   justify-content: space-between;
@@ -611,8 +621,8 @@ footer {
 /* ---------------------------------------------------------------------
 Project Cards (Medium Breakpoint)
 ------------------------------------------------------------------------ */
-@media (min-width: 768px) {
-  /* line 110, ../sass/_index.scss */
+@media (min-width: 850px) {
+  /* line 119, ../sass/_index.scss */
   .project-card {
     width: 47.22222%;
     float: left;
@@ -621,25 +631,25 @@ Project Cards (Medium Breakpoint)
     height: 408px;
     margin-bottom: 48px;
   }
-  /* line 115, ../sass/_index.scss */
+  /* line 124, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 97.22222%;
     float: left;
     margin-left: 1.38889%;
     margin-right: 1.38889%;
   }
-  /* line 119, ../sass/_index.scss */
+  /* line 128, ../sass/_index.scss */
   .project-card .card-image {
     height: 265px;
   }
-  /* line 123, ../sass/_index.scss */
+  /* line 132, ../sass/_index.scss */
   .project-card .card-content {
     padding-bottom: 0px;
   }
 }
 /*One-off heigh adjustment for cards with long descriptions*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* line 131, ../sass/_index.scss */
+@media (min-width: 850px) and (max-width: 1024px) {
+  /* line 140, ../sass/_index.scss */
   .project-card:nth-child(4), .project-card:nth-child(5) {
     height: 426px;
   }
@@ -648,7 +658,7 @@ Project Cards (Medium Breakpoint)
  Project Cards (Large Breakpoint)
  ------------------------------------------------------------------------ */
 @media (min-width: 1024px) {
-  /* line 143, ../sass/_index.scss */
+  /* line 152, ../sass/_index.scss */
   .project-card {
     width: 34.72222%;
     float: left;
@@ -656,7 +666,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.38889%;
     margin-bottom: 56px;
   }
-  /* line 147, ../sass/_index.scss */
+  /* line 156, ../sass/_index.scss */
   .project-card:nth-child(1) {
     width: 59.72222%;
     float: left;
@@ -664,7 +674,7 @@ Project Cards (Medium Breakpoint)
     margin-right: 1.38889%;
   }
 
-  /* line 152, ../sass/_index.scss */
+  /* line 161, ../sass/_index.scss */
   .primary-card {
     width: 59.72222%;
     float: left;
@@ -770,7 +780,7 @@ Project Cards (Medium Breakpoint)
 /* ---------------------------------------------------------------------
 Project Description
 ------------------------------------------------------------------------ */
-/* line 84, ../sass/_project.scss */
+/* line 83, ../sass/_project.scss */
 .description-container {
   width: 30.55556%;
   float: right;
@@ -778,33 +788,33 @@ Project Description
   margin-right: 1.38889%;
   margin-bottom: 24px;
 }
-/* line 88, ../sass/_project.scss */
+/* line 87, ../sass/_project.scss */
 .description-container p {
   margin-bottom: 16px;
 }
-/* line 91, ../sass/_project.scss */
+/* line 90, ../sass/_project.scss */
 .description-container p:last-child {
   margin-bottom: 0;
 }
 
-/* line 97, ../sass/_project.scss */
+/* line 96, ../sass/_project.scss */
 .project-title {
   margin-bottom: 2rem;
 }
 
-/* line 101, ../sass/_project.scss */
+/* line 100, ../sass/_project.scss */
 .project-description {
   display: flex;
   margin-bottom: 13px;
 }
-/* line 105, ../sass/_project.scss */
+/* line 104, ../sass/_project.scss */
 .project-description h4 {
   margin-right: 4px;
 }
 
 /*Adjust at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 114, ../sass/_project.scss */
+  /* line 113, ../sass/_project.scss */
   .description-container {
     width: 80.55556%;
     float: left;
@@ -813,8 +823,8 @@ Project Description
     margin-bottom: 40px;
   }
 }
-@media (max-width: 768px) {
-  /* line 121, ../sass/_project.scss */
+@media (max-width: 850px) {
+  /* line 120, ../sass/_project.scss */
   .description-container {
     width: 97.22222%;
     float: left;
@@ -825,7 +835,7 @@ Project Description
 /* ---------------------------------------------------------------------
  Links Container
  ------------------------------------------------------------------------ */
-/* line 131, ../sass/_project.scss */
+/* line 130, ../sass/_project.scss */
 .project-links-container {
   width: 30.55556%;
   float: right;
@@ -836,7 +846,7 @@ Project Description
   align-items: center;
 }
 @media (max-width: 1024px) {
-  /* line 137, ../sass/_project.scss */
+  /* line 136, ../sass/_project.scss */
   .project-links-container .single-link-container {
     margin: 0 40px;
   }
@@ -844,7 +854,7 @@ Project Description
 
 /*Widen at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 146, ../sass/_project.scss */
+  /* line 145, ../sass/_project.scss */
   .project-links-container {
     width: 97.22222%;
     float: left;
@@ -870,7 +880,7 @@ Project Description
   display: block;
   clear: both;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 5, ../sass/_about.scss */
   .about-page-container {
     padding: 24px 0 48px 0;
@@ -894,7 +904,7 @@ Project Description
 }
 
 /*Full width at small breakpoint*/
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 31, ../sass/_about.scss */
   .about-image-container {
     width: 97.22222%;
@@ -933,7 +943,7 @@ Project Description
 /* ---------------------------------------------------------------------
  About Blurb (Small, Medium Breakpoint)
  ------------------------------------------------------------------------ */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* line 67, ../sass/_about.scss */
   .about-blurb {
     width: 97.22222%;
