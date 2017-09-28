@@ -11,7 +11,7 @@ layout: default
 	<div class="description-container">
 		<div class="project-description"><h4>{{ page.role }}</h4><h5>{% if page.date %}• {{ page.date }}{% endif %}</h5></div>
 		<h3 class="project-title">
-		{{ page.pretty_title }}
+			{{ page.pretty_title }}
 		</h3>
 		
 		{{ content }}
@@ -22,7 +22,7 @@ layout: default
 	{% capture location %}img/{{ page.title }}{% endcapture %}
 	{% for image in site.static_files %}
 		{% if image.path contains location %}
-			<img src="{{ site.baseurl }}{{ image.path }}" alt="project image" data-aos="fade" data-aos-duration="500"/>
+			<img src="{{ site.baseurl }}{{ image.path }}" alt="{{ page.pretty_title }} Image" data-aos="fade" data-aos-duration="500"/>
 		{% endif %}
 	{% endfor %}
 	</div>

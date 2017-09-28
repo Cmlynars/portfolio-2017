@@ -17,4 +17,4 @@ order: 2
 
 <p>By collaborating with the behavioral insights team, we improved the product's choice architecture, reduced decision fatigue, and A/B tested labor illusion concepts to improve the product experience.</p>
 
-<p>Screenshots of the product are not displayed due to legal reasons.</p>
+<p>Because my work was concentrated on the UX, I haven't included visual design mockups of the product.</p>

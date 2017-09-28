@@ -17,7 +17,7 @@ layout: default
         {% if projects.layout == 'project' %}
         
         <a class="project-card {% if projects.importance == 'primary' %} primary-card {% endif %}" href="{{ site.baseurl }}{{ projects.url }}" data-aos="fade" {% if projects.order == 1 or projects.order == 2 %} data-aos-delay="800" data-aos-duration="800"{% else %} data-aos-delay="0" data-aos-duration="500" {% endif %}>                    
-            <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}");"></div>
+            <div class="card-image" style="background-image: url({{ site.baseurl}}/img/index/{{ projects.card_image }}"); alt="{{ page.pretty_title }} Project"></div>
             <div class="card-content">
                 <div class="card-details">
                     <h4>{{ projects.role }}</h4> 

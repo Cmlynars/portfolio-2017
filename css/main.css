@@ -800,21 +800,22 @@ Project Description
 /* line 96, ../sass/_project.scss */
 .project-title {
   margin-bottom: 2rem;
+  line-height: 34px;
 }
 
-/* line 100, ../sass/_project.scss */
+/* line 101, ../sass/_project.scss */
 .project-description {
   display: flex;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
-/* line 104, ../sass/_project.scss */
+/* line 105, ../sass/_project.scss */
 .project-description h4 {
   margin-right: 4px;
 }
 
 /*Adjust at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 113, ../sass/_project.scss */
+  /* line 114, ../sass/_project.scss */
   .description-container {
     width: 80.55556%;
     float: left;
@@ -824,7 +825,7 @@ Project Description
   }
 }
 @media (max-width: 850px) {
-  /* line 120, ../sass/_project.scss */
+  /* line 121, ../sass/_project.scss */
   .description-container {
     width: 97.22222%;
     float: left;
@@ -835,7 +836,7 @@ Project Description
 /* ---------------------------------------------------------------------
  Links Container
  ------------------------------------------------------------------------ */
-/* line 130, ../sass/_project.scss */
+/* line 131, ../sass/_project.scss */
 .project-links-container {
   width: 30.55556%;
   float: right;
@@ -846,7 +847,7 @@ Project Description
   align-items: center;
 }
 @media (max-width: 1024px) {
-  /* line 136, ../sass/_project.scss */
+  /* line 137, ../sass/_project.scss */
   .project-links-container .single-link-container {
     margin: 0 40px;
   }
@@ -854,7 +855,7 @@ Project Description
 
 /*Widen at Small Breakpoint*/
 @media (max-width: 1024px) {
-  /* line 145, ../sass/_project.scss */
+  /* line 146, ../sass/_project.scss */
   .project-links-container {
     width: 97.22222%;
     float: left;
