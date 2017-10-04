@@ -16,4 +16,4 @@ importance: primary
 
 <p>My team has designed multiple, 100 plus screen experiences including product dashboards and application processes.</p>
 
-<p>I am also responsible for rolling out a completely new, modern brand across all products and communications channels.</p>
+<p>I am also responsible for rolling out a completely new brand across all products and communications channels.</p>

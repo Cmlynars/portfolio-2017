@@ -4,7 +4,7 @@
 
  .project-content {
  	@include container($max-width);
- 	padding: 88px 0 60px 0;
+ 	padding: 88px 0 88px 0;
  }
 
 
@@ -14,12 +14,12 @@
 
  .project-header {
  	@include span(12 nest);
- 	margin-bottom: 88px;
+ 	margin-bottom: 110px;
  }	
 
  .site-title {
  	@include span(8);	
- 	margin-bottom: 16px;
+ 	margin-bottom: 18px;
  }
 
  .site-byline {
@@ -151,7 +151,7 @@
 
  	.project-card {
  		@include span(4.5);
- 		margin-bottom: 56px;
+ 		margin-bottom: 64px;
 
  		&:nth-child(1) {
  			@include span(7.5);

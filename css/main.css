@@ -486,7 +486,7 @@ footer {
   max-width: 1130px;
   margin-left: auto;
   margin-right: auto;
-  padding: 88px 0 60px 0;
+  padding: 88px 0 88px 0;
 }
 /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .project-content:after {
@@ -502,7 +502,7 @@ footer {
 .project-header {
   width: 100%;
   float: left;
-  margin-bottom: 88px;
+  margin-bottom: 110px;
 }
 
 /* line 20, ../sass/_index.scss */
@@ -511,7 +511,7 @@ footer {
   float: left;
   margin-left: 1.38889%;
   margin-right: 1.38889%;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 /* line 25, ../sass/_index.scss */
@@ -664,7 +664,7 @@ Project Cards (Medium Breakpoint)
     float: left;
     margin-left: 1.38889%;
     margin-right: 1.38889%;
-    margin-bottom: 56px;
+    margin-bottom: 64px;
   }
   /* line 156, ../sass/_index.scss */
   .project-card:nth-child(1) {
