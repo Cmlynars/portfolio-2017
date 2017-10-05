@@ -2,14 +2,6 @@
  Variables
  ------------------------------------------------------------------------ */
 
-/* === Blue Theme === */
-/*$primary: #4F5E66;
-$secondary: #7893A1;
-$tertiary: #9DA9B0;
-$accent: #4BC180;
-$link-hover: lighten( $accent, 10% );
-$background-color: rgba(237, 241, 245, 1);*/
-
 /* === Gray Theme === */
 $primary: #212121;
 $secondary: #898989;
@@ -25,11 +17,10 @@ $medium-break: 850px;
 $large-break: 1024px;
 
 /* === FONTS === */
-@import url('https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:600|Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Hind:400,700|Open+Sans:300,400,600,700');
 $base-font-size: 16px;
 $headline-font: 'Hind', sans-serif;
 $body-font: 'Open Sans', sans-serif;
-$logo-font: 'Montserrat', sans-serif;
 
 /* === SHADOWS === */
 $card-shadow: 0 4px 8px rgba(0, 0, 0, .20);

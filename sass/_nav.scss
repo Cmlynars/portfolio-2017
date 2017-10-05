@@ -11,11 +11,12 @@
  	display: flex;
  	justify-content: space-between;
  	align-items: center;
- 	padding: 2.75rem 0;
+ 	padding: 3rem 0;
  }
 
  .logo {
- 	font-family: $logo-font;
+ 	font-family: $body-font;
+ 	font-weight: 700;
  	font-size: 18px;
  	letter-spacing: .05rem;
  	color: $primary;
@@ -39,7 +40,7 @@
  			color: $secondary;
  			font-family: $body-font;
  			font-size: 16px;
- 			letter-spacing: 1px;
+ 			letter-spacing: .05rem;
  			/*text-transform: uppercase;*/
  			
  			&:hover {

@@ -1,7 +1,7 @@
 /* ---------------------------------------------------------------------
  Imports
 ------------------------------------------------------------------------ */
-@import url("https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:600|Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Hind:400,700|Open+Sans:300,400,600,700");
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -70,13 +70,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* ---------------------------------------------------------------------
  Variables
  ------------------------------------------------------------------------ */
-/* === Blue Theme === */
-/*$primary: #4F5E66;
-$secondary: #7893A1;
-$tertiary: #9DA9B0;
-$accent: #4BC180;
-$link-hover: lighten( $accent, 10% );
-$background-color: rgba(237, 241, 245, 1);*/
 /* === Gray Theme === */
 /* === SIZING === */
 /* === MEDIA QUERIES === */
@@ -264,6 +257,7 @@ a:visted {
 /* line 152, ../sass/_base.scss */
 .project-link {
   font-size: 16px;
+  font-weight: 400;
   color: #44C5A2;
   -moz-transition-property: color, fill;
   -o-transition-property: color, fill;
@@ -278,16 +272,16 @@ a:visted {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 160, ../sass/_base.scss */
+/* line 161, ../sass/_base.scss */
 .project-link:nth-child(1) {
   margin-right: 8px;
 }
-/* line 164, ../sass/_base.scss */
+/* line 165, ../sass/_base.scss */
 .project-link:nth-child(2) {
   margin-left: 8px;
 }
 
-/* line 169, ../sass/_base.scss */
+/* line 170, ../sass/_base.scss */
 .arrow {
   stroke: #44C5A2;
   fill: #44C5A2;
@@ -306,12 +300,12 @@ a:visted {
 }
 
 /*Links within blocks of text*/
-/* line 179, ../sass/_base.scss */
+/* line 180, ../sass/_base.scss */
 .inline-link {
   color: #44C5A2;
   display: inline-block;
 }
-/* line 183, ../sass/_base.scss */
+/* line 184, ../sass/_base.scss */
 .inline-link:hover {
   color: #6bd1b5;
 }
@@ -341,12 +335,13 @@ nav:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.75rem 0;
+  padding: 3rem 0;
 }
 
 /* line 17, ../sass/_nav.scss */
 .logo {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: .05rem;
   color: #212121;
@@ -358,32 +353,32 @@ nav:after {
   }
 }
 
-/* line 28, ../sass/_nav.scss */
+/* line 29, ../sass/_nav.scss */
 ul {
   display: flex;
 }
-/* line 31, ../sass/_nav.scss */
+/* line 32, ../sass/_nav.scss */
 ul li {
   margin-right: 3rem;
 }
-/* line 34, ../sass/_nav.scss */
+/* line 35, ../sass/_nav.scss */
 ul li:last-child {
   margin-right: 0;
 }
-/* line 38, ../sass/_nav.scss */
+/* line 39, ../sass/_nav.scss */
 ul li a {
   color: #898989;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: .05rem;
   /*text-transform: uppercase;*/
 }
-/* line 45, ../sass/_nav.scss */
+/* line 46, ../sass/_nav.scss */
 ul li a:hover {
   color: #44C5A2;
 }
 @media (max-width: 850px) {
-  /* line 38, ../sass/_nav.scss */
+  /* line 39, ../sass/_nav.scss */
   ul li a {
     font-size: 15px;
   }
