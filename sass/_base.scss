@@ -151,6 +151,7 @@
 
  .project-link {
  	font-size: 16px;
+ 	font-weight: 400;
  	color: $accent;
 
  	@include transition-property(color, fill);
