@@ -158,7 +158,6 @@ h3 {
   color: #212121;
   font-family: "Hind", sans-serif;
   font-size: 28px;
-  font-weight: 300;
   letter-spacing: .5px;
 }
 @media (max-width: 850px) {
@@ -168,7 +167,7 @@ h3 {
   }
 }
 
-/* line 85, ../sass/_base.scss */
+/* line 84, ../sass/_base.scss */
 h4 {
   color: #212121;
   font-size: 16px;
@@ -176,7 +175,7 @@ h4 {
   letter-spacing: .25px;
 }
 
-/* line 92, ../sass/_base.scss */
+/* line 91, ../sass/_base.scss */
 h5 {
   color: #898989;
   font-size: 16px;
@@ -184,7 +183,7 @@ h5 {
   font-weight: 300;
 }
 
-/* line 99, ../sass/_base.scss */
+/* line 98, ../sass/_base.scss */
 p {
   color: #898989;
   font-size: 16px;
@@ -192,7 +191,7 @@ p {
   letter-spacing: .5px;
 }
 
-/* line 106, ../sass/_base.scss */
+/* line 105, ../sass/_base.scss */
 a {
   text-decoration: none;
   -moz-transition-property: color, fill;
@@ -208,7 +207,7 @@ a {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 112, ../sass/_base.scss */
+/* line 111, ../sass/_base.scss */
 a:visted {
   color: inherit;
 }
@@ -216,28 +215,28 @@ a:visted {
 /* ---------------------------------------------------------------------
  Global Link Styles
  ------------------------------------------------------------------------ */
-/* line 122, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 .single-link-container {
   display: flex;
 }
-/* line 126, ../sass/_base.scss */
+/* line 125, ../sass/_base.scss */
 .single-link-container:hover .project-link {
   color: #6bd1b5;
 }
-/* line 130, ../sass/_base.scss */
+/* line 129, ../sass/_base.scss */
 .single-link-container:hover .arrow {
   stroke: #6bd1b5;
   fill: #6bd1b5;
 }
-/* line 135, ../sass/_base.scss */
+/* line 134, ../sass/_base.scss */
 .single-link-container:hover .right-arrow {
   transform: translateX(4px);
 }
-/* line 139, ../sass/_base.scss */
+/* line 138, ../sass/_base.scss */
 .single-link-container:hover .left-arrow {
   transform: translateX(-4px);
 }
-/* line 144, ../sass/_base.scss */
+/* line 143, ../sass/_base.scss */
 .single-link-container svg {
   margin-top: 5px;
   -moz-transition-property: all;
@@ -254,7 +253,7 @@ a:visted {
   transition-timing-function: ease-in;
 }
 
-/* line 152, ../sass/_base.scss */
+/* line 151, ../sass/_base.scss */
 .project-link {
   font-size: 16px;
   font-weight: 400;
@@ -272,16 +271,16 @@ a:visted {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 161, ../sass/_base.scss */
+/* line 160, ../sass/_base.scss */
 .project-link:nth-child(1) {
   margin-right: 8px;
 }
-/* line 165, ../sass/_base.scss */
+/* line 164, ../sass/_base.scss */
 .project-link:nth-child(2) {
   margin-left: 8px;
 }
 
-/* line 170, ../sass/_base.scss */
+/* line 169, ../sass/_base.scss */
 .arrow {
   stroke: #44C5A2;
   fill: #44C5A2;
@@ -300,12 +299,12 @@ a:visted {
 }
 
 /*Links within blocks of text*/
-/* line 180, ../sass/_base.scss */
+/* line 179, ../sass/_base.scss */
 .inline-link {
   color: #44C5A2;
   display: inline-block;
 }
-/* line 184, ../sass/_base.scss */
+/* line 183, ../sass/_base.scss */
 .inline-link:hover {
   color: #6bd1b5;
 }
