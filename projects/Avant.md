@@ -2,7 +2,7 @@
 layout: project
 title: avant
 pretty_title: Avant
-role: Head of Design
+role: Head of Design, UI, UX
 date: Apr 2016 - Present
 description: Leading all design projects at a data-focused fintech company that makes it easier for middle-income consumers to borrow money online.
 card_image: avant.png
@@ -16,6 +16,6 @@ importance: primary
 
 <p>My team has designed multiple, 100 plus screen experiences including product dashboards and application processes.</p>
 
-<p>We work closely with all business units and analytics teams to ensure that our design decisions are informed and validated by data.
+<p>We work closely with all business units and analytics teams to ensure that our design decisions are informed and validated by data.</p>
 
 <p>I am also responsible for rolling out a completely new brand across all products and communications channels.</p>
