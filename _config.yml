@@ -1,4 +1,4 @@
-baseurl: "/portfolio"
+baseurl: ""
 description: "A site that displays Chris Mlynarski's work"
 exclude: 
   - Gemfile
