@@ -1,4 +1,4 @@
-baseurl: ""
+baseurl: "www.chrismlynarski.com"
 description: "A site that displays Chris Mlynarski's work"
 exclude: 
   - Gemfile
