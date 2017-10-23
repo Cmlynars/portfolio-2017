@@ -31,7 +31,7 @@ layout: default
 	{% assign previous = page.order | minus: 1 %}
 	{% for projects in site.pages %}
 		{% if projects.order == previous %}
-			<a class="single-link-container" href="{{ site.baseurl }}/{{ projects.url }}">{% include left_arrow.html %}<p class="project-link">Previous</p></a>
+			<a class="single-link-container" href="{{ site.baseurl }}{{ projects.url }}">{% include left_arrow.html %}<p class="project-link">Previous</p></a>
 		{% endif %}
 	{% endfor %}
 	{% assign next = page.order | plus: 1 %}
