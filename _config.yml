@@ -1,8 +1,8 @@
-baseurl: "www.chrismlynarski.com"
+baseurl: ""
 description: "A site that displays Chris Mlynarski's work"
 exclude: 
   - Gemfile
   - Gemfile.lock
 title: "Chris Mlynarski's Portfolio Site"
-url: ""
+url: "http://www.chrismlynarski.com"
 
