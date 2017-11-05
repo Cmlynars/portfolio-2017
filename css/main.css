@@ -471,6 +471,11 @@ footer {
   .icons-container {
     margin-bottom: 16px;
   }
+
+  /* line 73, ../sass/_footer.scss */
+  .footer-item {
+    text-align: center;
+  }
 }
 /* ---------------------------------------------------------------------
  Page Container
